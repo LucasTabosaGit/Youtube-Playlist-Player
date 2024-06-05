@@ -1,15 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
-import YouTube, { PlayerState } from 'youtube-player';
-import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
+import YouTube from 'youtube-player';
+import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
 
 const AudioPlayer = ({ selectedSong }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(localStorage.getItem('volume') || 50); // Get volume from localStorage or default to 50
+  const [volume, setVolume] = useState(localStorage.getItem('volume') || 50);
   const [currentSongIndex, setCurrentSongIndex] = useState(null);
   const [songs, setSongs] = useState([]);
+  const [shuffle, setShuffle] = useState(localStorage.getItem('shuffle') === 'true');
+  const [repeat, setRepeat] = useState(localStorage.getItem('repeat') === 'true');
+  const [hasRepeated, setHasRepeated] = useState(false);
   const playerRef = useRef(null);
   const intervalRef = useRef(null);
   const [thumbnail, setThumbnail] = useState('');
@@ -31,11 +34,19 @@ const AudioPlayer = ({ selectedSong }) => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('volume', volume); // Save volume to localStorage
+    localStorage.setItem('volume', volume);
     if (playerRef.current) {
-      playerRef.current.setVolume(volume); // Set volume when player is ready
+      playerRef.current.setVolume(volume);
     }
   }, [volume]);
+
+  useEffect(() => {
+    localStorage.setItem('shuffle', shuffle);
+  }, [shuffle]);
+
+  useEffect(() => {
+    localStorage.setItem('repeat', repeat);
+  }, [repeat]);
 
   const handleAudioPlayerSelect = async (song, index) => {
     try {
@@ -65,7 +76,7 @@ const AudioPlayer = ({ selectedSong }) => {
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
-        player.setVolume(volume); // Set volume when player is ready
+        player.setVolume(volume);
       });
 
       playerRef.current = player;
@@ -87,40 +98,60 @@ const AudioPlayer = ({ selectedSong }) => {
 
   useEffect(() => {
     if (isPlaying) {
-      // Se a música está tocando, monitoramos o progresso
       intervalRef.current = setInterval(() => {
         playerRef.current.getCurrentTime().then(time => {
           setCurrentTime(time);
         });
-        // Se a música chegou ao fim
-        if (currentTime >= duration - 1)  {
-          playNextSong(); // Passa para a próxima música
+        if (currentTime >= duration - 1) {
+          if (repeat) {
+            setCurrentTime(0); // Reinicia a música para o início
+            playerRef.current.seekTo(0); // Define o tempo do player para o início
+            setIsPlaying(true); // Inicia a reprodução
+          } else {
+            setHasRepeated(false);
+            if (shuffle) {
+              playRandomSong();
+            } else {
+              playNextSong();
+            }
+          }
         }
+        
       }, 1000);
     } else {
       clearInterval(intervalRef.current);
     }
-  
-    return () => clearInterval(intervalRef.current);
-  }, [isPlaying, currentTime]);
 
-  useEffect(() => {
-    if (selectedSong && selectedSong.duration) {
-      const [minutes, seconds] = selectedSong.duration.split(':').map(num => parseInt(num));
-      setDuration(minutes * 60 + seconds);
-    }
-  }, [selectedSong]);
+    return () => clearInterval(intervalRef.current);
+  }, [isPlaying, currentTime, repeat, hasRepeated]);
 
   const playNextSong = () => {
-    const nextIndex = (currentSongIndex + 1) % songs.length;
-    const nextSong = songs[nextIndex];
+    if (shuffle) {
+      playRandomSong();
+    } else {
+      const nextIndex = (currentSongIndex + 1) % songs.length;
+      const nextSong = songs[nextIndex];
+      setCurrentTime(0);
+      setIsPlaying(false);
+      setCurrentSongIndex(nextIndex);
+      setDuration(0);
+      axios
+        .post('/api/playing', { selectedSong: nextSong })
+        .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
+        .catch(error => console.error('Error updating playing API:', error));
+    }
+  };
+
+  const playRandomSong = () => {
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    const randomSong = songs[randomIndex];
     setCurrentTime(0);
     setIsPlaying(false);
-    setCurrentSongIndex(nextIndex);
+    setCurrentSongIndex(randomIndex);
     setDuration(0);
     axios
-      .post('/api/playing', { selectedSong: nextSong })
-      .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
+      .post('/api/playing', { selectedSong: randomSong })
+      .then(() => handleAudioPlayerSelect(randomSong, randomIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
 
@@ -155,6 +186,14 @@ const AudioPlayer = ({ selectedSong }) => {
     const newTime = parseFloat(event.target.value);
     setCurrentTime(newTime);
     playerRef.current.seekTo(newTime);
+  };
+
+  const toggleShuffle = () => {
+    setShuffle(!shuffle);
+  };
+
+  const toggleRepeat = () => {
+    setRepeat(!repeat);
   };
 
   const formatTime = time => {
@@ -207,6 +246,9 @@ const AudioPlayer = ({ selectedSong }) => {
 
         <div className="flex justify-center mt-2 mb-2">
           <div className="flex items-center space-x-4 ">
+            <div className="hover:cursor-pointer" onClick={toggleShuffle}>
+              {shuffle ? <ShuffleActiveSvg /> : <ShuffleSvg />}
+            </div>
             <div className="hover:cursor-pointer" onClick={playPreviousSong}>
               <PrevSvg />
             </div>
@@ -216,6 +258,10 @@ const AudioPlayer = ({ selectedSong }) => {
 
             <div className="hover:cursor-pointer" onClick={playNextSong}>
               <NextSvg />
+            </div>
+
+            <div className="hover:cursor-pointer" onClick={toggleRepeat}>
+              {repeat ? <RepeatOneSvg /> : <RepeatSvg />}
             </div>
           </div>
         </div>
@@ -234,7 +280,7 @@ const AudioPlayer = ({ selectedSong }) => {
         </div>
 
         <div className="flex items-center mr-7 mt-9 absolute top-0 right-0 hover:cursor-pointer">
-          
+
           <div className="ml-auto mx-2">
             {volume >= 80 ? <Volume100Svg /> : volume >= 1 ? <Volume50Svg /> : <MutedSvg />}
           </div>
