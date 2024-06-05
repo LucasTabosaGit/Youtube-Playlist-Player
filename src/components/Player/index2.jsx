@@ -7,7 +7,7 @@ const AudioPlayer = ({ selectedSong }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(50);
+  const [volume, setVolume] = useState(localStorage.getItem('volume') || 50); // Get volume from localStorage or default to 50
   const [currentSongIndex, setCurrentSongIndex] = useState(null);
   const [songs, setSongs] = useState([]);
   const playerRef = useRef(null);
@@ -30,20 +30,24 @@ const AudioPlayer = ({ selectedSong }) => {
     fetchSongs();
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('volume', volume); // Save volume to localStorage
+    if (playerRef.current) {
+      playerRef.current.setVolume(volume); // Set volume when player is ready
+    }
+  }, [volume]);
+
   const handleAudioPlayerSelect = async (song, index) => {
     try {
-      // Limpar todos os estados anteriores
       setCurrentSongIndex(index);
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
 
-      // Parar e remover o player atual, se existir
       if (playerRef.current) {
         playerRef.current.destroy();
       }
 
-      // Criar um novo player com a nova música selecionada
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
         playerVars: {
@@ -54,18 +58,18 @@ const AudioPlayer = ({ selectedSong }) => {
 
       player.on('stateChange', event => {
         if (event && event.data) {
-          setIsPlaying(event.data === 1);         }
+          setIsPlaying(event.data === 1);
+        }
       });
-
 
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
+        player.setVolume(volume); // Set volume when player is ready
       });
 
       playerRef.current = player;
 
-      // Atualizar a thumbnail, o título e o artista
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
@@ -73,8 +77,6 @@ const AudioPlayer = ({ selectedSong }) => {
       console.error('Error handling song selection:', error);
     }
   };
-
-
 
   useEffect(() => {
     if (selectedSong) {
@@ -97,7 +99,6 @@ const AudioPlayer = ({ selectedSong }) => {
     return () => clearInterval(intervalRef.current);
   }, [isPlaying]);
 
-
   useEffect(() => {
     if (selectedSong && selectedSong.duration) {
       const [minutes, seconds] = selectedSong.duration.split(':').map(num => parseInt(num));
@@ -108,11 +109,12 @@ const AudioPlayer = ({ selectedSong }) => {
   const playNextSong = () => {
     const nextIndex = (currentSongIndex + 1) % songs.length;
     const nextSong = songs[nextIndex];
-    setCurrentTime(0); // Resetar o tempo atual
-    setIsPlaying(false); // Pausar a música
-    setCurrentSongIndex(nextIndex); // Atualizar o índice da música atual
-    setDuration(0); // Resetar a duração
-    axios.post('/api/playing', { selectedSong: nextSong })
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setCurrentSongIndex(nextIndex);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: nextSong })
       .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
@@ -120,28 +122,28 @@ const AudioPlayer = ({ selectedSong }) => {
   const playPreviousSong = () => {
     const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     const previousSong = songs[previousIndex];
-    setCurrentTime(0); // Resetar o tempo atual
-    setIsPlaying(false); // Pausar a música
-    setCurrentSongIndex(previousIndex); // Atualizar o índice da música atual
-    setDuration(0); // Resetar a duração
-    axios.post('/api/playing', { selectedSong: previousSong })
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setCurrentSongIndex(previousIndex);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: previousSong })
       .then(() => handleAudioPlayerSelect(previousSong, previousIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
 
   const togglePlay = () => {
     if (isPlaying) {
-      playerRef.current.pauseVideo(); // Pausa o vídeo se estiver tocando
+      playerRef.current.pauseVideo();
     } else {
-      playerRef.current.playVideo(); // Toca o vídeo se estiver pausado
+      playerRef.current.playVideo();
     }
-    setIsPlaying(!isPlaying); // Alterna entre os estados de reprodução
+    setIsPlaying(!isPlaying);
   };
 
   const handleVolumeChange = event => {
     const newVolume = parseInt(event.target.value);
     setVolume(newVolume);
-    playerRef.current.setVolume(newVolume);
   };
 
   const handleProgressBarChange = event => {
@@ -188,6 +190,7 @@ const AudioPlayer = ({ selectedSong }) => {
                 transform: 'translateY(25%)'
               }}
               alt="Cover"
+              className='hover:cursor-pointer'
             />
           </div>
 
@@ -195,7 +198,6 @@ const AudioPlayer = ({ selectedSong }) => {
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
           </div>
-
         </div>
 
         <div className="flex justify-center mt-2 mb-2">
@@ -213,7 +215,7 @@ const AudioPlayer = ({ selectedSong }) => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center mt-2 mb-2">
+        <div className="flex items-center justify-center mt-2 mb-2 ">
           <span className='mr-2'>{formatTime(currentTime)}</span>
           <input
             type="range"
@@ -227,6 +229,7 @@ const AudioPlayer = ({ selectedSong }) => {
         </div>
 
         <div className="flex items-center mr-7 mt-9 absolute top-0 right-0 hover:cursor-pointer">
+          
           <div className="ml-auto mx-2">
             {volume >= 80 ? <Volume100Svg /> : volume >= 1 ? <Volume50Svg /> : <MutedSvg />}
           </div>
@@ -248,3 +251,4 @@ const AudioPlayer = ({ selectedSong }) => {
 };
 
 export default AudioPlayer;
+

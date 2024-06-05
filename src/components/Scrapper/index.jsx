@@ -28,6 +28,7 @@ const Scrapper = () => {
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           required
+          className='text-black'
         />
         <button type="submit">Scrape Video</button>
       </form>
