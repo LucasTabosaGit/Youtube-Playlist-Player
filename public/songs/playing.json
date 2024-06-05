@@ -1,9 +1,27 @@
 [
   {
-    "name": "4 Non Blondes - What's Up (Official Music Video)",
-    "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
-    "thumbnail": "https://img.youtube.com/vi/6NXnxTNIWkc/hqdefault.jpg",
-    "artist": "4 Non Blondes",
-    "duration": "4:52"
+    "songs": [
+      {
+        "name": "4 Non Blondes - What's Up (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
+        "thumbnail": "https://img.youtube.com/vi/6NXnxTNIWkc/hqdefault.jpg",
+        "artist": "4 Non Blondes",
+        "duration": "4:52"
+      },
+      {
+        "name": "Godsmack - Truth (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=d7sBkZLbQfY",
+        "thumbnail": "https://img.youtube.com/vi/d7sBkZLbQfY/hqdefault.jpg",
+        "artist": "Godsmack",
+        "duration": "4:33"
+      },
+      {
+        "name": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+        "link": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "thumbnail": "https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
+        "artist": "Queen Official",
+        "duration": "5:59"
+      }
+    ]
   }
 ]

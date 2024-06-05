@@ -27,14 +27,14 @@ const Playlist = ({ onSongSelect }) => {
         return text;
     };
 
-    const handleSongClick = async (song) => {
+    const handleSongClick = async () => {
         try {
-            await axios.post('/api/playing', song);
-            console.log('Song sent to playing API:', song);
+            await axios.post('/api/playing', { songs: songs });
+            console.log('Playlist sent to playing API');
             setSelectedSong(song); // Atualiza a música selecionada no estado
             onSongSelect(); // Chama a função fetchSongs passada como propriedade
         } catch (error) {
-            console.error('Error sending song to playing API:', error);
+            console.error('Error sending playlist to playing API:', error);
         }
     };
 
