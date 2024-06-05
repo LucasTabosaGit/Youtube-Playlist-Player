@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import MenuLateral from "../Menu/MenuLateral";
 
 const Playlist = ({ onSongSelect }) => {
     const [songs, setSongs] = useState([]);
@@ -37,11 +38,27 @@ const Playlist = ({ onSongSelect }) => {
     };
 
     return (
-        <div>
+        
+        <div style={{
+            maxHeight: '78.5vh',
+            overflowY: 'auto',
+            width: '100%',
+            marginTop: '5px',
+            marginLeft: '5px',
+            borderBottomLeftRadius: '10px',
+            borderBottomRightRadius: '10px'
+        }}>
             <div className="playlist-title">
-                <div className="playlist-title mx-10 ">Minha Playlist</div>
+                <div className="mx-10 py-9 font-bold-10">Minha Playlist</div>
             </div>
-            <div className="playlist">
+            <div className="playlist-container" style={{ backgroundColor: '#171717' }}>
+                <div className="playlist-header">
+                    <div className="header-item song-number">#</div>
+                    <div className="header-item song-thumbnail">Título</div>
+                    <div className="header-item song-title"></div>
+                    <div style={{ marginLeft: '20px'}}className="header-item song-artist">Nome do Artista</div>
+                    <div style={{ marginRight: '10px'}} className="header-item song-duration ">Duração</div>
+                </div>
                 {songs.length > 0 ? (
                     songs.map((song, index) => (
                         <div key={index} className={`song-item ${selectedSong === song ? 'selected' : ''}`} onClick={() => handleSongClick(song)}>
@@ -58,7 +75,7 @@ const Playlist = ({ onSongSelect }) => {
                             }}>
                                 <img
                                     src={song.thumbnail}
-                                    className="hover:cursor-pointer mx-2"
+                                    className="hover:cursor-pointer mx-3"
                                     style={{
                                         width: '100px',
                                         height: '100px',
@@ -74,9 +91,11 @@ const Playlist = ({ onSongSelect }) => {
                         </div>
                     ))
                 ) : (
-                    <div>No songs available</div>
+                    <div>Carregando...</div>
                 )}
             </div>
+
+
         </div>
     );
 };

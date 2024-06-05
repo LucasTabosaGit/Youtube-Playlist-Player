@@ -1,17 +1,21 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import YouTube from 'youtube-player';
 import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
+
+const defaultVolume = typeof window !== 'undefined' ? localStorage.getItem('volume') || 50 : 50;
+const defaultShuffle = typeof window !== 'undefined' ? localStorage.getItem('shuffle') === 'true' : false;
+const defaultRepeat = typeof window !== 'undefined' ? localStorage.getItem('repeat') === 'true' : false;
 
 const AudioPlayer = ({ selectedSong }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(localStorage.getItem('volume') || 50);
+  const [volume, setVolume] = useState(defaultVolume);
   const [currentSongIndex, setCurrentSongIndex] = useState(null);
   const [songs, setSongs] = useState([]);
-  const [shuffle, setShuffle] = useState(localStorage.getItem('shuffle') === 'true');
-  const [repeat, setRepeat] = useState(localStorage.getItem('repeat') === 'true');
+  const [shuffle, setShuffle] = useState(defaultShuffle);
+  const [repeat, setRepeat] = useState(defaultRepeat);
   const [hasRepeated, setHasRepeated] = useState(false);
   const playerRef = useRef(null);
   const intervalRef = useRef(null);
@@ -116,7 +120,7 @@ const AudioPlayer = ({ selectedSong }) => {
             }
           }
         }
-        
+
       }, 1000);
     } else {
       clearInterval(intervalRef.current);
@@ -209,6 +213,9 @@ const AudioPlayer = ({ selectedSong }) => {
     return text;
   };
 
+  const progressPercentage = (currentTime / duration) * 100;
+
+
   return (
     <>
       <div id="player" style={{ width: '1px', height: '1px' }} className="video-player"></div>
@@ -275,6 +282,10 @@ const AudioPlayer = ({ selectedSong }) => {
             value={currentTime}
             className="w-80 mx-2 range-input hover:cursor-pointer"
             onChange={handleProgressBarChange}
+            style={{
+              '--current-time': `${currentTime}`,
+              '--duration': `${duration}`,
+            }}
           />
           <span className='mx-2'>{formatTime(duration)}</span>
         </div>
@@ -292,7 +303,8 @@ const AudioPlayer = ({ selectedSong }) => {
               max="100"
               value={volume}
               onChange={handleVolumeChange}
-              className="range-input w-24 hover:cursor-pointer"
+              className="volume-input w-24 hover:cursor-pointer"
+              style={{ '--volume': `${volume}` }}
             />
           </div>
         </div>

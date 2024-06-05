@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 24, 24, 24;
-    --background-end-rgb: 24, 24, 24;
+    --background-start-rgb:0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -56,85 +56,174 @@ body {
 
 
 
-.range-input {
-    -webkit-appearance: none; /* Removendo a aparência padrão do navegador */
-    height: 6px; /* Define a altura da faixa */
-    background: gray; /* Define a cor de fundo da faixa */
-    border-radius: 3px; /* Define o raio das bordas da faixa */
-    outline: none; /* Remove o contorno padrão do navegador */
-    margin: 0; /* Define a margem como zero */
-    padding: 0; /* Define o preenchimento como zero */
+    .range-input {
+      -webkit-appearance: none;
+      height: 6px;
+      background: linear-gradient(to right, #0d632b 0%, #25D865 calc((var(--current-time) / var(--duration)) * 100%), gray calc((var(--current-time) / var(--duration)) * 100%), gray 100%);
+      border-radius: 3px;
+      outline: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 10px; /* Reduzido o tamanho do polegar */
+      height: 10px; /* Reduzido o tamanho do polegar */
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      transition: width 0.2s, height 0.2s; /* Adicionado a transição para as propriedades width e height */
+    }
+    
+    /* Aumenta o tamanho do polegar quando o mouse está sobre ele */
+    .range-input:hover::-webkit-slider-thumb {
+      width: 13px; /* Tamanho original do polegar */
+      height: 13px; /* Tamanho original do polegar */
+    }
+    
+    .volume-input {
+      -webkit-appearance: none;
+      width: 100px;
+      height: 6px;
+      background: linear-gradient(to right, #0d632b 0%, #25D865 calc((var(--volume) / 100) * 100%), gray calc((var(--volume) / 100) * 100%), gray 100%);
+      border-radius: 3px;
+      outline: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .volume-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 10px; /* Reduzido o tamanho do polegar */
+      height: 10px; /* Reduzido o tamanho do polegar */
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      transition: width 0.2s, height 0.2s; /* Adicionado a transição para as propriedades width e height */
+    }
+    
+    /* Aumenta o tamanho do polegar quando o mouse está sobre ele */
+    .volume-input:hover::-webkit-slider-thumb {
+      width: 13px; /* Tamanho original do polegar */
+      height: 13px; /* Tamanho original do polegar */
+    }
+    
+  
+
+    .playlist-container {
+      width: auto;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    .playlist-title {
+      background: linear-gradient(180deg, #500c3b, rgb(24, 24, 24));
+      height: 200px;
+      font-size: 60px;
+      font-weight: 600;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      top: 30px;
+    }
+    
+    .song-cover {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      object-fit: cover;
+      transform: translateY(25%);
+    }
+    
+    .playlist-header,
+    .song-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid rgba(46, 46, 46, 0.5); /* 50% de transparência */
+    }
+    
+    .playlist-header {
+      font-weight: bold;
+    }
+    
+    .header-item,
+    .song-number,
+    .song-title,
+    .song-artist,
+    .song-duration {
+      padding: 0 10px;
+    }
+
+    .header-item{
+      font-weight: 400; 
+      font-size: small;
+    }
+    
+    .song-number,
+    .header-item.song-number {
+      width: 30px;
+      text-align: center;
+    }
+    
+    .song-thumbnail,
+    .header-item.song-thumbnail {
+      width: 100px; /* Certifique-se de que a largura da miniatura no cabeçalho seja a mesma */
+    }
+    
+    .song-title,
+    .header-item.song-title {
+      flex: 2;
+    }
+    
+    .song-artist,
+    .header-item.song-artist {
+      flex: 1;
+      text-align: left;
+    }
+    
+    .song-duration,
+    .header-item.song-duration {
+      width: 60px;
+      text-align: center;
+    }
+
+    .song-item:hover {
+      background-color: #2e2e2e;
+      border-radius: 5px;
+      cursor: pointer;
   }
   
-  .range-input::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Removendo a aparência padrão do polegar */
-    width: 12px; /* Define a largura do polegar */
-    height: 12px; /* Define a altura do polegar */
-    border-radius: 50%; /* Define o raio das bordas do polegar */
-    background: #fff; /* Define a cor de fundo do polegar */
-    cursor: pointer; /* Altera o cursor ao passar sobre o polegar */
-  }
-  
-/* .hover{
-    cursor: pointer;
-} */
+    
 
-
-.playlist-container{
-  width: 900px;
-  margin: auto;
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
 }
 
-.playlist-title {
-  background: linear-gradient(180deg, #00234b, rgb(24, 24, 24));
-  height: 200px;
-  font-size: 60px;
-  font-weight: 600;
+/* Estiliza o botão de rolagem para cima e para baixo */
+::-webkit-scrollbar-button {
+  background-color: #000000; /* Cor de fundo do botão de rolagem */
 }
 
-.song-cover{
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  object-fit: 'cover';
-  transform: 'translateY(25%)';
-
+/* Estiliza a alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Cor de fundo da alça */
+  border-radius: 5px; /* Borda arredondada */
 }
 
-.playlist-container {
-  padding: 20px;
+/* Estiliza a alça da barra de rolagem quando o mouse passa por cima */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor de fundo da alça quando o mouse passa por cima */
 }
 
-.playlist-header, .song-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #8d7e7e;
+/* Estiliza a pista da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #000000; /* Cor de fundo da pista */
 }
 
-.playlist-header {
-  font-weight: bold;
-}
-
-.header-item, .song-number, .song-title, .song-artist, .song-duration {
-  padding: 0 10px;
-}
-
-.song-number {
-  width: 30px;
-  text-align: center;
-}
-
-.song-title {
-  flex: 2;
-}
-
-.song-artist {
-  flex: 1;
-  text-align: left;
-}
-
-.song-duration {
-  width: 60px;
-  text-align: center;
+/* Estiliza a pista da barra de rolagem quando a barra de rolagem está em movimento */
+::-webkit-scrollbar-track-piece {
+  background-color: #000000; /* Cor de fundo da pista quando a barra de rolagem está em movimento */
 }

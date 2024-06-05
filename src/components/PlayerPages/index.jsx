@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import AudioPlayer from '../Player/index2';
 import Playlist from '../Playlist';
 import Scrapper from '../Scrapper';
+import MenuLateral from '../Menu/MenuLateral';
+import Header from '../Menu/Header';
 
 const PlayerPage = () => {
   const [selectedSong, setSelectedSong] = useState(null);
@@ -12,11 +14,17 @@ const PlayerPage = () => {
   };
 
   return (
-    <div>
-      {/* <Scrapper/> */}
-      <Playlist onSongSelect={handleSongSelect} />
+    <>
+       <Scrapper />
+      <Header/>
+
+      <div className='flex'>
+        <MenuLateral />
+        < Playlist onSongSelect={handleSongSelect} />
+      </div>
+
       <AudioPlayer selectedSong={selectedSong} />
-    </div>
+    </>
   );
 };
 
