@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 24, 24, 24;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 24, 24, 24;
+    --background-end-rgb: 24, 24, 24;
   }
 }
 
@@ -30,4 +30,115 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+@keyframes colorChange {
+    0% { border-color: rgb(255, 0, 0); } /* Vermelho */
+    33% { border-color: rgb(0, 255, 0); } /* Verde */
+    66% { border-color: rgb(0, 0, 255); } /* Azul */
+    100% { border-color: rgb(255, 0, 0); } /* Vermelho novamente */
+  }
+  
+.footer-player {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #000000;
+      color: white;
+      padding: 10px 0;
+      border-top: 2px solid rgb(255, 0, 0); /* Começa com uma borda vermelha */
+      animation: colorChange 5s linear infinite; /* Aplica a animação de mudança de cor à borda */
+
+    }
+  
+
+
+
+.range-input {
+    -webkit-appearance: none; /* Removendo a aparência padrão do navegador */
+    height: 6px; /* Define a altura da faixa */
+    background: gray; /* Define a cor de fundo da faixa */
+    border-radius: 3px; /* Define o raio das bordas da faixa */
+    outline: none; /* Remove o contorno padrão do navegador */
+    margin: 0; /* Define a margem como zero */
+    padding: 0; /* Define o preenchimento como zero */
+  }
+  
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removendo a aparência padrão do polegar */
+    width: 12px; /* Define a largura do polegar */
+    height: 12px; /* Define a altura do polegar */
+    border-radius: 50%; /* Define o raio das bordas do polegar */
+    background: #fff; /* Define a cor de fundo do polegar */
+    cursor: pointer; /* Altera o cursor ao passar sobre o polegar */
+  }
+  
+/* .hover{
+    cursor: pointer;
+} */
+
+
+.playlist-container{
+  width: 900px;
+  margin: auto;
+}
+
+.playlist-title {
+  background: linear-gradient(180deg, #00234b, rgb(24, 24, 24));
+  height: 200px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.song-cover{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: 'cover';
+  transform: 'translateY(25%)';
+
+}
+
+
+
+
+
+.playlist-container {
+  padding: 20px;
+}
+
+.playlist-header, .song-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #8d7e7e;
+}
+
+.playlist-header {
+  font-weight: bold;
+}
+
+.header-item, .song-number, .song-title, .song-artist, .song-duration {
+  padding: 0 10px;
+}
+
+.song-number {
+  width: 30px;
+  text-align: center;
+}
+
+.song-title {
+  flex: 2;
+}
+
+.song-artist {
+  flex: 1;
+  text-align: left;
+}
+
+.song-duration {
+  width: 60px;
+  text-align: center;
 }
