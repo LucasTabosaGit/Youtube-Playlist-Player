@@ -87,17 +87,22 @@ const AudioPlayer = ({ selectedSong }) => {
 
   useEffect(() => {
     if (isPlaying) {
+      // Se a música está tocando, monitoramos o progresso
       intervalRef.current = setInterval(() => {
         playerRef.current.getCurrentTime().then(time => {
           setCurrentTime(time);
         });
+        // Se a música chegou ao fim
+        if (currentTime >= duration - 1)  {
+          playNextSong(); // Passa para a próxima música
+        }
       }, 1000);
     } else {
       clearInterval(intervalRef.current);
     }
-
+  
     return () => clearInterval(intervalRef.current);
-  }, [isPlaying]);
+  }, [isPlaying, currentTime]);
 
   useEffect(() => {
     if (selectedSong && selectedSong.duration) {
@@ -251,4 +256,3 @@ const AudioPlayer = ({ selectedSong }) => {
 };
 
 export default AudioPlayer;
-
