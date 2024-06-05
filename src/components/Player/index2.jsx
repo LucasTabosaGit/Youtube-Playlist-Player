@@ -16,7 +16,7 @@ const AudioPlayer = () => {
   useEffect(() => {
     const fetchSongs = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/playinglist');
+        const response = await axios.get('http://localhost:3000/api/playing');
         setSongs(response.data.songsList || []);
       } catch (error) {
         console.error('Error fetching songs:', error);
