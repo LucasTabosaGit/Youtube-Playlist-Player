@@ -1,6 +1,6 @@
 [
-  
-    
+  {
+    "songs": [
       {
         "name": "4 Non Blondes - What's Up (Official Music Video)",
         "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
@@ -22,6 +22,6 @@
         "artist": "Queen Official",
         "duration": "5:59"
       }
-    
-  
+    ]
+  }
 ]

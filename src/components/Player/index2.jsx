@@ -17,14 +17,16 @@ const AudioPlayer = () => {
     const fetchSongs = async () => {
       try {
         const response = await axios.get('http://localhost:3000/api/playing');
-        setSongs(response.data.songsList || []);
+        const songsList = response.data.songsList[0].songs || response.data.songsList;
+        setSongs(songsList);
       } catch (error) {
         console.error('Error fetching songs:', error);
       }
     };
-
+  
     fetchSongs();
   }, []);
+  
 
   useEffect(() => {
     if (!songs.length) return;
