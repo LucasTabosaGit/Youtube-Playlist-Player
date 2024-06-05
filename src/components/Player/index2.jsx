@@ -12,6 +12,9 @@ const AudioPlayer = ({ selectedSong }) => {
   const [songs, setSongs] = useState([]);
   const playerRef = useRef(null);
   const intervalRef = useRef(null);
+  const [thumbnail, setThumbnail] = useState('');
+  const [title, setTitle] = useState('');
+  const [artist, setArtist] = useState('');
 
   useEffect(() => {
     const fetchSongs = async () => {
@@ -34,12 +37,12 @@ const AudioPlayer = ({ selectedSong }) => {
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
-  
+
       // Parar e remover o player atual, se existir
       if (playerRef.current) {
         playerRef.current.destroy();
       }
-  
+
       // Criar um novo player com a nova música selecionada
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
@@ -48,22 +51,30 @@ const AudioPlayer = ({ selectedSong }) => {
           controls: 0,
         },
       });
-  
+
       player.on('stateChange', event => {
-        setIsPlaying(event.data === PlayerState.PLAYING);
+        if (event && event.data) {
+          setIsPlaying(event.data === 1);         }
       });
-  
+
+
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
       });
-  
+
       playerRef.current = player;
+
+      // Atualizar a thumbnail, o título e o artista
+      setThumbnail(song.thumbnail);
+      setTitle(song.name);
+      setArtist(song.artist);
     } catch (error) {
       console.error('Error handling song selection:', error);
     }
   };
-  
+
+
 
   useEffect(() => {
     if (selectedSong) {
@@ -82,10 +93,10 @@ const AudioPlayer = ({ selectedSong }) => {
     } else {
       clearInterval(intervalRef.current);
     }
-  
+
     return () => clearInterval(intervalRef.current);
   }, [isPlaying]);
-  
+
 
   useEffect(() => {
     if (selectedSong && selectedSong.duration) {
@@ -97,13 +108,25 @@ const AudioPlayer = ({ selectedSong }) => {
   const playNextSong = () => {
     const nextIndex = (currentSongIndex + 1) % songs.length;
     const nextSong = songs[nextIndex];
-    handleAudioPlayerSelect(nextSong, nextIndex);
+    setCurrentTime(0); // Resetar o tempo atual
+    setIsPlaying(false); // Pausar a música
+    setCurrentSongIndex(nextIndex); // Atualizar o índice da música atual
+    setDuration(0); // Resetar a duração
+    axios.post('/api/playing', { selectedSong: nextSong })
+      .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
+      .catch(error => console.error('Error updating playing API:', error));
   };
 
   const playPreviousSong = () => {
     const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     const previousSong = songs[previousIndex];
-    handleAudioPlayerSelect(previousSong, previousIndex);
+    setCurrentTime(0); // Resetar o tempo atual
+    setIsPlaying(false); // Pausar a música
+    setCurrentSongIndex(previousIndex); // Atualizar o índice da música atual
+    setDuration(0); // Resetar a duração
+    axios.post('/api/playing', { selectedSong: previousSong })
+      .then(() => handleAudioPlayerSelect(previousSong, previousIndex))
+      .catch(error => console.error('Error updating playing API:', error));
   };
 
   const togglePlay = () => {
@@ -112,6 +135,7 @@ const AudioPlayer = ({ selectedSong }) => {
     } else {
       playerRef.current.playVideo(); // Toca o vídeo se estiver pausado
     }
+    setIsPlaying(!isPlaying); // Alterna entre os estados de reprodução
   };
 
   const handleVolumeChange = event => {
@@ -156,7 +180,7 @@ const AudioPlayer = ({ selectedSong }) => {
             alignItems: 'flex-end'
           }}>
             <img
-              src={selectedSong?.thumbnail}
+              src={thumbnail}
               style={{
                 width: '150px',
                 height: '150px',
@@ -168,9 +192,10 @@ const AudioPlayer = ({ selectedSong }) => {
           </div>
 
           <div className="flex flex-col mx-3 mt-3">
-            <div className="song-name font-bold">{truncateText(selectedSong?.name, 38)}</div>
-            <div className="artist-name text-left">{truncateText(selectedSong?.artist, 20)}</div>
+            <div className="song-name font-bold">{truncateText(title, 38)}</div>
+            <div className="artist-name text-left">{truncateText(artist, 20)}</div>
           </div>
+
         </div>
 
         <div className="flex justify-center mt-2 mb-2">
@@ -181,6 +206,7 @@ const AudioPlayer = ({ selectedSong }) => {
             <div className="hover:cursor-pointer" onClick={togglePlay}>
               {isPlaying ? <span><PauseSvg /></span> : <span><PlaySvg /></span>}
             </div>
+
             <div className="hover:cursor-pointer" onClick={playNextSong}>
               <NextSvg />
             </div>
