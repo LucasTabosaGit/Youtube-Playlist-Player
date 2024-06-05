@@ -1,13 +1,19 @@
+"Use client";
+import React, { useState } from 'react';
 import AudioPlayer from '../Player/index2';
-import { useState } from 'react';
 import Playlist from '../Playlist';
-const PlayerPage = ({ songs }) => {
 
+const PlayerPage = () => {
+  const [selectedSong, setSelectedSong] = useState(null);
+
+  const handleSongSelect = (song) => {
+    setSelectedSong(song);
+  };
 
   return (
     <div>
-      <AudioPlayer songs={songs} />
-      <Playlist  />
+      <Playlist onSongSelect={handleSongSelect} />
+      <AudioPlayer selectedSong={selectedSong} />
     </div>
   );
 };

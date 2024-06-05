@@ -1,5 +1,3 @@
-// Playlist.js
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -27,12 +25,12 @@ const Playlist = ({ onSongSelect }) => {
         return text;
     };
 
-    const handleSongClick = async () => {
+    const handleSongClick = async (song) => {
         try {
             await axios.post('/api/Writeplaying', { songs: songs });
             console.log('Playlist sent to playing API');
             setSelectedSong(song); // Atualiza a música selecionada no estado
-            onSongSelect(); // Chama a função fetchSongs passada como propriedade
+            onSongSelect(song); // Chama a função onSongSelect passada como propriedade com a música selecionada
         } catch (error) {
             console.error('Error sending playlist to playing API:', error);
         }
@@ -47,7 +45,7 @@ const Playlist = ({ onSongSelect }) => {
                 {songs.length > 0 ? (
                     songs.map((song, index) => (
                         <div key={index} className={`song-item ${selectedSong === song ? 'selected' : ''}`} onClick={() => handleSongClick(song)}>
-                            <div className="song-number  mr-3">{index + 1}</div>
+                            <div className="song-number mr-3">{index + 1}</div>
                             <div style={{
                                 width: '100px',
                                 height: '50px',
@@ -80,7 +78,6 @@ const Playlist = ({ onSongSelect }) => {
                 )}
             </div>
         </div>
-            
     );
 };
 

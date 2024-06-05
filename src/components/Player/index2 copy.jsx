@@ -28,50 +28,43 @@ const AudioPlayer = ({ selectedSong }) => {
   }, []);
 
   const handleAudioPlayerSelect = async (song, index) => {
-    try {
-      // Limpar todos os estados anteriores
-      setCurrentSongIndex(index);
-      setIsPlaying(false);
-      setDuration(0);
-      setCurrentTime(0);
-  
-      // Parar e remover o player atual, se existir
-      if (playerRef.current) {
-        playerRef.current.destroy();
-      }
-  
-      // Criar um novo player com a nova música selecionada
-      const player = YouTube('player', {
-        videoId: song.link.split('v=')[1],
-        playerVars: {
-          autoplay: true,
-          controls: 0,
-        },
-      });
-  
-      player.on('stateChange', event => {
-        setIsPlaying(event.data === PlayerState.PLAYING);
-      });
-  
-      player.on('ready', event => {
-        setDuration(event.target.getDuration());
-        setIsPlaying(true);
-      });
-  
-      playerRef.current = player;
-    } catch (error) {
-      console.error('Error handling song selection:', error);
-    }
-  };
-  
+  try {
+    // Limpar todos os estados anteriores
+    setCurrentSongIndex(index);
+    setIsPlaying(false);
+    setDuration(0);
+    setCurrentTime(0);
 
-  useEffect(() => {
-    if (selectedSong) {
-      const index = songs.findIndex(song => song.link === selectedSong.link);
-      handleAudioPlayerSelect(selectedSong, index);
+    // Parar e remover o player atual, se existir
+    if (playerRef.current) {
+      playerRef.current.destroy();
     }
-  }, [selectedSong]);
 
+    // Criar um novo player com a nova música selecionada
+    const player = YouTube('player', {
+      videoId: song.link.split('v=')[1],
+      playerVars: {
+        autoplay: true,
+        controls: 0,
+      },
+    });
+
+    player.on('stateChange', event => {
+      setIsPlaying(event.data === PlayerState.PLAYING);
+    });
+
+    player.on('ready', event => {
+      setDuration(event.target.getDuration());
+      setIsPlaying(true);
+    });
+
+    playerRef.current = player;
+  } catch (error) {
+    console.error('Error handling song selection:', error);
+  }
+};
+
+  
   useEffect(() => {
     if (isPlaying) {
       intervalRef.current = setInterval(() => {
@@ -85,6 +78,16 @@ const AudioPlayer = ({ selectedSong }) => {
   
     return () => clearInterval(intervalRef.current);
   }, [isPlaying]);
+  
+  
+
+  useEffect(() => {
+    if (selectedSong) {
+      const index = songs.findIndex(song => song.link === selectedSong.link);
+      handleAudioPlayerSelect(selectedSong, index);
+    }
+  }, [selectedSong]);
+
   
 
   useEffect(() => {
