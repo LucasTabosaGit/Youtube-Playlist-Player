@@ -116,7 +116,10 @@ body {
       width: auto;
       margin: auto;
       padding: 20px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
+    
     
     .playlist-title {
       background: linear-gradient(180deg, #500c3b, rgb(24, 24, 24));
@@ -227,3 +230,20 @@ body {
 ::-webkit-scrollbar-track-piece {
   background-color: #000000; /* Cor de fundo da pista quando a barra de rolagem está em movimento */
 }
+
+
+
+/* Área dos gêneros */
+.categories-box{
+  height: 40px;
+  width: 100px;
+}
+
+.selected-genre {
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: rgba(255, 255, 255, 0.5) 2px solid; /* Cor branca com 50% de transparência */
+  cursor: pointer;
+}
+
+

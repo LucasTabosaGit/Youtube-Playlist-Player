@@ -5,7 +5,7 @@ import { useMusicContext } from '../context';
 
 const HomePage = () => {
   const { handleSongSelect } = useMusicContext();
-  const [content, setContent] = useState('playlist'); 
+  const [content, setContent] = useState('playlist');
 
   const handleMenuClick = (contentType) => {
     setContent(contentType);
@@ -28,9 +28,11 @@ const HomePage = () => {
         {renderContent()}
         <div>
           <button onClick={() => handleMenuClick('playlist')}>Playlist</button>
-          <button onClick={() => handleMenuClick('favorites')}>Favoritos</button>
+          <div className='mx-3'>
+          <button onClick={() => handleMenuClick('favorites')}></button>
         </div>
-      </Template>
+      </div>
+    </Template >
     </>
   );
 };

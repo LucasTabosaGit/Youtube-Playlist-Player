@@ -34,9 +34,9 @@ const Playlist = ({ onSongSelect }) => {
         try {
             await axios.post('/api/Writeplaying', { songs: songs });
             console.log('Playlist sent to playing API');
-            setSelectedSong(song); // Atualiza a música selecionada no estado
-            handleSongSelect(song); // Chama a função handleSongSelect para atualizar o contexto
-            onSongSelect(song); // Chama a função onSongSelect passada como propriedade com a música selecionada
+            setSelectedSong(song);
+            handleSongSelect(song);
+            onSongSelect(song); 
         } catch (error) {
             console.error('Error sending playlist to playing API:', error);
         }
