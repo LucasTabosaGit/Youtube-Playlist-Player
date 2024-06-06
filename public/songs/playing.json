@@ -119,6 +119,23 @@
         "thumbnail": "https://img.youtube.com/vi/kijpcUv-b8M/hqdefault.jpg",
         "artist": "Queen Official",
         "duration": "5:09"
+      },
+      {
+        "name": "Numb (Official Music Video) [4K UPGRADE] – Linkin Park",
+        "link": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+        "thumbnail": "https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:07",
+        "extractedAt": "2024-06-06T07:11:14.486Z"
+      },
+      {
+        "name": "Kansas - Dust in the Wind (Official Video)",
+        "link": "https://www.youtube.com/watch?v=tH2w6Oxx0kQ",
+        "thumbnail": "https://img.youtube.com/vi/tH2w6Oxx0kQ/hqdefault.jpg",
+        "artist": "KANSAS",
+        "duration": "3:19",
+        "genre": "",
+        "extractedAt": "2024-06-06T07:57:00.448Z"
       }
     ]
   }

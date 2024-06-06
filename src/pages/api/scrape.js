@@ -57,7 +57,9 @@ export default async function handler(req, res) {
       link: `https://www.youtube.com/watch?v=${videoId}`,
       thumbnail: thumbnail,
       artist: channelName,
-      duration: duration
+      duration: duration,
+      genre: '', // Adicionando campo genre vazio
+      extractedAt: new Date().toISOString()
     };
 
     const filePath = path.join(process.cwd(), 'public', 'songs', 'songs.json');
