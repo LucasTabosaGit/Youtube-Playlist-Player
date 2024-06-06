@@ -1,4 +1,4 @@
-"Use client";
+/* "Use client";
 import React, { useState } from 'react';
 import AudioPlayer from '../Player/index2';
 import Playlist from '../Playlist';
@@ -15,8 +15,8 @@ const PlayerPage = () => {
 
   return (
     <>
-       <Scrapper />
-      <Header/>
+      <Scrapper />
+      <Header />
 
       <div className='flex'>
         <MenuLateral />
@@ -29,3 +29,4 @@ const PlayerPage = () => {
 };
 
 export default PlayerPage;
+ */

@@ -3,6 +3,8 @@ import React from "react";
 const Header = () => {
     return (
         <div className="header bg-black text-white flex items-center justify-between h-12 ">
+            
+            
             <div className="flex items-center p-1">
                 {/* Ícone da casa */}
                 <div style={{ backgroundColor: '#171717' }} className="p5 w-16 px-5 py-2 mr-4 rounded-md">

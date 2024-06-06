@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MenuLateral from "../Menu/MenuLateral";
+import { useMusicContext } from "../context";
 
 const Playlist = ({ onSongSelect }) => {
     const [songs, setSongs] = useState([]);
+    const { handleSongSelect } = useMusicContext();
+
     const [selectedSong, setSelectedSong] = useState(null);
 
     useEffect(() => {
@@ -27,27 +30,22 @@ const Playlist = ({ onSongSelect }) => {
     };
 
     const handleSongClick = async (song) => {
+        console.log('Selected song sent to player:', song);
         try {
             await axios.post('/api/Writeplaying', { songs: songs });
             console.log('Playlist sent to playing API');
             setSelectedSong(song); // Atualiza a música selecionada no estado
+            handleSongSelect(song); // Chama a função handleSongSelect para atualizar o contexto
             onSongSelect(song); // Chama a função onSongSelect passada como propriedade com a música selecionada
         } catch (error) {
             console.error('Error sending playlist to playing API:', error);
         }
     };
+    
 
     return (
-        
-        <div style={{
-            maxHeight: '78.5vh',
-            overflowY: 'auto',
-            width: '100%',
-            marginTop: '5px',
-            marginLeft: '5px',
-            borderBottomLeftRadius: '10px',
-            borderBottomRightRadius: '10px'
-        }}>
+
+        <>
             <div className="playlist-title">
                 <div className="mx-10 py-9 font-bold-10">Minha Playlist</div>
             </div>
@@ -56,8 +54,8 @@ const Playlist = ({ onSongSelect }) => {
                     <div className="header-item song-number">#</div>
                     <div className="header-item song-thumbnail">Título</div>
                     <div className="header-item song-title"></div>
-                    <div style={{ marginLeft: '20px'}}className="header-item song-artist">Nome do Artista</div>
-                    <div style={{ marginRight: '10px'}} className="header-item song-duration ">Duração</div>
+                    <div style={{ marginLeft: '20px' }} className="header-item song-artist">Nome do Artista</div>
+                    <div style={{ marginRight: '10px' }} className="header-item song-duration ">Duração</div>
                 </div>
                 {songs.length > 0 ? (
                     songs.map((song, index) => (
@@ -96,7 +94,7 @@ const Playlist = ({ onSongSelect }) => {
             </div>
 
 
-        </div>
+        </>
     );
 };
 

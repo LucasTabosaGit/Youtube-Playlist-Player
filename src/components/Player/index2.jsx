@@ -1,13 +1,16 @@
+"use client";
 import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import YouTube from 'youtube-player';
+import { useMusicContext } from '../context';
 import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
 
 const defaultVolume = typeof window !== 'undefined' ? localStorage.getItem('volume') || 50 : 50;
 const defaultShuffle = typeof window !== 'undefined' ? localStorage.getItem('shuffle') === 'true' : false;
 const defaultRepeat = typeof window !== 'undefined' ? localStorage.getItem('repeat') === 'true' : false;
 
-const AudioPlayer = ({ selectedSong }) => {
+const AudioPlayer = ({ /* selectedSong */ }) => {
+  const { selectedSong } = useMusicContext();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -16,7 +19,6 @@ const AudioPlayer = ({ selectedSong }) => {
   const [songs, setSongs] = useState([]);
   const [shuffle, setShuffle] = useState(defaultShuffle);
   const [repeat, setRepeat] = useState(defaultRepeat);
-  const [hasRepeated, setHasRepeated] = useState(false);
   const playerRef = useRef(null);
   const intervalRef = useRef(null);
   const [thumbnail, setThumbnail] = useState('');
@@ -108,11 +110,10 @@ const AudioPlayer = ({ selectedSong }) => {
         });
         if (currentTime >= duration - 1) {
           if (repeat) {
-            setCurrentTime(0); // Reinicia a música para o início
-            playerRef.current.seekTo(0); // Define o tempo do player para o início
-            setIsPlaying(true); // Inicia a reprodução
+            setCurrentTime(0);
+            playerRef.current.seekTo(0);
+            setIsPlaying(true);
           } else {
-            setHasRepeated(false);
             if (shuffle) {
               playRandomSong();
             } else {
@@ -120,14 +121,13 @@ const AudioPlayer = ({ selectedSong }) => {
             }
           }
         }
-
       }, 1000);
     } else {
       clearInterval(intervalRef.current);
     }
 
     return () => clearInterval(intervalRef.current);
-  }, [isPlaying, currentTime, repeat, hasRepeated]);
+  }, [isPlaying, currentTime, repeat]);
 
   const playNextSong = () => {
     if (shuffle) {
@@ -215,7 +215,6 @@ const AudioPlayer = ({ selectedSong }) => {
 
   const progressPercentage = (currentTime / duration) * 100;
 
-
   return (
     <>
       <div id="player" style={{ width: '1px', height: '1px' }} className="video-player"></div>
@@ -291,7 +290,6 @@ const AudioPlayer = ({ selectedSong }) => {
         </div>
 
         <div className="flex items-center mr-7 mt-9 absolute top-0 right-0 hover:cursor-pointer">
-
           <div className="ml-auto mx-2">
             {volume >= 80 ? <Volume100Svg /> : volume >= 1 ? <Volume50Svg /> : <MutedSvg />}
           </div>
