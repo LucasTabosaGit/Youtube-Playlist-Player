@@ -3,13 +3,13 @@ import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import YouTube from 'youtube-player';
 import { useMusicContext } from '../context';
-import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
+import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShareSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
 
 const defaultVolume = typeof window !== 'undefined' ? localStorage.getItem('volume') || 50 : 50;
 const defaultShuffle = typeof window !== 'undefined' ? localStorage.getItem('shuffle') === 'true' : false;
 const defaultRepeat = typeof window !== 'undefined' ? localStorage.getItem('repeat') === 'true' : false;
 
-const AudioPlayer = ({ /* selectedSong */ }) => {
+const AudioPlayer = () => {
   const { selectedSong } = useMusicContext();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -19,6 +19,7 @@ const AudioPlayer = ({ /* selectedSong */ }) => {
   const [songs, setSongs] = useState([]);
   const [shuffle, setShuffle] = useState(defaultShuffle);
   const [repeat, setRepeat] = useState(defaultRepeat);
+  const [currentSongLink, setCurrentSongLink] = useState(''); // Novo estado para armazenar o link da música atual
   const playerRef = useRef(null);
   const intervalRef = useRef(null);
   const [thumbnail, setThumbnail] = useState('');
@@ -90,6 +91,7 @@ const AudioPlayer = ({ /* selectedSong */ }) => {
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
+      setCurrentSongLink(song.link); // Atualiza o link da música atual
     } catch (error) {
       console.error('Error handling song selection:', error);
     }
@@ -215,6 +217,14 @@ const AudioPlayer = ({ /* selectedSong */ }) => {
 
   const progressPercentage = (currentTime / duration) * 100;
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(currentSongLink).then(() => {
+      console.log('Link copiado para o clipboard:', currentSongLink);
+    }).catch(error => {
+      console.error('Erro ao copiar o link:', error);
+    });
+  };
+
   return (
     <>
       <div id="player" style={{ width: '1px', height: '1px' }} className="video-player"></div>
@@ -287,6 +297,12 @@ const AudioPlayer = ({ /* selectedSong */ }) => {
             }}
           />
           <span className='mx-2'>{formatTime(duration)}</span>
+        </div>
+
+        <div style={{ marginRight: '170px', marginTop: '43px'}} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={copyToClipboard}>
+          <div className="ml-auto mx-2">
+            <ShareSvg />
+          </div>
         </div>
 
         <div className="flex items-center mr-7 mt-9 absolute top-0 right-0 hover:cursor-pointer">
