@@ -7,16 +7,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Only POST requests are allowed' });
   }
 
-  const { url } = req.body;
+  const { url, playlist } = req.body;
 
   if (!url) {
     return res.status(400).json({ message: 'URL is required' });
-  }
-
-  // Extrai apenas o ID do vídeo da URL do YouTube
-  const videoId = url.match(/(?<=v=)[^&]+/)[0];
-  if (!videoId) {
-    return res.status(400).json({ message: 'Invalid YouTube URL' });
   }
 
   try {
@@ -46,6 +40,7 @@ export default async function handler(req, res) {
       throw new Error('Could not fetch video details');
     }
 
+    const videoId = url.match(/(?<=v=)[^&]+/)[0];
     const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
     await browser.close();
@@ -58,7 +53,7 @@ export default async function handler(req, res) {
       duration: duration,
       genre: '', 
       extractedAt: new Date().toISOString(),
-      playlist:''
+      playlist: playlist // Aqui é onde a variável playlist é atribuída ao objeto newVideo
     };
 
     const filePath = path.join(process.cwd(), 'public', 'songs', 'addsongs.json');
