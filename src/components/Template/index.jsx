@@ -1,24 +1,14 @@
-
-"use client";
-import React, { useState } from 'react';
-import AudioPlayer from '../Player/index2';
-import Playlist from '../Playlist';
-import MenuLateral from '../Menu/MenuLateral';
+import React from 'react';
 import Header from '../Menu/Header';
+import MenuLateral from '../Menu/MenuLateral';
+import AudioPlayer from '../Player/index2';
 
-const Template = ({ children }) => {
-
-    const [selectedSong, setSelectedSong] = useState(null);
-
-    const handleSongSelect = (song) => {
-        setSelectedSong(song);
-    };
-
+const Template = ({ children, content, setContent }) => {
     return (
         <>
-            <Header />
+            <Header content={content} setContent={setContent} />
             <div className='flex'>
-                <MenuLateral />
+                <MenuLateral content={content} setContent={setContent} />
                 <div
                     style={{
                         maxHeight: '78.5vh',
@@ -28,19 +18,14 @@ const Template = ({ children }) => {
                         marginLeft: '5px',
                         borderBottomLeftRadius: '10px',
                         borderBottomRightRadius: '10px'
-
                     }}
                 >
                     {children}
                 </div>
             </div>
-            <AudioPlayer selectedSong={selectedSong} />
-
+            <AudioPlayer />
         </>
-
     );
 };
 
 export default Template;
-
-

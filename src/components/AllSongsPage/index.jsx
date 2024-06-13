@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useMusicContext } from "../context";
 
-const Playlist = ({ onSongSelect }) => {
+const AllSongsPage = ({ onSongSelect }) => {
     const { handleSongSelect } = useMusicContext();
     const [songs, setSongs] = useState([]);
     const [filteredSongs, setFilteredSongs] = useState([]);
@@ -141,4 +141,4 @@ const Playlist = ({ onSongSelect }) => {
     );
 };
 
-export default Playlist;
+export default AllSongsPage;

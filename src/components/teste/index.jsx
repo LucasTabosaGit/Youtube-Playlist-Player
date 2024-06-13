@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Template from '../Template';
-import Playlist from '../Playlist';
+import Playlist from '../AllSongsPage';
 import { useMusicContext } from '../context';
 
 const HomePage = () => {
