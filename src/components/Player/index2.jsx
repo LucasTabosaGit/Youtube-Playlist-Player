@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import YouTube from 'youtube-player';
 import { useMusicContext } from '../context';
-import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShareSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, VolumeSvg } from '../Svgs';
+import PlaySvg, { MutedSvg, NextSvg, PauseSvg, PrevSvg, RepeatOneSvg, RepeatSvg, ShareSvg, ShuffleActiveSvg, ShuffleSvg, Volume100Svg, Volume50Svg, YoutbSvg } from '../Svgs';
 
 const defaultVolume = typeof window !== 'undefined' ? localStorage.getItem('volume') || 50 : 50;
 const defaultShuffle = typeof window !== 'undefined' ? localStorage.getItem('shuffle') === 'true' : false;
@@ -215,6 +215,10 @@ const AudioPlayer = () => {
     return text;
   };
 
+  const openYoutubeLink = () => {
+    window.open(currentSongLink, '_blank');
+  };
+
   const progressPercentage = (currentTime / duration) * 100;
 
   const copyToClipboard = () => {
@@ -225,12 +229,49 @@ const AudioPlayer = () => {
     });
   };
 
+  const [thumbnailClicked, setThumbnailClicked] = useState(false);
+
+  const handleThumbnailClick = () => {
+    setThumbnailClicked(true);
+    handleAudioPlayerSelect(selectedSong, currentSongIndex);
+
+  };
+
+  const handleCloseClick = () => {
+    setThumbnailClicked(false); // Retorna o vídeo ao tamanho original
+    handleAudioPlayerSelect(selectedSong, currentSongIndex); // Reinicia a música
+  };
+
+
+
   return (
     <>
-      <div id="player" style={{ width: '1px', height: '1px' }} className="video-player"></div>
+      <div
+        id="player"
+        style={{
+          width: thumbnailClicked ? '896px' : '1px',
+          height: thumbnailClicked ? '504px' : '1px',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: thumbnailClicked ? 'translate(-50%, -50%)' : 'none',
+        }}
+        className="video-player"
+      ></div>
+
+
+
+      {thumbnailClicked && (
+        <div
+          className="absolute bottom-0 right-0 mr-3 mt-1 mb-3 text-white cursor-pointer"
+          onClick={handleCloseClick}
+        >
+          Fechar
+        </div>
+      )}
 
       <div className="footer-player relative">
-        <div className='flex align-items-center mx-3 absolute top-0 left-0 mt-3'>
+        <div style={{ minWidth: '400px' }} className='flex align-items-center mx-3 absolute top-0 left-0 mt-3'>
           <div style={{
             width: '130px',
             height: '70px',
@@ -251,6 +292,7 @@ const AudioPlayer = () => {
               }}
               alt="Cover"
               className='hover:cursor-pointer'
+              onClick={handleThumbnailClick}
             />
           </div>
 
@@ -258,6 +300,18 @@ const AudioPlayer = () => {
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
           </div>
+
+
+          {thumbnailClicked && (
+            <div style={{ marginBottom: '2px', width: '120px', textAlign: 'center' }}
+              className="rounded-md absolute bottom-0 right-0 mr-3  mb-3 text-white cursor-pointer bg-[#2F2F2F] hover:bg-[#C11925]"
+              onClick={handleCloseClick}
+            >
+              Fechar Vídeo
+            </div>
+          )}
+
+
         </div>
 
         <div className="flex justify-center mt-2 mb-2">
@@ -299,7 +353,14 @@ const AudioPlayer = () => {
           <span className='mx-2'>{formatTime(duration)}</span>
         </div>
 
-        <div style={{ marginRight: '170px', marginTop: '43px'}} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={copyToClipboard}>
+       
+        <div style={{ marginRight: '200px', marginTop: '43px' }} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={openYoutubeLink}>
+          <div className="ml-auto mx-2">
+            <YoutbSvg />
+          </div>
+        </div>
+
+        <div style={{ marginRight: '165px', marginTop: '43px' }} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={copyToClipboard}>
           <div className="ml-auto mx-2">
             <ShareSvg />
           </div>

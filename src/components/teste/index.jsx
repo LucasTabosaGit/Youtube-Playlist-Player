@@ -29,10 +29,10 @@ const HomePage = () => {
         <div>
           <button onClick={() => handleMenuClick('playlist')}>Playlist</button>
           <div className='mx-3'>
-          <button onClick={() => handleMenuClick('favorites')}></button>
+            <button onClick={() => handleMenuClick('favorites')}></button>
+          </div>
         </div>
-      </div>
-    </Template >
+      </Template >
     </>
   );
 };

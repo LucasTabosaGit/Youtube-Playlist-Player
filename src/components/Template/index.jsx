@@ -28,7 +28,7 @@ const Template = ({ children }) => {
                         marginLeft: '5px',
                         borderBottomLeftRadius: '10px',
                         borderBottomRightRadius: '10px'
-                        
+
                     }}
                 >
                     {children}

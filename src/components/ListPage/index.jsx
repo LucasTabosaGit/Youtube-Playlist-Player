@@ -96,7 +96,6 @@ export default function ListPage() {
                     <div className="header-item song-title"></div>
                     <div style={{ marginLeft: '20px' }} className="header-item song-artist">Nome do Artista</div>
                     <div style={{ marginRight: '10px' }} className="header-item song-duration ">Duração</div>
-                    <div style={{ marginRight: '10px' }} className="header-item song-duration ">Adicionada</div>
                 </div>
                 {filteredSongs.length > 0 ? (
                     filteredSongs.map((song, index) => (

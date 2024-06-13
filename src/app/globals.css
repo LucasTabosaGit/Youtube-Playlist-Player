@@ -120,7 +120,6 @@ body {
       border-bottom-right-radius: 5px;
     }
     
-    
     .playlist-title {
       background: linear-gradient(180deg, #500c3b, rgb(24, 24, 24));
       height: 200px;
@@ -147,6 +146,13 @@ body {
       border-top: 1px solid rgba(46, 46, 46, 0.5); /* 50% de transparência */
     }
     
+    .song-item-add {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid rgba(46, 46, 46, 0.5); /* 50% de transparência */
+    }
+    
     .playlist-header {
       font-weight: bold;
     }
@@ -155,12 +161,13 @@ body {
     .song-number,
     .song-title,
     .song-artist,
+    .song-album,
     .song-duration {
       padding: 0 10px;
     }
-
-    .header-item{
-      font-weight: 400; 
+    
+    .header-item {
+      font-weight: 400;
       font-size: small;
     }
     
@@ -170,20 +177,36 @@ body {
       text-align: center;
     }
     
-    .song-thumbnail,
-    .header-item.song-thumbnail {
-      width: 100px; /* Certifique-se de que a largura da miniatura no cabeçalho seja a mesma */
+    .song-title-header,
+    .song-title {
+      width: 35%;
+    }
+
+    .song-playlist{
+      width: 25%;
     }
     
-    .song-title,
-    .header-item.song-title {
-      flex: 2;
+    .song-artist {
+      width: 25%;
     }
     
-    .song-artist,
-    .header-item.song-artist {
-      flex: 1;
-      text-align: left;
+    .song-thumbnail {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+      width: 100px;
+    }
+    
+    .song-duration,
+    .header-item.song-duration {
+      width: 60px;
+      text-align: center;
+      margin-left: auto; /* Adicionado */
+    }
+    
+    .song-item:hover {
+      background-color: #2e2e2e;
+      border-radius: 5px;
+      cursor: pointer;
     }
     
     .song-duration,

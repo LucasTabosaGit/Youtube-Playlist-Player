@@ -33,13 +33,11 @@ export default async function handler(req, res) {
     });
     console.log("Title extracted:", title);
 
-    // Extrai o nome do canal do YouTube
     const channelName = await page.evaluate(() => {
       const channelElement = document.querySelector('#text > a.yt-simple-endpoint');
       return channelElement ? channelElement.textContent.trim() : null;
     });
 
-    // Extrai a duração do vídeo
     const duration = await page.$eval('span.ytp-time-duration', (el) => {
       return el.textContent.trim();
     });
@@ -58,21 +56,19 @@ export default async function handler(req, res) {
       thumbnail: thumbnail,
       artist: channelName,
       duration: duration,
-      genre: '', // Adicionando campo genre vazio
-      extractedAt: new Date().toISOString()
+      genre: '', 
+      extractedAt: new Date().toISOString(),
+      playlist:''
     };
 
-    const filePath = path.join(process.cwd(), 'public', 'songs', 'songs.json');
+    const filePath = path.join(process.cwd(), 'public', 'songs', 'addsongs.json');
     const fileData = fs.readFileSync(filePath, 'utf-8');
     const json = JSON.parse(fileData);
 
-    // Verifica se já existe um vídeo com o mesmo título ou URL
     const existingVideoIndex = json.findIndex((video) => video.name === title || video.link === newVideo.link);
     if (existingVideoIndex !== -1) {
-      // Substitui os dados do vídeo existente pelos novos
       json[existingVideoIndex] = newVideo;
     } else {
-      // Adiciona o novo vídeo à lista
       json.push(newVideo);
     }
 

@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Template from '../Template';
 import Playlist from '../Playlist';
 import { useMusicContext } from '../context';
-import AudioPlayer from '../Player/index2';
 import ListPage from '../ListPage';
+import AddSongsPage from '../AddSongsPage';
 
 const HomePage = () => {
   const { handleSongSelect } = useMusicContext();
@@ -19,7 +19,9 @@ const HomePage = () => {
       case 'playlist':
         return <Playlist onSongSelect={handleSongSelect} />;
       case 'favorites':
-        return <><ListPage onSongSelect={handleSongSelect}/></>;
+        return <><ListPage onSongSelect={handleSongSelect} /></>;
+      case 'adicionar':
+        return <><AddSongsPage onSongSelect={handleSongSelect} /></>;
       default:
         return null;
     }
@@ -28,9 +30,11 @@ const HomePage = () => {
   return (
     <>
       <Template>
+
         <div>
           <button onClick={() => handleMenuClick('playlist')}>Playlist</button>
           <button className='mx-3' onClick={() => handleMenuClick('favorites')}>Gêneros</button>
+          <button className='mx-3' onClick={() => handleMenuClick('adicionar')}>Adicionar Músicas</button>
         </div>
         {renderContent()}
       </Template>

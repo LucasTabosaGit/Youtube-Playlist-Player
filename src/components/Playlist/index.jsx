@@ -47,45 +47,34 @@ const Playlist = ({ onSongSelect }) => {
 
         <>
             <div className="playlist-title">
-                <div className="mx-10 py-9 font-bold-10">Minha Playlist</div>
+                <div className="mx-10 py-9 font-bold-10">Todas Músicas</div>
             </div>
             <div className="playlist-container" style={{ backgroundColor: '#171717' }}>
                 <div className="playlist-header">
                     <div className="header-item song-number">#</div>
-                    <div className="header-item song-thumbnail">Título</div>
-                    <div className="header-item song-title"></div>
-                    <div style={{ marginLeft: '20px' }} className="header-item song-artist">Nome do Artista</div>
-                    <div style={{ marginRight: '10px' }} className="header-item song-duration ">Duração</div>
+                    <div style={{ marginLeft: '3px'}} className="header-item song-thumbnail">Vídeo</div>
+                    <div style={{ marginLeft: '3px'}} className="header-item song-title-header">Título</div>
+                    <div className="header-item song-artist">Nome do Artista</div>
+                    <div className="header-item song-playlist">Playlist</div>
+                    <div className="header-item song-duration ">Duração</div>
                 </div>
                 {songs.length > 0 ? (
                     songs.map((song, index) => (
-                        <div key={index} className={`song-item ${selectedSong === song ? 'selected' : ''}`} onClick={() => handleSongClick(song)}>
+                        <div key={index} className={`song-item ${selectedSong === song ? 'selected' : ''}`}>
                             <div className="song-number mr-3">{index + 1}</div>
-                            <div style={{
-                                width: '100px',
-                                height: '50px',
-                                borderRadius: '5px',
-                                overflow: 'hidden',
-                                position: 'relative',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'flex-end'
-                            }}>
+                            
+                            <div className="song-thumbnail w-24 h-12 rounded-lg overflow-hidden flex justify-center items-end">
                                 <img
                                     src={song.thumbnail}
-                                    className="hover:cursor-pointer mx-3"
-                                    style={{
-                                        width: '100px',
-                                        height: '100px',
-                                        objectFit: 'cover',
-                                        transform: 'translateY(25%)'
-                                    }}
+                                    className="mx-3 w-24 h-24 object-cover transform translate-y-1/4"
                                     alt="Cover"
                                 />
                             </div>
-                            <div className="song-title font-bold">{truncateText(song.name, 35)}</div>
-                            <div className="song-artist">{truncateText(song.artist, 15)}</div>
-                            <div className="song-duration">{song.duration}</div>
+                            
+                            <div onClick={() => handleSongClick(song)} className="song-title font-bold">{truncateText(song.name, 35)}</div>
+                            <div onClick={() => handleSongClick(song)} className="song-artist">{truncateText(song.artist, 15)}</div>
+                            <div  className="song-playlist">{truncateText(song.playlist, 15)}</div>
+                            <div onClick={() => handleSongClick(song)} className="song-duration">{song.duration}</div>
                         </div>
                     ))
                 ) : (
