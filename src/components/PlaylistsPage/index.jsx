@@ -77,7 +77,7 @@ export default function PlaylistPage() {
                         <div
                             key={index}
                             className={`mb-4 rounded-md mx-2 mt-2 mb-2 hover:cursor-pointer ${selectedPlaylist === playlist.playlist ? 'selected-genre' : ''}`}
-                            style={{ backgroundColor: '#333333' }}
+                            style={{ backgroundColor: playlist.color }}
                             onClick={() => setSelectedPlaylist(playlist.playlist)}
                         >
                             <div className="categories-box rounded-md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -96,11 +96,10 @@ export default function PlaylistPage() {
             <div className="playlist-container" style={{ backgroundColor: '#171717' }}>
                 <div className="playlist-header">
                     <div className="header-item song-number">#</div>
-                    <div style={{ marginLeft: '-2px' }} className="header-item song-thumbnail">Vídeo</div>
-                    <div style={{ marginLeft: '-2px' }} className="header-item song-title-header">Título</div>
-                    <div className="header-item song-artist">Nome do Artista</div>
-                    <div style={{ marginLeft: '-6px' }} className="header-item song-playlist">Playlist</div>
-                    <div className="header-item song-duration ">Duração</div>
+                    <div className="header-item song-thumbnail">Título</div>
+                    <div className="header-item song-title"></div>
+                    <div style={{ marginLeft: '20px' }} className="header-item song-artist">Nome do Artista</div>
+                    <div style={{ marginRight: '10px' }} className="header-item song-duration ">Duração</div>
                 </div>
                 {filteredSongs.length > 0 ? (
                     filteredSongs.map((song, index) => (
@@ -125,12 +124,11 @@ export default function PlaylistPage() {
                                         objectFit: 'cover',
                                         transform: 'translateY(25%)'
                                     }}
-                                    alt="Cover"
+                                    alt="Capa"
                                 />
                             </div>
                             <div className="song-title font-bold">{truncateText(song.name, 35)}</div>
                             <div className="song-artist">{truncateText(song.artist, 15)}</div>
-                            <div className="song-playlist">{truncateText(song.playlist, 15)}</div>
                             <div className="song-duration">{song.duration}</div>
                         </div>
                     ))
