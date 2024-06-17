@@ -2,21 +2,23 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useMusicContext } from '../context';
 
-export default function PlaylistPage() {
-    const [playlists, setPlaylists] = useState([]); // Renomeando 'generos' para 'playlists'
-    const [selectedPlaylist, setSelectedPlaylist] = useState(null); // Renomeando 'selectedGenre' para 'selectedPlaylist'
+const PlaylistPage = ({ onSongSelect }) => {
+    const [playlists, setPlaylists] = useState([]);
+    const [selectedPlaylist, setSelectedPlaylist] = useState(null); 
     const [allSongs, setAllSongs] = useState([]);
+    const {handleSongSelect } = useMusicContext();
+    const [songs, setSongs] = useState([]);
     const [filteredSongs, setFilteredSongs] = useState([]);
     const [selectedSong, setSelectedSong] = useState(null);
-    const { handleSongSelect } = useMusicContext();
+
 
     useEffect(() => {
-        async function fetchPlaylists() { // Renomeando 'fetchGenres' para 'fetchPlaylists'
+        async function fetchPlaylists() { 
             try {
-                const response = await axios.get('/api/playlistname'); // Alterando o endpoint para '/api/playlists'
+                const response = await axios.get('/api/playlistname'); 
                 setPlaylists(response.data || []);
             } catch (error) {
-                console.error('Error fetching playlists:', error); // Ajustando mensagem de erro para playlists
+                console.error('Error fetching playlists:', error); 
             }
         }
 
@@ -47,15 +49,32 @@ export default function PlaylistPage() {
         return text;
     };
 
+    useEffect(() => {
+        const fetchSongs = async () => {
+            try {
+                const response = await axios.get('http://localhost:3000/api/songs');
+                setSongs(response.data.songsList || []);
+                setFilteredSongs(response.data.songsList || []);
+            } catch (error) {
+                console.error('Error fetching songs:', error);
+            }
+        };
+
+        fetchSongs();
+    }, []);
+
+
+
     const handleSongClick = async (song) => {
-        console.log('Selected song:', song);
+        console.log('Selected song sent to player:', song);
         try {
-            await axios.post('/api/Writeplaying', { selectedSong: song });
-            console.log('Selected song sent to playing API');
+            await axios.post('/api/Writeplaying', { songs: songs });
+            console.log('Playlist sent to playing API');
             setSelectedSong(song);
             handleSongSelect(song);
+            onSongSelect(song);
         } catch (error) {
-            console.error('Error sending selected song to playing API:', error);
+            console.error('Error sending playlist to playing API:', error);
         }
     };
 
@@ -103,33 +122,25 @@ export default function PlaylistPage() {
                 </div>
                 {filteredSongs.length > 0 ? (
                     filteredSongs.map((song, index) => (
-                        <div key={index} className={`song-item ${selectedSong === song ? 'selected' : ''}`} onClick={() => handleSongClick(song)}>
+                        <div
+                            key={index}
+                            className={`song-item ${selectedSong === song ? 'selected' : ''}`}
+                            onClick={() => handleSongClick(song)}
+                        >
                             <div className="song-number mr-3">{index + 1}</div>
-                            <div style={{
-                                width: '100px',
-                                height: '50px',
-                                borderRadius: '5px',
-                                overflow: 'hidden',
-                                position: 'relative',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'flex-end'
-                            }}>
+
+                            <div className="song-thumbnail w-24 h-12 rounded-lg overflow-hidden flex justify-center items-end">
                                 <img
                                     src={song.thumbnail}
-                                    className="hover:cursor-pointer mx-3"
-                                    style={{
-                                        width: '100px',
-                                        height: '100px',
-                                        objectFit: 'cover',
-                                        transform: 'translateY(25%)'
-                                    }}
-                                    alt="Capa"
+                                    className="mx-3 w-24 h-24 object-cover transform translate-y-1/4"
+                                    alt="Cover"
                                 />
                             </div>
-                            <div className="song-title font-bold">{truncateText(song.name, 35)}</div>
-                            <div className="song-artist">{truncateText(song.artist, 15)}</div>
-                            <div className="song-duration">{song.duration}</div>
+
+                            <div onClick={() => handleSongClick(song)} className="song-title font-bold">{truncateText(song.name, 35)}</div>
+                            <div onClick={() => handleSongClick(song)} className="song-artist">{truncateText(song.artist, 15)}</div>
+                            <div className="song-playlist">{truncateText(song.playlist, 15)}</div>
+                            <div onClick={() => handleSongClick(song)} className="song-duration">{song.duration}</div>
                         </div>
                     ))
                 ) : (
@@ -139,3 +150,6 @@ export default function PlaylistPage() {
         </div>
     );
 }
+
+
+export default PlaylistPage
