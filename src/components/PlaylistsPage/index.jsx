@@ -77,7 +77,7 @@ export default function PlaylistPage() {
                         <div
                             key={index}
                             className={`mb-4 rounded-md mx-2 mt-2 mb-2 hover:cursor-pointer ${selectedPlaylist === playlist.playlist ? 'selected-genre' : ''}`}
-                            style={{ backgroundColor: playlist.color }}
+                            style={{ backgroundColor: '#333333' }}
                             onClick={() => setSelectedPlaylist(playlist.playlist)}
                         >
                             <div className="categories-box rounded-md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

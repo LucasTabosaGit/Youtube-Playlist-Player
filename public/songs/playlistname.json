@@ -1,10 +1,11 @@
 [
-    {
-      "playlist": "Rock",
-      "color": "#C11925"
-    },
-    {
-      "playlist": "Pop",
-      "color": "#5C2D92"
-    }
-  ]
+  {
+    "playlist": "Rock"
+  },
+  {
+    "playlist": "Pop"
+  },
+  {
+    "playlist": "teste"
+  }
+]

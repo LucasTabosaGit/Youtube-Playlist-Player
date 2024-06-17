@@ -63,20 +63,39 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         setError(null);
         try {
             const playlistToSave = newPlaylist || selectedPlaylist;
-            const res = await fetch('/api/updateSongs', {
+    
+            // Primeira API - Salvar músicas na playlist existente ou nova
+            const res1 = await fetch('/api/updateSongs', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ playlist: playlistToSave })
             });
-            const data = await res.json();
-            setResponse(data);
+            const data1 = await res1.json();
+    
+            // Segunda API - Adicionar nova playlist ao arquivo JSON
+            if (selectedPlaylist === 'new' && newPlaylist) {
+                const res2 = await fetch('/api/addplaylistname', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ playlist: newPlaylist })
+                });
+                const data2 = await res2.json();
+                // Lidar com a resposta da segunda API, se necessário
+            }
+    
+            // Atualiza a resposta e atualiza a lista de músicas
+            setResponse(data1);
             fetchSongs();
         } catch (error) {
-            setError('Error saving the songs');
+            setError('Erro ao salvar as músicas');
         }
     };
+    
+    
 
     const handleClearApi = async () => {
         setError(null);
