@@ -167,14 +167,14 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                 <>
                     <button
                         style={{ height: '40px' }}
-                        className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2 hover:cursor-pointer hover:bg-[#14843B]'
+                        className='text-white rounded-md bg-[#14843B] px-2 py-1 font mx-2 mt-3 mb-2 hover:cursor-pointer hover:bg-[#14843B]'
                         onClick={handleSaveApi}
                     >
-                        Salvar
+                        Salvar Músicas
                     </button>
                     <button
                         style={{ height: '40px' }}
-                        className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mt-3 mb-2 hover:cursor-pointer hover:bg-[#C11925]'
+                        className='text-white rounded-md bg-[#C11925] px-2 py-1 font mt-3 mb-2 hover:cursor-pointer hover:bg-[#C11925]'
                         onClick={handleClearApi}
                     >
                         Limpar Lista

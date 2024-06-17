@@ -2,29 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 24, 24, 24;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb:0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #ffffff;
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      #000000
     )
-    rgb(var(--background-start-rgb));
+    #000000;
 }
+
 
 @layer utilities {
   .text-balance {
@@ -39,6 +27,14 @@ body {
     66% { border-color: rgb(0, 0, 255); } /* Azul */
     100% { border-color: rgb(255, 0, 0); } /* Vermelho novamente */
   }
+
+
+  @keyframes colorChangeGreen {
+    0% { border-color: rgb(57, 255, 20); } 
+    33% { border-color: rgb(0, 128, 0); } 
+    66% { border-color: rgb(57, 255, 20); } 
+    100% { border-color: rgb(0, 128, 0); } 
+}
   
 .footer-player {
       position: fixed;
@@ -49,9 +45,9 @@ body {
       color: white;
       padding: 10px 0;
       border-top: 2px solid rgb(255, 0, 0); /* Começa com uma borda vermelha */
-      animation: colorChange 5s linear infinite; /* Aplica a animação de mudança de cor à borda */
+      animation: colorChangeGreen 5s linear infinite; /* Aplica a animação de mudança de cor à borda */
 
-    }
+}
   
 
 

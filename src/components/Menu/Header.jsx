@@ -23,9 +23,9 @@ const Header = ({ setContent }) => {
     };
 
     return (
-        <div className="header bg-black text-white flex items-center justify-between h-12">
-            <div className="flex items-center p-1">
-                <div style={{ backgroundColor: '#171717', cursor: 'pointer' }} className="p-5 w-16 px-5 py-2 rounded-md" onClick={handleInicioClick}>
+        <div className="header bg-black text-white flex items-center justify-between mb-0.3 mt-1">
+            <div className="flex items-center p-1 justify-center ">
+                <div style={{ backgroundColor: '#171717', cursor: 'pointer' }} className="items-center justify-center p-5 w-16 py-2 rounded-md" onClick={handleInicioClick}>
                     <i className="fas fa-home text-white"></i>
                 </div>
                 <div style={{ width: '330px', backgroundColor: '#171717', marginLeft: '10px' }} className="search-bar rounded-lg px-4 py-2 flex items-center">
