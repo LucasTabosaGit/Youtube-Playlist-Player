@@ -4,19 +4,19 @@ import { useMusicContext } from '../context';
 
 const PlaylistPage = ({ onSongSelect }) => {
     const [playlists, setPlaylists] = useState([]);
-    const [selectedPlaylist, setSelectedPlaylist] = useState(null); 
+    const [selectedPlaylist, setSelectedPlaylist] = useState(null);
     const [allSongs, setAllSongs] = useState([]);
     const { handleSongSelect } = useMusicContext();
     const [filteredSongs, setFilteredSongs] = useState([]);
     const [selectedSong, setSelectedSong] = useState(null);
 
     useEffect(() => {
-        async function fetchPlaylists() { 
+        async function fetchPlaylists() {
             try {
-                const response = await axios.get('/api/playlistname'); 
+                const response = await axios.get('/api/playlistname');
                 setPlaylists(response.data || []);
             } catch (error) {
-                console.error('Error fetching playlists:', error); 
+                console.error('Error fetching playlists:', error);
             }
         }
 
@@ -62,8 +62,10 @@ const PlaylistPage = ({ onSongSelect }) => {
 
     return (
         <div>
-            <div style={{ background: 'linear-gradient(180deg, #E8911C, rgb(24, 24, 24))' }} className="playlist-title">
+            <div style={{ background: 'linear-gradient(180deg, #E8911C, rgb(24, 24, 24))' }} className="playlist-title flex">
+                
                 <div className="mx-10 py-9 font-bold-10">Playlists</div>
+
             </div>
             <div style={{ backgroundColor: '#171717', display: 'flex', flexWrap: 'wrap' }}>
                 <div className='mx-4 flex'>
@@ -99,10 +101,11 @@ const PlaylistPage = ({ onSongSelect }) => {
             <div className="playlist-container" style={{ backgroundColor: '#171717' }}>
                 <div className="playlist-header">
                     <div className="header-item song-number">#</div>
-                    <div className="header-item song-thumbnail">Título</div>
-                    <div className="header-item song-title"></div>
-                    <div style={{ marginLeft: '20px' }} className="header-item song-artist">Nome do Artista</div>
-                    <div style={{ marginRight: '10px' }} className="header-item song-duration ">Duração</div>
+                    <div style={{ marginLeft: '-2px' }} className="header-item song-thumbnail">Vídeo</div>
+                    <div style={{ marginLeft: '-2px' }} className="header-item song-title-header">Título</div>
+                    <div className="header-item song-artist">Nome do Artista</div>
+                    <div style={{ marginLeft: '-6px' }} className="header-item song-playlist">Playlist</div>
+                    <div className="header-item song-duration ">Duração</div>
                 </div>
                 {filteredSongs.length > 0 ? (
                     filteredSongs.map((song, index) => (

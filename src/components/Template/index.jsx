@@ -3,10 +3,17 @@ import Header from '../Menu/Header';
 import MenuLateral from '../Menu/MenuLateral';
 import AudioPlayer from '../Player/index2';
 
-const Template = ({ children, content, setContent }) => {
+const Template = ({ children, content, setContent, goBack, goForward, canGoBack, canGoForward }) => {
     return (
         <>
-            <Header content={content} setContent={setContent} />
+            <Header
+                content={content}
+                setContent={setContent}
+                goBack={goBack}
+                goForward={goForward}
+                canGoBack={canGoBack}
+                canGoForward={canGoForward}
+            />
             <div className='flex'>
                 <MenuLateral content={content} setContent={setContent} />
                 <div

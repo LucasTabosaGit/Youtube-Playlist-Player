@@ -29,7 +29,6 @@ const MenuLateral = ({ setContent }) => {
                 className={`p-3 rounded-lg top-0 left-0 h-screen ${expanded ? 'w-60' : 'w-16'} 
         bg-black rounded-md border-white transition-all duration-500 `}
             >
-                {/* Botão para expandir/retrair o menu */}
                 <div
                     className="cursor-pointer flex items-center justify-center h-8"
                     onClick={toggleExpanded}
@@ -38,7 +37,6 @@ const MenuLateral = ({ setContent }) => {
                     {expanded && <span className="ml-2 font-bold transition-opacity duration-500">Menu</span>}
                 </div>
 
-                {/* Botão para adicionar músicas */}
                 <div className='flex items-center mt-4 rounded-lg' onClick={() => handleMenuClick('adicionar')}
                 >
                     <div
@@ -54,7 +52,6 @@ const MenuLateral = ({ setContent }) => {
                         </span>
                     )}                </div>
 
-                {/* Botão para exibir playlists */}
                 <div className='flex items-center mt-4' onClick={() => handleMenuClick('playlist')}>
                     <div
                         className="bg-[#262626] hover:bg-[#E7901C] rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer"
