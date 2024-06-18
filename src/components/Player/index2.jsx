@@ -265,35 +265,33 @@ const AudioPlayer = () => {
 
 
   const handleThumbnailClick = () => {
-    if (selectedSong !== currentPlayingSong) {
-      setCurrentPlayingSong(selectedSong);
-    }
-
     const currentTimeBeforeExpand = currentTime;
 
     setThumbnailClicked(true);
-    handleAudioPlayerSelect(selectedSong, currentSongIndex)
+
+    // Use the current playing song to ensure the correct song is resumed
+    handleAudioPlayerSelect(songs[currentSongIndex], currentSongIndex)
       .then(() => {
         playerRef.current.seekTo(currentTimeBeforeExpand);
       })
       .catch(error => console.error('Error handling song selection:', error));
   };
 
+
   const handleCloseClick = () => {
     const currentTimeBeforeClose = currentTime;
 
     setThumbnailClicked(false);
 
-    if (currentPlayingSong === selectedSong) {
-      setCurrentPlayingSong(null);
-    }
-
-    handleAudioPlayerSelect(selectedSong, currentSongIndex)
+    // Use the current playing song to ensure the correct song is resumed
+    handleAudioPlayerSelect(songs[currentSongIndex], currentSongIndex)
       .then(() => {
         playerRef.current.seekTo(currentTimeBeforeClose);
       })
       .catch(error => console.error('Error handling song selection:', error));
   };
+
+
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -383,19 +381,19 @@ const AudioPlayer = () => {
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
 
-            {thumbnailClicked ? (
-              <div style={{ width: '120px', textAlign: 'center' }}>
-                <div className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#C11925]" onClick={handleCloseClick}>
-                  Fechar Vídeo
+            {currentSongLink && (
+              thumbnailClicked ? (
+                <div style={{ width: '120px', textAlign: 'center' }}>
+                  <div className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#C11925]" onClick={handleCloseClick}>
+                    Fechar Vídeo
+                  </div>
                 </div>
-                
-              </div>
-            ) : (
-              <div style={{ width: '120px', textAlign: 'center' }} className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#3db52b]" onClick={handleThumbnailClick}>
-                Abrir Vídeo
-              </div>
+              ) : (
+                <div style={{ width: '120px', textAlign: 'center' }} className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#3db52b]" onClick={handleThumbnailClick}>
+                  Abrir Vídeo
+                </div>
+              )
             )}
-
           </div>
 
 
