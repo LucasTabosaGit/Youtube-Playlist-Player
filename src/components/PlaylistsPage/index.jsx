@@ -72,7 +72,6 @@ const PlaylistPage = ({ onSongSelect }) => {
                     <div
                         key="todos"
                         className={`mb-4 rounded-md mx-2 mt-2 mb-2 hover:cursor-pointer ${selectedPlaylist === null ? 'selected-genre' : ''}`}
-                        style={{ backgroundColor: "#333" }}
                         onClick={() => setSelectedPlaylist(null)}
                     >
                         <div className="categories-box rounded-md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

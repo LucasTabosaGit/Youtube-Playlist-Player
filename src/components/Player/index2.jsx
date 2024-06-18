@@ -25,6 +25,18 @@ const AudioPlayer = () => {
   const [thumbnail, setThumbnail] = useState('');
   const [title, setTitle] = useState('');
   const [artist, setArtist] = useState('');
+  const [isMuted, setIsMuted] = useState(false);
+
+  const toggleMute = () => {
+    if (isMuted) {
+      setVolume(previousVolume => previousVolume === 0 ? 50 : previousVolume); // Restaura o volume anterior se for zero
+    } else {
+      setVolume(0); // Muda para volume zero
+    }
+    setIsMuted(!isMuted); // Inverte o estado de mutado
+  };
+
+
 
   useEffect(() => {
     const fetchSongs = async () => {
@@ -207,7 +219,9 @@ const AudioPlayer = () => {
   const handleVolumeChange = event => {
     const newVolume = parseInt(event.target.value);
     setVolume(newVolume);
+    setIsMuted(newVolume === 0); // Atualiza isMuted se o novo volume for zero
   };
+  
 
   const handleProgressBarChange = event => {
     const newTime = parseFloat(event.target.value);
@@ -258,9 +272,9 @@ const AudioPlayer = () => {
     if (selectedSong !== currentPlayingSong) {
       setCurrentPlayingSong(selectedSong);
     }
-  
+
     const currentTimeBeforeExpand = currentTime;
-  
+
     setThumbnailClicked(true);
     handleAudioPlayerSelect(selectedSong, currentSongIndex)
       .then(() => {
@@ -268,24 +282,24 @@ const AudioPlayer = () => {
       })
       .catch(error => console.error('Error handling song selection:', error));
   };
-  
+
   const handleCloseClick = () => {
     const currentTimeBeforeClose = currentTime;
-  
-    setThumbnailClicked(false); 
-  
+
+    setThumbnailClicked(false);
+
     if (currentPlayingSong === selectedSong) {
       setCurrentPlayingSong(null);
     }
-  
+
     handleAudioPlayerSelect(selectedSong, currentSongIndex)
       .then(() => {
         playerRef.current.seekTo(currentTimeBeforeClose);
       })
       .catch(error => console.error('Error handling song selection:', error));
   };
-  
-  
+
+
 
 
   return (
@@ -411,9 +425,10 @@ const AudioPlayer = () => {
         </div>
 
         <div className="flex items-center mr-7 mt-9 absolute top-0 right-0 hover:cursor-pointer">
-          <div className="ml-auto mx-2">
-            {volume >= 80 ? <Volume100Svg /> : volume >= 1 ? <Volume50Svg /> : <MutedSvg />}
+          <div className="ml-auto mx-2" onClick={toggleMute}>
+            {isMuted || volume === 0 ? <MutedSvg /> : volume >= 80 ? <Volume100Svg /> : <Volume50Svg />}
           </div>
+
 
           <div className="flex items-center ">
             <input
