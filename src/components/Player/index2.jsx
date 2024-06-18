@@ -56,9 +56,10 @@ const AudioPlayer = () => {
     localStorage.setItem('repeat', repeat);
   }, [repeat]);
 
+
   const handleAudioPlayerSelect = async (song, index) => {
     try {
-      setCurrentSongIndex(index);
+      setCurrentSongIndex(index); // Atualiza índice da música atual
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
@@ -107,6 +108,29 @@ const AudioPlayer = () => {
       console.error('Error handling song selection:', error);
     }
   };
+
+  const playNextSong = () => {
+    const nextIndex = (currentSongIndex + 1) % songs.length;
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: songs[nextIndex] })
+      .then(() => handleAudioPlayerSelect(songs[nextIndex], nextIndex))
+      .catch(error => console.error('Error updating playing API:', error));
+  };
+  
+  const playPreviousSong = () => {
+    const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: songs[previousIndex] })
+      .then(() => handleAudioPlayerSelect(songs[previousIndex], previousIndex))
+      .catch(error => console.error('Error updating playing API:', error));
+  };
+  
   
   
 
@@ -144,18 +168,6 @@ const AudioPlayer = () => {
     return () => clearInterval(intervalRef.current);
   }, [isPlaying, currentTime, repeat]);
 
-  const playNextSong = () => {
-    const nextIndex = (currentSongIndex + 1) % songs.length;
-    const nextSong = songs[nextIndex];
-    setCurrentTime(0);
-    setIsPlaying(false);
-    setCurrentSongIndex(nextIndex);
-    setDuration(0);
-    axios
-      .post('/api/playing', { selectedSong: nextSong })
-      .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
-      .catch(error => console.error('Error updating playing API:', error));
-  };
 
   const playRandomSong = () => {
     const randomIndex = Math.floor(Math.random() * songs.length);
@@ -167,19 +179,6 @@ const AudioPlayer = () => {
     axios
       .post('/api/playing', { selectedSong: randomSong })
       .then(() => handleAudioPlayerSelect(randomSong, randomIndex))
-      .catch(error => console.error('Error updating playing API:', error));
-  };
-
-  const playPreviousSong = () => {
-    const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
-    const previousSong = songs[previousIndex];
-    setCurrentTime(0);
-    setIsPlaying(false);
-    setCurrentSongIndex(previousIndex);
-    setDuration(0);
-    axios
-      .post('/api/playing', { selectedSong: previousSong })
-      .then(() => handleAudioPlayerSelect(previousSong, previousIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
 
