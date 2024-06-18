@@ -36,10 +36,10 @@ const AudioPlayer = () => {
         console.error('Error fetching songs:', error);
       }
     };
-  
+
     fetchSongs();
   }, [selectedSong]); // Disparar novamente quando selectedSong mudar
-  
+
 
   useEffect(() => {
     localStorage.setItem('volume', volume);
@@ -63,18 +63,18 @@ const AudioPlayer = () => {
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
-  
+
       // Destruir o player anterior
       if (playerRef.current) {
         playerRef.current.destroy();
       }
-  
+
       // Limpar estados da música anterior
       setThumbnail('');
       setTitle('');
       setArtist('');
       setCurrentSongLink('');
-  
+
       // Criar um novo player para a nova música
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
@@ -83,34 +83,44 @@ const AudioPlayer = () => {
           controls: 0,
         },
       });
-  
+
       player.on('stateChange', event => {
         if (event && event.data) {
           setIsPlaying(event.data === 1);
         }
       });
-  
+
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
         player.setVolume(volume);
       });
-  
+
       playerRef.current = player;
-  
+
       // Atualizar os estados da nova música
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
       setCurrentSongLink(song.link);
-  
+
     } catch (error) {
       console.error('Error handling song selection:', error);
     }
   };
 
   const playNextSong = () => {
-    const nextIndex = (currentSongIndex + 1) % songs.length;
+    let nextIndex;
+    if (shuffle) {
+      // Se shuffle estiver ativado, escolhe um índice aleatório diferente do atual
+      do {
+        nextIndex = Math.floor(Math.random() * songs.length);
+      } while (nextIndex === currentSongIndex); // Garante que não seja o mesmo índice atual
+    } else {
+      // Se shuffle estiver desativado, avança para o próximo na ordem
+      nextIndex = (currentSongIndex + 1) % songs.length;
+    }
+    
     setCurrentTime(0);
     setIsPlaying(false);
     setDuration(0);
@@ -120,6 +130,7 @@ const AudioPlayer = () => {
       .catch(error => console.error('Error updating playing API:', error));
   };
   
+
   const playPreviousSong = () => {
     const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     setCurrentTime(0);
@@ -130,9 +141,9 @@ const AudioPlayer = () => {
       .then(() => handleAudioPlayerSelect(songs[previousIndex], previousIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
-  
-  
-  
+
+
+
 
   useEffect(() => {
     if (selectedSong) {
@@ -154,9 +165,9 @@ const AudioPlayer = () => {
             setIsPlaying(true);
           } else {
             if (shuffle) {
-              playRandomSong();
+              playRandomSong(); // Chama a função para reproduzir uma música aleatória
             } else {
-              playNextSong();
+              playNextSong(); // Chama a função para reproduzir a próxima música
             }
           }
         }
@@ -166,7 +177,8 @@ const AudioPlayer = () => {
     }
 
     return () => clearInterval(intervalRef.current);
-  }, [isPlaying, currentTime, repeat]);
+  }, [isPlaying, currentTime, repeat, shuffle]); // Adiciona shuffle como dependência
+
 
 
   const playRandomSong = () => {
@@ -181,6 +193,7 @@ const AudioPlayer = () => {
       .then(() => handleAudioPlayerSelect(randomSong, randomIndex))
       .catch(error => console.error('Error updating playing API:', error));
   };
+
 
   const togglePlay = () => {
     if (isPlaying) {
@@ -361,7 +374,7 @@ const AudioPlayer = () => {
           <span className='mx-2'>{formatTime(duration)}</span>
         </div>
 
-       
+
         <div style={{ marginRight: '200px', marginTop: '43px' }} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={openYoutubeLink}>
           <div className="ml-auto mx-2">
             <YoutbSvg />
@@ -397,3 +410,5 @@ const AudioPlayer = () => {
 };
 
 export default AudioPlayer;
+
+

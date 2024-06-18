@@ -2,6 +2,1606 @@
   {
     "songs": [
       {
+        "name": "OneRepublic - Counting Stars",
+        "link": "https://www.youtube.com/watch?v=hT_nvWreIhg",
+        "thumbnail": "https://img.youtube.com/vi/hT_nvWreIhg/hqdefault.jpg",
+        "artist": "OneRepublic",
+        "duration": "4:44",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "John Legend - All of Me (Official Video)",
+        "link": "https://www.youtube.com/watch?v=450p7goxZqg",
+        "thumbnail": "https://img.youtube.com/vi/450p7goxZqg/hqdefault.jpg",
+        "artist": "John Legend",
+        "duration": "5:08",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Ed Sheeran - Perfect (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+        "thumbnail": "https://img.youtube.com/vi/2Vv-BfVoq4g/hqdefault.jpg",
+        "artist": "Ed Sheeran",
+        "duration": "4:40",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Adele - Hello (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=YQHsXMglC9A",
+        "thumbnail": "https://img.youtube.com/vi/YQHsXMglC9A/hqdefault.jpg",
+        "artist": "Adele",
+        "duration": "6:07",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Imagine Dragons - Demons (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=mWRsgZuwf_8",
+        "thumbnail": "https://img.youtube.com/vi/mWRsgZuwf_8/hqdefault.jpg",
+        "artist": "ImagineDragons",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack",
+        "link": "https://www.youtube.com/watch?v=RgKAFK5djSk",
+        "thumbnail": "https://img.youtube.com/vi/RgKAFK5djSk/hqdefault.jpg",
+        "artist": "Wiz Khalifa",
+        "duration": "3:58",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Avicii - Waiting For Love",
+        "link": "https://www.youtube.com/watch?v=cHHLHGNpCSA",
+        "thumbnail": "https://img.youtube.com/vi/cHHLHGNpCSA/hqdefault.jpg",
+        "artist": "Avicii",
+        "duration": "3:51",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Fun.: We Are Young ft. Janelle Monáe [OFFICIAL VIDEO]",
+        "link": "https://www.youtube.com/watch?v=Sv6dMFF_yts",
+        "thumbnail": "https://img.youtube.com/vi/Sv6dMFF_yts/hqdefault.jpg",
+        "artist": "Fueled By Ramen",
+        "duration": "4:13",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=8UVNT4wvIGY",
+        "thumbnail": "https://img.youtube.com/vi/8UVNT4wvIGY/hqdefault.jpg",
+        "artist": "gotyemusic",
+        "duration": "4:04",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Ed Sheeran - Shape of You (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+        "thumbnail": "https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg",
+        "artist": "Ed Sheeran",
+        "duration": "4:24",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "R.E.M. - Losing My Religion (Official HD Music Video)",
+        "link": "https://www.youtube.com/watch?v=xwtdhWltSIg",
+        "thumbnail": "https://img.youtube.com/vi/xwtdhWltSIg/hqdefault.jpg",
+        "artist": "remhq",
+        "duration": "4:54",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Justin Timberlake - Mirrors (Official Video)",
+        "link": "https://www.youtube.com/watch?v=uuZE_IRwLNI",
+        "thumbnail": "https://img.youtube.com/vi/uuZE_IRwLNI/hqdefault.jpg",
+        "artist": "Justin Timberlake",
+        "duration": "8:21",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Avicii - Wake Me Up (Official Video)",
+        "link": "https://www.youtube.com/watch?v=IcrbM1l_BoI",
+        "thumbnail": "https://img.youtube.com/vi/IcrbM1l_BoI/hqdefault.jpg",
+        "artist": "Avicii",
+        "duration": "4:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Alan Walker - Faded",
+        "link": "https://www.youtube.com/watch?v=60ItHLz5WEA",
+        "thumbnail": "https://img.youtube.com/vi/60ItHLz5WEA/hqdefault.jpg",
+        "artist": "Alan Walker",
+        "duration": "3:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Pharrell Williams - Happy (Video)",
+        "link": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "thumbnail": "https://img.youtube.com/vi/ZbZSe6N_BXs/hqdefault.jpg",
+        "artist": "Pharrell Williams",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Maroon 5 - One More Night (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=fwK7ggA3-bU",
+        "thumbnail": "https://img.youtube.com/vi/fwK7ggA3-bU/hqdefault.jpg",
+        "artist": "Maroon 5",
+        "duration": "3:43",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]",
+        "link": "https://www.youtube.com/watch?v=3AtDnEC4zak",
+        "thumbnail": "https://img.youtube.com/vi/3AtDnEC4zak/hqdefault.jpg",
+        "artist": "Charlie Puth",
+        "duration": "3:51",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Imagine Dragons - Radioactive",
+        "link": "https://www.youtube.com/watch?v=ktvTqknDobU",
+        "thumbnail": "https://img.youtube.com/vi/ktvTqknDobU/hqdefault.jpg",
+        "artist": "ImagineDragons",
+        "duration": "4:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Coldplay - Hymn For The Weekend (Official Video)",
+        "link": "https://www.youtube.com/watch?v=YykjpeuMNEk",
+        "thumbnail": "https://img.youtube.com/vi/YykjpeuMNEk/hqdefault.jpg",
+        "artist": "Coldplay",
+        "duration": "4:21",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Sia - Cheap Thrills (Official Lyric Video) ft. Sean Paul",
+        "link": "https://www.youtube.com/watch?v=nYh-n7EOtMA",
+        "thumbnail": "https://img.youtube.com/vi/nYh-n7EOtMA/hqdefault.jpg",
+        "artist": "Sia",
+        "duration": "4:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Carly Rae Jepsen - Call Me Maybe",
+        "link": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+        "thumbnail": "https://img.youtube.com/vi/fWNaR-rxAic/hqdefault.jpg",
+        "artist": "Carly Rae Jepsen",
+        "duration": "3:20",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Numb (Official Music Video) [4K UPGRADE] – Linkin Park",
+        "link": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+        "thumbnail": "https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:08",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Audioslave - Like a Stone (Official Video)",
+        "link": "https://www.youtube.com/watch?v=7QU1nvuxaMA",
+        "thumbnail": "https://img.youtube.com/vi/7QU1nvuxaMA/hqdefault.jpg",
+        "artist": "Audioslave",
+        "duration": "5:02",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Imagine Dragons - Believer (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=7wtfhZwyrcc",
+        "thumbnail": "https://img.youtube.com/vi/7wtfhZwyrcc/hqdefault.jpg",
+        "artist": "ImagineDragons",
+        "duration": "3:37",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Adele - Someone Like You (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
+        "thumbnail": "https://img.youtube.com/vi/hLQl3WQQoQ0/hqdefault.jpg",
+        "artist": "Adele",
+        "duration": "4:45",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Taylor Swift - Blank Space",
+        "link": "https://www.youtube.com/watch?v=e-ORhEE9VVg",
+        "thumbnail": "https://img.youtube.com/vi/e-ORhEE9VVg/hqdefault.jpg",
+        "artist": "Taylor Swift",
+        "duration": "4:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Evanescence - Bring Me To Life (Official HD Music Video)",
+        "link": "https://www.youtube.com/watch?v=3YxaaGgTQYM",
+        "thumbnail": "https://img.youtube.com/vi/3YxaaGgTQYM/hqdefault.jpg",
+        "artist": "Evanescence",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Maroon 5 - Sugar (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=09R8_2nJtjg",
+        "thumbnail": "https://img.youtube.com/vi/09R8_2nJtjg/hqdefault.jpg",
+        "artist": "Maroon 5",
+        "duration": "5:02",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "The Chainsmokers - Closer (Lyric) ft. Halsey",
+        "link": "https://www.youtube.com/watch?v=PT2_F-1esPk",
+        "thumbnail": "https://img.youtube.com/vi/PT2_F-1esPk/hqdefault.jpg",
+        "artist": "The Chainsmokers",
+        "duration": "4:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Bruno Mars - Just The Way You Are (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=LjhCEhWiKXk",
+        "thumbnail": "https://img.youtube.com/vi/LjhCEhWiKXk/hqdefault.jpg",
+        "artist": "Bruno Mars",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Harry Styles - Sign of the Times (Official Video)",
+        "link": "https://www.youtube.com/watch?v=qN4ooNx77u0",
+        "thumbnail": "https://img.youtube.com/vi/qN4ooNx77u0/hqdefault.jpg",
+        "artist": "Harry Styles",
+        "duration": "5:42",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Coldplay - Adventure Of A Lifetime (Official Video)",
+        "link": "https://www.youtube.com/watch?v=QtXby3twMmI",
+        "thumbnail": "https://img.youtube.com/vi/QtXby3twMmI/hqdefault.jpg",
+        "artist": "Coldplay",
+        "duration": "5:16",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Maroon 5 - Girls Like You ft. Cardi B (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=aJOTlE1K90k",
+        "thumbnail": "https://img.youtube.com/vi/aJOTlE1K90k/hqdefault.jpg",
+        "artist": "Maroon 5",
+        "duration": "4:31",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Imagine Dragons - Thunder",
+        "link": "https://www.youtube.com/watch?v=fKopy74weus",
+        "thumbnail": "https://img.youtube.com/vi/fKopy74weus/hqdefault.jpg",
+        "artist": "ImagineDragons",
+        "duration": "3:25",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "ZAYN - Dusk Till Dawn (Official Video) ft. Sia",
+        "link": "https://www.youtube.com/watch?v=tt2k8PGm-TI",
+        "thumbnail": "https://img.youtube.com/vi/tt2k8PGm-TI/hqdefault.jpg",
+        "artist": "zayn",
+        "duration": "5:38",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "a-ha - Take On Me (Vídeo oficial)",
+        "link": "https://www.youtube.com/watch?v=djV11Xbc914",
+        "thumbnail": "https://img.youtube.com/vi/djV11Xbc914/hqdefault.jpg",
+        "artist": "a-ha",
+        "duration": "4:04",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Eminem - Love The Way You Lie ft. Rihanna",
+        "link": "https://www.youtube.com/watch?v=uelHwf8o7_U",
+        "thumbnail": "https://img.youtube.com/vi/uelHwf8o7_U/hqdefault.jpg",
+        "artist": "EminemMusic",
+        "duration": "4:27",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Lukas Graham - 7 Years [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=LHCob76kigA",
+        "thumbnail": "https://img.youtube.com/vi/LHCob76kigA/hqdefault.jpg",
+        "artist": "Lukas Graham",
+        "duration": "4:00",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Bon Jovi - It's My Life (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=vx2u5uUu3DE",
+        "thumbnail": "https://img.youtube.com/vi/vx2u5uUu3DE/hqdefault.jpg",
+        "artist": "Bon Jovi",
+        "duration": "4:27",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Coldplay - Paradise (Official Video)",
+        "link": "https://www.youtube.com/watch?v=1G4isv_Fylg",
+        "thumbnail": "https://img.youtube.com/vi/1G4isv_Fylg/hqdefault.jpg",
+        "artist": "Coldplay",
+        "duration": "4:21",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Ellie Goulding - Burn (Official Video)",
+        "link": "https://www.youtube.com/watch?v=CGyEd0aKWZE",
+        "thumbnail": "https://img.youtube.com/vi/CGyEd0aKWZE/hqdefault.jpg",
+        "artist": "Ellie Goulding",
+        "duration": "3:59",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "twenty one pilots - Ride (Official Video)",
+        "link": "https://www.youtube.com/watch?v=Pw-0pbY9JeU",
+        "thumbnail": "https://img.youtube.com/vi/Pw-0pbY9JeU/hqdefault.jpg",
+        "artist": "twenty one pilots",
+        "duration": "3:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "In The End [Official HD Music Video] - Linkin Park",
+        "link": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+        "thumbnail": "https://img.youtube.com/vi/eVTXPUF4Oz4/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:39",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Shawn Mendes - Stitches (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=VbfpW0pbvaU",
+        "thumbnail": "https://img.youtube.com/vi/VbfpW0pbvaU/hqdefault.jpg",
+        "artist": "Shawn Mendes",
+        "duration": "4:00",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer",
+        "link": "https://www.youtube.com/watch?v=EPo5wWmKEaI",
+        "thumbnail": "https://img.youtube.com/vi/EPo5wWmKEaI/hqdefault.jpg",
+        "artist": "Pitbull",
+        "duration": "4:27",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Post Malone, Swae Lee - Sunflower (Spider-Man: Into the Spider-Verse)",
+        "link": "https://www.youtube.com/watch?v=ApXoWvfEYVU",
+        "thumbnail": "https://img.youtube.com/vi/ApXoWvfEYVU/hqdefault.jpg",
+        "artist": "Post Malone",
+        "duration": "2:42",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Marshmello ft. Bastille - Happier (Clipe Musical Oficial)",
+        "link": "https://www.youtube.com/watch?v=m7Bc3pLyij0",
+        "thumbnail": "https://img.youtube.com/vi/m7Bc3pLyij0/hqdefault.jpg",
+        "artist": "Marshmello",
+        "duration": "3:54",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "MACKLEMORE & RYAN LEWIS - CAN'T HOLD US FEAT. RAY DALTON (OFFICIAL MUSIC VIDEO)",
+        "link": "https://www.youtube.com/watch?v=2zNSgSzhBfM",
+        "thumbnail": "https://img.youtube.com/vi/2zNSgSzhBfM/hqdefault.jpg",
+        "artist": "Macklemore",
+        "duration": "7:04",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "P!nk - Just Give Me A Reason ft. Nate Ruess",
+        "link": "https://www.youtube.com/watch?v=OpQFFLBMEPI",
+        "thumbnail": "https://img.youtube.com/vi/OpQFFLBMEPI/hqdefault.jpg",
+        "artist": "P!NK",
+        "duration": "4:03",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "The Police - Every Breath You Take (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "thumbnail": "https://img.youtube.com/vi/OMOGaugKpzs/hqdefault.jpg",
+        "artist": "The Police",
+        "duration": "3:49",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "OFFICIAL Somewhere over the Rainbow - Israel \"IZ\" Kamakawiwoʻole",
+        "link": "https://www.youtube.com/watch?v=V1bFr2SWP1I",
+        "thumbnail": "https://img.youtube.com/vi/V1bFr2SWP1I/hqdefault.jpg",
+        "artist": "Mountain Apple Company Inc",
+        "duration": "3:48",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "twenty one pilots: Stressed Out [OFFICIAL VIDEO]",
+        "link": "https://www.youtube.com/watch?v=pXRviuL6vMY",
+        "thumbnail": "https://img.youtube.com/vi/pXRviuL6vMY/hqdefault.jpg",
+        "artist": "Fueled By Ramen",
+        "duration": "3:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Europe - The Final Countdown (Official Video)",
+        "link": "https://www.youtube.com/watch?v=9jK-NcRmVcw",
+        "thumbnail": "https://img.youtube.com/vi/9jK-NcRmVcw/hqdefault.jpg",
+        "artist": "europethebandtv",
+        "duration": "4:57",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "The Weeknd - Starboy ft. Daft Punk (Official Video)",
+        "link": "https://www.youtube.com/watch?v=34Na4j8AVgA",
+        "thumbnail": "https://img.youtube.com/vi/34Na4j8AVgA/hqdefault.jpg",
+        "artist": "The Weeknd",
+        "duration": "4:34",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "twenty one pilots: Heathens (from Suicide Squad: The Album) [OFFICIAL VIDEO]",
+        "link": "https://www.youtube.com/watch?v=UprcpdwuwCg",
+        "thumbnail": "https://img.youtube.com/vi/UprcpdwuwCg/hqdefault.jpg",
+        "artist": "Fueled By Ramen",
+        "duration": "3:38",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Passenger | Let Her Go (Official Video)",
+        "link": "https://www.youtube.com/watch?v=RBumgq5yVrA",
+        "thumbnail": "https://img.youtube.com/vi/RBumgq5yVrA/hqdefault.jpg",
+        "artist": "Passenger",
+        "duration": "4:15",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Sean Paul - No Lie ft. Dua Lipa",
+        "link": "https://www.youtube.com/watch?v=GzU8KqOY8YA",
+        "thumbnail": "https://img.youtube.com/vi/GzU8KqOY8YA/hqdefault.jpg",
+        "artist": "Sean Paul",
+        "duration": "3:49",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Katy Perry - Firework (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=QGJuMBdaqIw",
+        "thumbnail": "https://img.youtube.com/vi/QGJuMBdaqIw/hqdefault.jpg",
+        "artist": "Katy Perry",
+        "duration": "3:54",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Rick Astley - Never Gonna Give You Up (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+        "artist": "Rick Astley",
+        "duration": "3:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Pitbull - Timber (Official Video) ft. Ke$ha",
+        "link": "https://www.youtube.com/watch?v=hHUbLv4ThOo",
+        "thumbnail": "https://img.youtube.com/vi/hHUbLv4ThOo/hqdefault.jpg",
+        "artist": "Pitbull",
+        "duration": "3:35",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Katy Perry - Last Friday Night (T.G.I.F.) (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=KlyXNRrsk4A",
+        "thumbnail": "https://img.youtube.com/vi/KlyXNRrsk4A/hqdefault.jpg",
+        "artist": "Katy Perry",
+        "duration": "8:05",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "The Weeknd - Save Your Tears (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=XXYlFuWEuKI",
+        "thumbnail": "https://img.youtube.com/vi/XXYlFuWEuKI/hqdefault.jpg",
+        "artist": "The Weeknd",
+        "duration": "4:09",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Taylor Swift - Shake It Off",
+        "link": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+        "thumbnail": "https://img.youtube.com/vi/nfWlot6h_JM/hqdefault.jpg",
+        "artist": "Taylor Swift",
+        "duration": "4:02",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Backstreet Boys - I Want It That Way (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=4fndeDfaWCg",
+        "thumbnail": "https://img.youtube.com/vi/4fndeDfaWCg/hqdefault.jpg",
+        "artist": "Backstreet Boys",
+        "duration": "3:40",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Red Hot Chili Peppers - Californication (Official Music Video) [HD UPGRADE]",
+        "link": "https://www.youtube.com/watch?v=YlUKcNNmywk",
+        "thumbnail": "https://img.youtube.com/vi/YlUKcNNmywk/hqdefault.jpg",
+        "artist": "Red Hot Chili Peppers",
+        "duration": "5:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "The Cranberries - Zombie (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+        "thumbnail": "https://img.youtube.com/vi/6Ejga4kJUts/hqdefault.jpg",
+        "artist": "TheCranberriesTV",
+        "duration": "5:08",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+        "thumbnail": "https://img.youtube.com/vi/hTWKbfoikeg/hqdefault.jpg",
+        "artist": "Nirvana",
+        "duration": "4:39",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Guns N' Roses - November Rain",
+        "link": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+        "thumbnail": "https://img.youtube.com/vi/8SbUC-UaAxE/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "9:17",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "4 Non Blondes - What's Up (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
+        "thumbnail": "https://img.youtube.com/vi/6NXnxTNIWkc/hqdefault.jpg",
+        "artist": "4 Non Blondes",
+        "duration": "4:53",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Cyndi Lauper - Girls Just Want To Have Fun (Official Video)",
+        "link": "https://www.youtube.com/watch?v=PIb6AZdTr-A",
+        "thumbnail": "https://img.youtube.com/vi/PIb6AZdTr-A/hqdefault.jpg",
+        "artist": "Cyndi Lauper",
+        "duration": "4:27",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+        "thumbnail": "https://img.youtube.com/vi/1w7OgIMMRc4/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "5:03",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Bon Jovi - Livin' On A Prayer",
+        "link": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+        "thumbnail": "https://img.youtube.com/vi/lDK9QqIzhwk/hqdefault.jpg",
+        "artist": "Bon Jovi",
+        "duration": "4:09",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Arctic Monkeys - Do I Wanna Know? (Official Video)",
+        "link": "https://www.youtube.com/watch?v=bpOSxM0rNPM",
+        "thumbnail": "https://img.youtube.com/vi/bpOSxM0rNPM/hqdefault.jpg",
+        "artist": "Official Arctic Monkeys",
+        "duration": "4:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "AC/DC - Thunderstruck (Official Video)",
+        "link": "https://www.youtube.com/watch?v=v2AC41dglnM",
+        "thumbnail": "https://img.youtube.com/vi/v2AC41dglnM/hqdefault.jpg",
+        "artist": "AC/DC",
+        "duration": "4:53",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Coolio - Gangsta's Paradise (feat. L.V.) [Videoclipe]",
+        "link": "https://www.youtube.com/watch?v=fPO76Jlnz6c",
+        "thumbnail": "https://img.youtube.com/vi/fPO76Jlnz6c/hqdefault.jpg",
+        "artist": "Tommy Boy",
+        "duration": "4:17",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "George Michael - Careless Whisper (Official Video)",
+        "link": "https://www.youtube.com/watch?v=izGwDsrQ1eQ",
+        "thumbnail": "https://img.youtube.com/vi/izGwDsrQ1eQ/hqdefault.jpg",
+        "artist": "georgemichael",
+        "duration": "5:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T10:13:24.400Z",
+        "playlist": "teste"
+      },
+      {
+        "name": "Billie Eilish - What Was I Made For? (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=cW8VLC9nnTo",
+        "thumbnail": "https://img.youtube.com/vi/cW8VLC9nnTo/hqdefault.jpg",
+        "artist": "Billie Eilish",
+        "duration": "4:09",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars",
+        "link": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+        "thumbnail": "https://img.youtube.com/vi/OPf0YbXqDm0/hqdefault.jpg",
+        "artist": "Mark Ronson",
+        "duration": "4:31",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Miley Cyrus - Flowers (Official Video)",
+        "link": "https://www.youtube.com/watch?v=G7KNmW9a75Y",
+        "thumbnail": "https://img.youtube.com/vi/G7KNmW9a75Y/hqdefault.jpg",
+        "artist": "Miley Cyrus",
+        "duration": "3:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Adele - Easy On Me (Lyrics) \"Go Easy On Me Baby\"",
+        "link": "https://www.youtube.com/watch?v=BR89eJVJrWs",
+        "thumbnail": "https://img.youtube.com/vi/BR89eJVJrWs/hqdefault.jpg",
+        "artist": "Revive Music",
+        "duration": "3:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "DJ Snake - Let Me Love You ft. Justin Bieber",
+        "link": "https://www.youtube.com/watch?v=euCqAq6BRa4",
+        "thumbnail": "https://img.youtube.com/vi/euCqAq6BRa4/hqdefault.jpg",
+        "artist": "DJ Snake",
+        "duration": "3:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Arizona Zervas - FLORIDA (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=D6MYACiS4oY",
+        "thumbnail": "https://img.youtube.com/vi/D6MYACiS4oY/hqdefault.jpg",
+        "artist": "Arizona Zervas",
+        "duration": "2:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=YqeW9_5kURI",
+        "thumbnail": "https://img.youtube.com/vi/YqeW9_5kURI/hqdefault.jpg",
+        "artist": "Major Lazer Official",
+        "duration": "2:59",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Adele - Rolling in the Deep (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+        "thumbnail": "https://img.youtube.com/vi/rYEDA3JcQqw/hqdefault.jpg",
+        "artist": "Adele",
+        "duration": "3:54",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lewis Capaldi - Someone You Loved",
+        "link": "https://www.youtube.com/watch?v=zABLecsR5UE",
+        "thumbnail": "https://img.youtube.com/vi/zABLecsR5UE/hqdefault.jpg",
+        "artist": "Lewis Capaldi",
+        "duration": "3:07",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Maoli - Broken Up (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=V1Ze_g0eFFE",
+        "thumbnail": "https://img.youtube.com/vi/V1Ze_g0eFFE/hqdefault.jpg",
+        "artist": "Maoli",
+        "duration": "3:07",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Shawn Mendes, Camila Cabello - Señorita",
+        "link": "https://www.youtube.com/watch?v=Pkh8UtuejGw",
+        "thumbnail": "https://img.youtube.com/vi/Pkh8UtuejGw/hqdefault.jpg",
+        "artist": "Shawn Mendes",
+        "duration": "3:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Alone. - Baa Baa Black Sheep (Lyrics)",
+        "link": "https://www.youtube.com/watch?v=6i1xRM7p1cA",
+        "thumbnail": "https://img.youtube.com/vi/6i1xRM7p1cA/hqdefault.jpg",
+        "artist": "Revive Music",
+        "duration": "2:51",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "David Kushner - Daylight (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=MoN9ql6Yymw",
+        "thumbnail": "https://img.youtube.com/vi/MoN9ql6Yymw/hqdefault.jpg",
+        "artist": "David Kushner",
+        "duration": "3:50",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Harry Styles - As It Was (Official Video)",
+        "link": "https://www.youtube.com/watch?v=H5v3kku4y6Q",
+        "thumbnail": "https://img.youtube.com/vi/H5v3kku4y6Q/hqdefault.jpg",
+        "artist": "Harry Styles",
+        "duration": "2:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Dua Lipa - New Rules (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=k2qgadSvNyU",
+        "thumbnail": "https://img.youtube.com/vi/k2qgadSvNyU/hqdefault.jpg",
+        "artist": "Dua Lipa",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Katy Perry - Dark Horse ft. Juicy J",
+        "link": "https://www.youtube.com/watch?v=0KSOMA3QBU0",
+        "thumbnail": "https://img.youtube.com/vi/0KSOMA3QBU0/hqdefault.jpg",
+        "artist": "Katy Perry",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Maoli - It’s A Great Day To Be Alive (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=zP8gGyfg8D0",
+        "thumbnail": "https://img.youtube.com/vi/zP8gGyfg8D0/hqdefault.jpg",
+        "artist": "Maoli",
+        "duration": "4:15",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Stephen Sanchez - Until I Found You (Official Video)",
+        "link": "https://www.youtube.com/watch?v=GxldQ9eX2wo",
+        "thumbnail": "https://img.youtube.com/vi/GxldQ9eX2wo/hqdefault.jpg",
+        "artist": "Stephen Sanchez",
+        "duration": "2:56",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Bruno Mars - The Lazy Song (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=fLexgOxsZu0",
+        "thumbnail": "https://img.youtube.com/vi/fLexgOxsZu0/hqdefault.jpg",
+        "artist": "Bruno Mars",
+        "duration": "3:20",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "The Kid LAROI, Justin Bieber - STAY (Official Video)",
+        "link": "https://www.youtube.com/watch?v=kTJczUoc26U",
+        "thumbnail": "https://img.youtube.com/vi/kTJczUoc26U/hqdefault.jpg",
+        "artist": "The Kid LAROI.",
+        "duration": "2:38",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Dua Lipa - Levitating Featuring DaBaby (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=TUVcZfQe-Kw",
+        "thumbnail": "https://img.youtube.com/vi/TUVcZfQe-Kw/hqdefault.jpg",
+        "artist": "Dua Lipa",
+        "duration": "3:51",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lady Gaga - Poker Face (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=bESGLojNYSo",
+        "thumbnail": "https://img.youtube.com/vi/bESGLojNYSo/hqdefault.jpg",
+        "artist": "Lady Gaga",
+        "duration": "3:34",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "FIFTY FIFTY (피프티피프티) - 'Cupid' (TwinVer.) Official Lyric Video",
+        "link": "https://www.youtube.com/watch?v=6uvUTu716rU",
+        "thumbnail": "https://img.youtube.com/vi/6uvUTu716rU/hqdefault.jpg",
+        "artist": "FIFTY FIFTY Official",
+        "duration": "3:00",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Aqua - Barbie Girl (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=ZyhrYis509A",
+        "thumbnail": "https://img.youtube.com/vi/ZyhrYis509A/hqdefault.jpg",
+        "artist": "Aqua",
+        "duration": "3:22",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Keane - Somewhere Only We Know (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=Oextk-If8HQ",
+        "thumbnail": "https://img.youtube.com/vi/Oextk-If8HQ/hqdefault.jpg",
+        "artist": "Keane",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Katy Perry - Roar",
+        "link": "https://www.youtube.com/watch?v=CevxZvSJLk8",
+        "thumbnail": "https://img.youtube.com/vi/CevxZvSJLk8/hqdefault.jpg",
+        "artist": "Katy Perry",
+        "duration": "4:30",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Andrew Wyatt - Beyond the Pale (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=tpQv5NXFCAg",
+        "thumbnail": "https://img.youtube.com/vi/tpQv5NXFCAg/hqdefault.jpg",
+        "artist": "Andrew Wyatt",
+        "duration": "3:48",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "OneRepublic - I Ain’t Worried (From “Top Gun: Maverick”) [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=mNEUkkoUoIA",
+        "thumbnail": "https://img.youtube.com/vi/mNEUkkoUoIA/hqdefault.jpg",
+        "artist": "OneRepublic",
+        "duration": "2:35",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lady Gaga, Bradley Cooper - Shallow (from A Star Is Born) (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=bo_efYhYU2A",
+        "thumbnail": "https://img.youtube.com/vi/bo_efYhYU2A/hqdefault.jpg",
+        "artist": "Lady Gaga",
+        "duration": "3:37",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Beyoncé - Halo",
+        "link": "https://www.youtube.com/watch?v=bnVUHWCynig",
+        "thumbnail": "https://img.youtube.com/vi/bnVUHWCynig/hqdefault.jpg",
+        "artist": "Beyoncé",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Sia - Unstoppable (Official Video - Live from the Nostalgic For The Present Tour)",
+        "link": "https://www.youtube.com/watch?v=YaEG2aWJnZ8",
+        "thumbnail": "https://img.youtube.com/vi/YaEG2aWJnZ8/hqdefault.jpg",
+        "artist": "Sia",
+        "duration": "3:47",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "JVKE - golden hour (official music video)",
+        "link": "https://www.youtube.com/watch?v=PEM0Vs8jf1w",
+        "thumbnail": "https://img.youtube.com/vi/PEM0Vs8jf1w/hqdefault.jpg",
+        "artist": "JVKE",
+        "duration": "3:52",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Justin Bieber - Sorry (PURPOSE : The Movement)",
+        "link": "https://www.youtube.com/watch?v=fRh_vgS2dFE",
+        "thumbnail": "https://img.youtube.com/vi/fRh_vgS2dFE/hqdefault.jpg",
+        "artist": "Justin Bieber",
+        "duration": "3:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "MAGIC! - Rude (Official Video)",
+        "link": "https://www.youtube.com/watch?v=PIh2xe4jnpk",
+        "thumbnail": "https://img.youtube.com/vi/PIh2xe4jnpk/hqdefault.jpg",
+        "artist": "MAGIC!",
+        "duration": "3:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Charlie Puth - Attention [Official Video]",
+        "link": "https://www.youtube.com/watch?v=nfs8NYg7yQM",
+        "thumbnail": "https://img.youtube.com/vi/nfs8NYg7yQM/hqdefault.jpg",
+        "artist": "Charlie Puth",
+        "duration": "3:52",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Charlie Puth - Left And Right (feat. Jung Kook of BTS) [Official Video]",
+        "link": "https://www.youtube.com/watch?v=a7GITgqwDVg",
+        "thumbnail": "https://img.youtube.com/vi/a7GITgqwDVg/hqdefault.jpg",
+        "artist": "Charlie Puth",
+        "duration": "2:40",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lana Del Rey - Summertime Sadness",
+        "link": "https://www.youtube.com/watch?v=nVjsGKrE6E8",
+        "thumbnail": "https://img.youtube.com/vi/nVjsGKrE6E8/hqdefault.jpg",
+        "artist": "Lana Del Rey",
+        "duration": "4:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Samantha Urbani - One Day at a Time",
+        "link": "https://www.youtube.com/watch?v=JvJQkL-99ks",
+        "thumbnail": "https://img.youtube.com/vi/JvJQkL-99ks/hqdefault.jpg",
+        "artist": "Samantha Urbani",
+        "duration": "3:21",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "David Guetta - Titanium ft. Sia (Official Video)",
+        "link": "https://www.youtube.com/watch?v=JRfuAukYTKg",
+        "thumbnail": "https://img.youtube.com/vi/JRfuAukYTKg/hqdefault.jpg",
+        "artist": "David Guetta",
+        "duration": "4:06",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "PinkPantheress, Ice Spice - Boy’s a liar Pt. 2 (Official Video)",
+        "link": "https://www.youtube.com/watch?v=oftolPu9qp4",
+        "thumbnail": "https://img.youtube.com/vi/oftolPu9qp4/hqdefault.jpg",
+        "artist": "Pinkpantheress",
+        "duration": "2:16",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]",
+        "link": "https://www.youtube.com/watch?v=papuvlVeZg8",
+        "thumbnail": "https://img.youtube.com/vi/papuvlVeZg8/hqdefault.jpg",
+        "artist": "Clean Bandit",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Janelle Monáe - Water Slide [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=hfwRjf675Ak",
+        "thumbnail": "https://img.youtube.com/vi/hfwRjf675Ak/hqdefault.jpg",
+        "artist": "Janelle Monáe",
+        "duration": "2:46",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lady Gaga - Bad Romance (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I",
+        "thumbnail": "https://img.youtube.com/vi/qrO4YZeyl0I/hqdefault.jpg",
+        "artist": "Lady Gaga",
+        "duration": "5:09",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Justin Bieber - Ghost",
+        "link": "https://www.youtube.com/watch?v=Fp8msa5uYsc",
+        "thumbnail": "https://img.youtube.com/vi/Fp8msa5uYsc/hqdefault.jpg",
+        "artist": "Justin Bieber",
+        "duration": "3:33",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Ellie Goulding - Love Me Like You Do (Official Video)",
+        "link": "https://www.youtube.com/watch?v=AJtDXIazrMo",
+        "thumbnail": "https://img.youtube.com/vi/AJtDXIazrMo/hqdefault.jpg",
+        "artist": "Ellie Goulding",
+        "duration": "4:10",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Skeez - Happy To Be Here",
+        "link": "https://www.youtube.com/watch?v=7PYh9pO5BO4",
+        "thumbnail": "https://img.youtube.com/vi/7PYh9pO5BO4/hqdefault.jpg",
+        "artist": "Skeez",
+        "duration": "3:04",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Hi-Rez, ALWZ SNNY, Sincerely Collins - GOOD VIBRATIONS (Music Video)",
+        "link": "https://www.youtube.com/watch?v=q6EkjOwaC2Q",
+        "thumbnail": "https://img.youtube.com/vi/q6EkjOwaC2Q/hqdefault.jpg",
+        "artist": "HiRezTV",
+        "duration": "3:14",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Elton John, Dua Lipa - Cold Heart (PNAU Remix) (Official Video)",
+        "link": "https://www.youtube.com/watch?v=qod03PVTLqk",
+        "thumbnail": "https://img.youtube.com/vi/qod03PVTLqk/hqdefault.jpg",
+        "artist": "Elton John",
+        "duration": "4:15",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lyan Paris - We're Ok",
+        "link": "https://www.youtube.com/watch?v=G-q1fPLwxuo",
+        "thumbnail": "https://img.youtube.com/vi/G-q1fPLwxuo/hqdefault.jpg",
+        "artist": "Lyan Paris",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Ariana Grande - 7 rings (Official Video)",
+        "link": "https://www.youtube.com/watch?v=QYh6mYIJG2Y",
+        "thumbnail": "https://img.youtube.com/vi/QYh6mYIJG2Y/hqdefault.jpg",
+        "artist": "Ariana Grande",
+        "duration": "3:05",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Sub Urban - UH OH! (feat. BENEE) [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=wZTIdnooV-s",
+        "thumbnail": "https://img.youtube.com/vi/wZTIdnooV-s/hqdefault.jpg",
+        "artist": "Sub Urban",
+        "duration": "2:39",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Fifth Harmony - Work from Home (Official Video) ft. Ty Dolla $ign",
+        "link": "https://www.youtube.com/watch?v=5GL9JoH4Sws",
+        "thumbnail": "https://img.youtube.com/vi/5GL9JoH4Sws/hqdefault.jpg",
+        "artist": "Fifth Harmony",
+        "duration": "3:40",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Alec Benjamin - Let Me Down Slowly [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=50VNCymT-Cs",
+        "thumbnail": "https://img.youtube.com/vi/50VNCymT-Cs/hqdefault.jpg",
+        "artist": "Alec Benjamin",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Post Malone - Circles",
+        "link": "https://www.youtube.com/watch?v=wXhTHyIgQ_U",
+        "thumbnail": "https://img.youtube.com/vi/wXhTHyIgQ_U/hqdefault.jpg",
+        "artist": "Post Malone",
+        "duration": "3:47",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Tiësto & Karol G - Don't Be Shy (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=taSubkjZUA4",
+        "thumbnail": "https://img.youtube.com/vi/taSubkjZUA4/hqdefault.jpg",
+        "artist": "Tiësto",
+        "duration": "3:08",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Mateo Beltran - No Body Is Looking 4 Love (Official Audio)",
+        "link": "https://www.youtube.com/watch?v=z1sIT5ONC-g",
+        "thumbnail": "https://img.youtube.com/vi/z1sIT5ONC-g/hqdefault.jpg",
+        "artist": "Mateo Beltran",
+        "duration": "2:34",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "One Direction - Night Changes",
+        "link": "https://www.youtube.com/watch?v=syFZfO_wfMQ",
+        "thumbnail": "https://img.youtube.com/vi/syFZfO_wfMQ/hqdefault.jpg",
+        "artist": "One Direction",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Sia - Cheap Thrills (Performance Edit)",
+        "link": "https://www.youtube.com/watch?v=31crA53Dgu0",
+        "thumbnail": "https://img.youtube.com/vi/31crA53Dgu0/hqdefault.jpg",
+        "artist": "Sia",
+        "duration": "3:38",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Teddy Swims - Lose Control (Live)",
+        "link": "https://www.youtube.com/watch?v=GZ3zL7kT6_c",
+        "thumbnail": "https://img.youtube.com/vi/GZ3zL7kT6_c/hqdefault.jpg",
+        "artist": "Teddy Swims",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Taylor Swift - Cruel Summer",
+        "link": "https://www.youtube.com/watch?v=JLJcHbYSlB8",
+        "thumbnail": "https://img.youtube.com/vi/JLJcHbYSlB8/hqdefault.jpg",
+        "artist": "LatinHype",
+        "duration": "3:00",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Ed Sheeran - Bad Habits [Official Video]",
+        "link": "https://www.youtube.com/watch?v=orJSJGHjBLI",
+        "thumbnail": "https://img.youtube.com/vi/orJSJGHjBLI/hqdefault.jpg",
+        "artist": "Ed Sheeran",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Miley Cyrus - Angels Like You (Official Video)",
+        "link": "https://www.youtube.com/watch?v=Y0ORhLyJWuc",
+        "thumbnail": "https://img.youtube.com/vi/Y0ORhLyJWuc/hqdefault.jpg",
+        "artist": "Miley Cyrus",
+        "duration": "4:06",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Taylor Swift - You Belong With Me",
+        "link": "https://www.youtube.com/watch?v=VuNIsY6JdUw",
+        "thumbnail": "https://img.youtube.com/vi/VuNIsY6JdUw/hqdefault.jpg",
+        "artist": "Taylor Swift",
+        "duration": "3:49",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Adele - Easy On Me (Official Video)",
+        "link": "https://www.youtube.com/watch?v=U3ASj1L6_sY",
+        "thumbnail": "https://img.youtube.com/vi/U3ASj1L6_sY/hqdefault.jpg",
+        "artist": "Adele",
+        "duration": "5:32",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Maroon 5 - Memories (Official Video)",
+        "link": "https://www.youtube.com/watch?v=SlPhMPnQ58k",
+        "thumbnail": "https://img.youtube.com/vi/SlPhMPnQ58k/hqdefault.jpg",
+        "artist": "Maroon 5",
+        "duration": "3:16",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Haddaway - What Is Love [Official]",
+        "link": "https://www.youtube.com/watch?v=HEXWRTEbj1I",
+        "thumbnail": "https://img.youtube.com/vi/HEXWRTEbj1I/hqdefault.jpg",
+        "artist": "CoconutMusicGermany",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "BLACKPINK - 'Ice Cream (with Selena Gomez)' M/V",
+        "link": "https://www.youtube.com/watch?v=vRXZj0DzXIA",
+        "thumbnail": "https://img.youtube.com/vi/vRXZj0DzXIA/hqdefault.jpg",
+        "artist": "BLACKPINK",
+        "duration": "3:03",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Beyoncé - Crazy In Love ft. JAY Z",
+        "link": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
+        "thumbnail": "https://img.youtube.com/vi/ViwtNLUqkMY/hqdefault.jpg",
+        "artist": "Beyoncé",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Coldplay - Viva La Vida (Official Video)",
+        "link": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
+        "thumbnail": "https://img.youtube.com/vi/dvgZkm1xWPE/hqdefault.jpg",
+        "artist": "Coldplay",
+        "duration": "4:03",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Ariana Grande - positions (official video)",
+        "link": "https://www.youtube.com/watch?v=tcYodQoapMg",
+        "thumbnail": "https://img.youtube.com/vi/tcYodQoapMg/hqdefault.jpg",
+        "artist": "Ariana Grande",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lana Del Rey - Young and Beautiful",
+        "link": "https://www.youtube.com/watch?v=o_1aF54DO60",
+        "thumbnail": "https://img.youtube.com/vi/o_1aF54DO60/hqdefault.jpg",
+        "artist": "Lana Del Rey",
+        "duration": "3:59",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Ariana Grande ft. Nicki Minaj - Side To Side (Official Video) ft. Nicki Minaj",
+        "link": "https://www.youtube.com/watch?v=SXiSVQZLje8",
+        "thumbnail": "https://img.youtube.com/vi/SXiSVQZLje8/hqdefault.jpg",
+        "artist": "Ariana Grande",
+        "duration": "3:58",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Roxette - It Must Have Been Love (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=k2C5TjS2sh4",
+        "thumbnail": "https://img.youtube.com/vi/k2C5TjS2sh4/hqdefault.jpg",
+        "artist": "Roxette",
+        "duration": "4:16",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Lady Gaga - Hold My Hand (From “Top Gun: Maverick”) [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=O2CIAKVTOrc",
+        "thumbnail": "https://img.youtube.com/vi/O2CIAKVTOrc/hqdefault.jpg",
+        "artist": "Lady Gaga",
+        "duration": "3:50",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Gym Class Heroes: Stereo Hearts ft. Adam Levine [OFFICIAL VIDEO]",
+        "link": "https://www.youtube.com/watch?v=T3E9Wjbq44E",
+        "thumbnail": "https://img.youtube.com/vi/T3E9Wjbq44E/hqdefault.jpg",
+        "artist": "Fueled By Ramen",
+        "duration": "3:37",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "James Arthur - Say You Won't Let Go",
+        "link": "https://www.youtube.com/watch?v=0yW7w8F2TVA",
+        "thumbnail": "https://img.youtube.com/vi/0yW7w8F2TVA/hqdefault.jpg",
+        "artist": "James Arthur",
+        "duration": "3:31",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman: Reimagined]",
+        "link": "https://www.youtube.com/watch?v=pRfmrE0ToTo",
+        "thumbnail": "https://img.youtube.com/vi/pRfmrE0ToTo/hqdefault.jpg",
+        "artist": "Anne-Marie",
+        "duration": "3:48",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Faouzia & John Legend - Minefields (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=jKIEUdAMtrQ",
+        "thumbnail": "https://img.youtube.com/vi/jKIEUdAMtrQ/hqdefault.jpg",
+        "artist": "Faouzia",
+        "duration": "3:28",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Coldplay - The Scientist (Official 4K Video)",
+        "link": "https://www.youtube.com/watch?v=RB-RcX5DS5A",
+        "thumbnail": "https://img.youtube.com/vi/RB-RcX5DS5A/hqdefault.jpg",
+        "artist": "Coldplay",
+        "duration": "4:26",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Kelsie Kimberlin -- Road Trip Summer Remix/#standwithukraine",
+        "link": "https://www.youtube.com/watch?v=XrF-FP06i9g",
+        "thumbnail": "https://img.youtube.com/vi/XrF-FP06i9g/hqdefault.jpg",
+        "artist": "Kelsie Kimberlin",
+        "duration": "2:47",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Black Eyed Peas, Shakira - GIRL LIKE ME (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=vMLk_T0PPbk",
+        "thumbnail": "https://img.youtube.com/vi/vMLk_T0PPbk/hqdefault.jpg",
+        "artist": "Black Eyed Peas",
+        "duration": "3:54",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Sam Smith, Kim Petras - Unholy (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=Uq9gPaIzbe8",
+        "thumbnail": "https://img.youtube.com/vi/Uq9gPaIzbe8/hqdefault.jpg",
+        "artist": "SAM SMITH",
+        "duration": "4:36",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "BTS (방탄소년단) 'Dynamite' Official MV",
+        "link": "https://www.youtube.com/watch?v=gdZLi9oWNZg",
+        "thumbnail": "https://img.youtube.com/vi/gdZLi9oWNZg/hqdefault.jpg",
+        "artist": "HYBE LABELS",
+        "duration": "3:44",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
+        "name": "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video)",
+        "link": "https://www.youtube.com/watch?v=qeMFqkcPYcg",
+        "thumbnail": "https://img.youtube.com/vi/qeMFqkcPYcg/hqdefault.jpg",
+        "artist": "Eurythmics",
+        "duration": "3:35",
+        "genre": "",
+        "extractedAt": "2024-06-17T11:21:22.947Z",
+        "playlist": "Pop"
+      },
+      {
         "name": "Zé Ramalho - Sinônimos (Ao Vivo 2005) (Clipe Oficial)",
         "link": "https://www.youtube.com/watch?v=FUz0a2cl_RM",
         "thumbnail": "https://img.youtube.com/vi/FUz0a2cl_RM/hqdefault.jpg",
@@ -990,6 +2590,16 @@
         "genre": "",
         "extractedAt": "2024-06-17T19:45:22.785Z",
         "playlist": "MPB"
+      },
+      {
+        "name": "Rihanna - Umbrella (Orange Version) (Official Music Video) ft. JAY-Z",
+        "link": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
+        "thumbnail": "https://img.youtube.com/vi/CvBfHwUxHIk/hqdefault.jpg",
+        "artist": "Rihanna",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-18T00:52:53.549Z",
+        "playlist": "Pop"
       }
     ]
   }
