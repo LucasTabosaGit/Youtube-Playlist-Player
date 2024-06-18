@@ -326,6 +326,22 @@ const AudioPlayer = () => {
 
   return (
     <>
+
+    
+
+<div
+      style={{
+        backgroundColor: '#000000',
+        width: thumbnailClicked ? '100%' : '1px',
+        height: thumbnailClicked ? '100%' : '1px',
+        position: 'absolute',
+        top: thumbnailClicked ? '0' : '50%',
+        left: '50%',
+        transform: thumbnailClicked ? 'translateX(-50%)' : 'translate(-50%, -50%)',
+      }}
+      >
+      </div>
+
       <div
         id="player"
         style={{
@@ -338,6 +354,10 @@ const AudioPlayer = () => {
         }}
         className="video-player"
       ></div>
+
+
+
+      
 
 
 
@@ -376,20 +396,22 @@ const AudioPlayer = () => {
             />
           </div>
 
-          <div className="flex flex-col mx-3 mt-3">
+          <div className="flex flex-col mx-3">
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
-          </div>
 
-
-          {thumbnailClicked && (
-            <div style={{ marginBottom: '2px', width: '120px', textAlign: 'center' }}
-              className="rounded-md absolute bottom-0 right-0 mr-3  mb-3 text-white cursor-pointer bg-[#2F2F2F] hover:bg-[#C11925]"
+            {thumbnailClicked && (
+            <div style={{  width: '120px', textAlign: 'center' }}
+              className="rounded-md bottom-0 mt-1 text-small text-white cursor-pointer bg-[#2F2F2F] hover:bg-[#C11925]"
               onClick={handleCloseClick}
             >
               Fechar Vídeo
             </div>
           )}
+          </div>
+
+
+          
 
 
         </div>
