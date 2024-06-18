@@ -109,27 +109,27 @@ const AudioPlayer = () => {
     }
   };
 
-  const playNextSong = () => {
-    let nextIndex;
-    if (shuffle) {
-      // Se shuffle estiver ativado, escolhe um índice aleatório diferente do atual
-      do {
-        nextIndex = Math.floor(Math.random() * songs.length);
-      } while (nextIndex === currentSongIndex); // Garante que não seja o mesmo índice atual
-    } else {
-      // Se shuffle estiver desativado, avança para o próximo na ordem
-      nextIndex = (currentSongIndex + 1) % songs.length;
-    }
-    
-    setCurrentTime(0);
-    setIsPlaying(false);
-    setDuration(0);
-    axios
-      .post('/api/playing', { selectedSong: songs[nextIndex] })
-      .then(() => handleAudioPlayerSelect(songs[nextIndex], nextIndex))
-      .catch(error => console.error('Error updating playing API:', error));
-  };
+ const playNextSong = () => {
+  let nextIndex;
+  if (shuffle) {
+    // Se shuffle estiver ativado, escolhe um índice aleatório diferente do atual
+    do {
+      nextIndex = Math.floor(Math.random() * songs.length);
+    } while (nextIndex === currentSongIndex); // Garante que não seja o mesmo índice atual
+  } else {
+    // Se shuffle estiver desativado, avança para o próximo na ordem
+    nextIndex = (currentSongIndex + 1) % songs.length;
+  }
   
+  setCurrentTime(0);
+  setIsPlaying(false);
+  setDuration(0);
+  axios
+    .post('/api/playing', { selectedSong: songs[nextIndex] })
+    .then(() => handleAudioPlayerSelect(songs[nextIndex], nextIndex))
+    .catch(error => console.error('Error updating playing API:', error));
+};
+
 
   const playPreviousSong = () => {
     const previousIndex = (currentSongIndex - 1 + songs.length) % songs.length;
@@ -403,6 +403,8 @@ const AudioPlayer = () => {
               style={{ '--volume': `${volume}` }}
             />
           </div>
+
+          
         </div>
       </div>
     </>

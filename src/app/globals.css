@@ -82,7 +82,8 @@ body {
       -webkit-appearance: none;
       width: 100px;
       height: 6px;
-      background: linear-gradient(to right, #0d632b 0%, #25D865 calc((var(--volume) / 100) * 100%), gray calc((var(--volume) / 100) * 100%), gray 100%);
+      background: #808080;
+      /* background: linear-gradient(to right, #0d632b 0%, #25D865 calc((var(--volume) / 100) * 100%), gray calc((var(--volume) / 100) * 100%), gray 100%); */
       border-radius: 3px;
       outline: none;
       margin: 0;
