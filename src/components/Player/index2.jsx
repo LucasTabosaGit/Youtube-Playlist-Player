@@ -327,18 +327,18 @@ const AudioPlayer = () => {
   return (
     <>
 
-    
 
-<div
-      style={{
-        backgroundColor: '#000000',
-        width: thumbnailClicked ? '100%' : '1px',
-        height: thumbnailClicked ? '100%' : '1px',
-        position: 'absolute',
-        top: thumbnailClicked ? '0' : '50%',
-        left: '50%',
-        transform: thumbnailClicked ? 'translateX(-50%)' : 'translate(-50%, -50%)',
-      }}
+
+      <div
+        style={{
+          backgroundColor: '#000000',
+          width: thumbnailClicked ? '100%' : '1px',
+          height: thumbnailClicked ? '100%' : '1px',
+          position: 'absolute',
+          top: thumbnailClicked ? '0' : '50%',
+          left: '50%',
+          transform: thumbnailClicked ? 'translateX(-50%)' : 'translate(-50%, -50%)',
+        }}
       >
       </div>
 
@@ -354,21 +354,6 @@ const AudioPlayer = () => {
         }}
         className="video-player"
       ></div>
-
-
-
-      
-
-
-
-      {thumbnailClicked && (
-        <div
-          className="absolute bottom-0 right-0 mr-3 mt-1 mb-3 text-white cursor-pointer"
-          onClick={handleCloseClick}
-        >
-          Fechar
-        </div>
-      )}
 
       <div className="footer-player relative">
         <div style={{ minWidth: '400px' }} className='flex align-items-center mx-3 absolute top-0 left-0 mt-3'>
@@ -391,8 +376,6 @@ const AudioPlayer = () => {
                 transform: 'translateY(25%)'
               }}
               alt="Cover"
-              className='hover:cursor-pointer'
-              onClick={handleThumbnailClick}
             />
           </div>
 
@@ -400,18 +383,22 @@ const AudioPlayer = () => {
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
 
-            {thumbnailClicked && (
-            <div style={{  width: '120px', textAlign: 'center' }}
-              className="rounded-md bottom-0 mt-1 text-small text-white cursor-pointer bg-[#2F2F2F] hover:bg-[#C11925]"
-              onClick={handleCloseClick}
-            >
-              Fechar Vídeo
-            </div>
-          )}
+            {thumbnailClicked ? (
+              <div style={{ width: '120px', textAlign: 'center' }}>
+                <div className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#C11925]" onClick={handleCloseClick}>
+                  Fechar Vídeo
+                </div>
+                
+              </div>
+            ) : (
+              <div style={{ width: '120px', textAlign: 'center' }} className="rounded-md text-small text-white cursor-pointer bg-[#262626] hover:bg-[#3db52b]" onClick={handleThumbnailClick}>
+                Abrir Vídeo
+              </div>
+            )}
+
           </div>
 
 
-          
 
 
         </div>
