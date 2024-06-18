@@ -325,8 +325,6 @@ const AudioPlayer = () => {
   return (
     <>
 
-
-
       <div
         style={{
           backgroundColor: '#000000',
@@ -376,7 +374,6 @@ const AudioPlayer = () => {
               alt="Cover"
             />
           </div>
-
           <div className="flex flex-col mx-3">
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
             <div className="artist-name text-left">{truncateText(artist, 20)}</div>
@@ -395,10 +392,6 @@ const AudioPlayer = () => {
               )
             )}
           </div>
-
-
-
-
         </div>
 
         <div className="flex justify-center mt-2 mb-2">
@@ -440,7 +433,6 @@ const AudioPlayer = () => {
           <span className='mx-2'>{formatTime(duration)}</span>
         </div>
 
-
         <div style={{ marginRight: '200px', marginTop: '43px' }} className="flex items-center absolute top-0 right-0 hover:cursor-pointer" onClick={openYoutubeLink}>
           <div className="ml-auto mx-2">
             <YoutbSvg />
@@ -458,7 +450,6 @@ const AudioPlayer = () => {
             {isMuted || volume === 0 ? <MutedSvg /> : volume >= 80 ? <Volume100Svg /> : <Volume50Svg />}
           </div>
 
-
           <div className="flex items-center ">
             <input
               type="range"
@@ -470,8 +461,6 @@ const AudioPlayer = () => {
               style={{ '--volume': `${volume}` }}
             />
           </div>
-
-
         </div>
       </div>
     </>
