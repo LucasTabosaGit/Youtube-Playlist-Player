@@ -72,8 +72,8 @@ const AllSongsPage = ({ onSongSelect }) => {
                         placeholder="Pesquisar..."
                         value={searchTerm}
                         onChange={handleSearchChange}
-                        className="pl-10 w-1/5 py-2 mx-3 px-3 text-white bg-gray-800 rounded"
-                        style={{ backgroundColor: '#2b2b2b' }}
+                        className="pl-10 w-1/5 py-2 mx-3 px-3 text-white bg-[#262626] rounded"
+                        style={{ backgroundColor: '#262626' }}
                     />
                 </div>
             </div>

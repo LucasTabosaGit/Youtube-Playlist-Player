@@ -42,7 +42,7 @@ const MenuLateral = ({ setContent }) => {
                 <div className='flex items-center mt-4 rounded-lg' onClick={() => handleMenuClick('adicionar')}
                 >
                     <div
-                        className="bg-[#676767] hover:bg-[#2C6BB2] rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer"
+                        className="bg-[#262626] hover:bg-[#2C6BB2] rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer"
                     >
                         <div className="text-white">
                             <i className="fas fa-plus"></i>
@@ -57,7 +57,7 @@ const MenuLateral = ({ setContent }) => {
                 {/* Botão para exibir playlists */}
                 <div className='flex items-center mt-4' onClick={() => handleMenuClick('playlist')}>
                     <div
-                        className="bg-[#676767] hover:bg-[#E7901C] rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer"
+                        className="bg-[#262626] hover:bg-[#E7901C] rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer"
                     >
                         <div className="text-white">
                             <i className="fas fa-music"></i>

@@ -36,9 +36,10 @@ const AudioPlayer = () => {
         console.error('Error fetching songs:', error);
       }
     };
-
+  
     fetchSongs();
-  }, []);
+  }, [selectedSong]); // Disparar novamente quando selectedSong mudar
+  
 
   useEffect(() => {
     localStorage.setItem('volume', volume);
@@ -61,11 +62,19 @@ const AudioPlayer = () => {
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
-
+  
+      // Destruir o player anterior
       if (playerRef.current) {
         playerRef.current.destroy();
       }
-
+  
+      // Limpar estados da música anterior
+      setThumbnail('');
+      setTitle('');
+      setArtist('');
+      setCurrentSongLink('');
+  
+      // Criar um novo player para a nova música
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
         playerVars: {
@@ -73,29 +82,33 @@ const AudioPlayer = () => {
           controls: 0,
         },
       });
-
+  
       player.on('stateChange', event => {
         if (event && event.data) {
           setIsPlaying(event.data === 1);
         }
       });
-
+  
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
         player.setVolume(volume);
       });
-
+  
       playerRef.current = player;
-
+  
+      // Atualizar os estados da nova música
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
-      setCurrentSongLink(song.link); // Atualiza o link da música atual
+      setCurrentSongLink(song.link);
+  
     } catch (error) {
       console.error('Error handling song selection:', error);
     }
   };
+  
+  
 
   useEffect(() => {
     if (selectedSong) {
@@ -132,20 +145,16 @@ const AudioPlayer = () => {
   }, [isPlaying, currentTime, repeat]);
 
   const playNextSong = () => {
-    if (shuffle) {
-      playRandomSong();
-    } else {
-      const nextIndex = (currentSongIndex + 1) % songs.length;
-      const nextSong = songs[nextIndex];
-      setCurrentTime(0);
-      setIsPlaying(false);
-      setCurrentSongIndex(nextIndex);
-      setDuration(0);
-      axios
-        .post('/api/playing', { selectedSong: nextSong })
-        .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
-        .catch(error => console.error('Error updating playing API:', error));
-    }
+    const nextIndex = (currentSongIndex + 1) % songs.length;
+    const nextSong = songs[nextIndex];
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setCurrentSongIndex(nextIndex);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: nextSong })
+      .then(() => handleAudioPlayerSelect(nextSong, nextIndex))
+      .catch(error => console.error('Error updating playing API:', error));
   };
 
   const playRandomSong = () => {
