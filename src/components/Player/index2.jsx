@@ -28,14 +28,10 @@ const AudioPlayer = () => {
   const [isMuted, setIsMuted] = useState(false);
 
   const toggleMute = () => {
-    if (isMuted) {
-      setVolume(previousVolume => previousVolume === 0 ? 50 : previousVolume); // Restaura o volume anterior se for zero
-    } else {
-      setVolume(0); // Muda para volume zero
-    }
-    setIsMuted(!isMuted); // Inverte o estado de mutado
+    const newVolume = isMuted ? (volume === 0 ? 50 : volume) : 0;
+    setVolume(newVolume);
+    setIsMuted(!isMuted);
   };
-
 
 
   useEffect(() => {
@@ -221,7 +217,7 @@ const AudioPlayer = () => {
     setVolume(newVolume);
     setIsMuted(newVolume === 0); // Atualiza isMuted se o novo volume for zero
   };
-  
+
 
   const handleProgressBarChange = event => {
     const newTime = parseFloat(event.target.value);
@@ -299,6 +295,32 @@ const AudioPlayer = () => {
       .catch(error => console.error('Error handling song selection:', error));
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const { key, code } = event;
+
+      const keyMap = {
+        'MediaPlayPause': togglePlay,
+        'MediaTrackNext': playNextSong,
+        'MediaTrackPrevious': playPreviousSong,
+        'ArrowRight': playNextSong,
+        'ArrowLeft': playPreviousSong,
+        'KeyM': toggleMute,
+        'Space': togglePlay,
+        'KeyS': toggleShuffle,
+        'KeyR': toggleRepeat,
+      };
+
+      keyMap[key]?.();
+      keyMap[code]?.();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [togglePlay, playNextSong, playPreviousSong, toggleMute, toggleShuffle, toggleRepeat]);
 
 
 
