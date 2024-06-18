@@ -109,26 +109,26 @@ const AudioPlayer = () => {
     }
   };
 
- const playNextSong = () => {
-  let nextIndex;
-  if (shuffle) {
-    // Se shuffle estiver ativado, escolhe um índice aleatório diferente do atual
-    do {
-      nextIndex = Math.floor(Math.random() * songs.length);
-    } while (nextIndex === currentSongIndex); // Garante que não seja o mesmo índice atual
-  } else {
-    // Se shuffle estiver desativado, avança para o próximo na ordem
-    nextIndex = (currentSongIndex + 1) % songs.length;
-  }
-  
-  setCurrentTime(0);
-  setIsPlaying(false);
-  setDuration(0);
-  axios
-    .post('/api/playing', { selectedSong: songs[nextIndex] })
-    .then(() => handleAudioPlayerSelect(songs[nextIndex], nextIndex))
-    .catch(error => console.error('Error updating playing API:', error));
-};
+  const playNextSong = () => {
+    let nextIndex;
+    if (shuffle) {
+      // Se shuffle estiver ativado, escolhe um índice aleatório diferente do atual
+      do {
+        nextIndex = Math.floor(Math.random() * songs.length);
+      } while (nextIndex === currentSongIndex); // Garante que não seja o mesmo índice atual
+    } else {
+      // Se shuffle estiver desativado, avança para o próximo na ordem
+      nextIndex = (currentSongIndex + 1) % songs.length;
+    }
+
+    setCurrentTime(0);
+    setIsPlaying(false);
+    setDuration(0);
+    axios
+      .post('/api/playing', { selectedSong: songs[nextIndex] })
+      .then(() => handleAudioPlayerSelect(songs[nextIndex], nextIndex))
+      .catch(error => console.error('Error updating playing API:', error));
+  };
 
 
   const playPreviousSong = () => {
@@ -255,7 +255,6 @@ const AudioPlayer = () => {
   const handleThumbnailClick = () => {
     setThumbnailClicked(true);
     handleAudioPlayerSelect(selectedSong, currentSongIndex);
-
   };
 
   const handleCloseClick = () => {
@@ -270,12 +269,12 @@ const AudioPlayer = () => {
       <div
         id="player"
         style={{
-          width: thumbnailClicked ? '896px' : '1px',
-          height: thumbnailClicked ? '504px' : '1px',
+          width: thumbnailClicked ? '100%' : '1px',
+          height: thumbnailClicked ? '88%' : '1px',
           position: 'absolute',
-          top: '50%',
+          top: thumbnailClicked ? '0' : '50%',
           left: '50%',
-          transform: thumbnailClicked ? 'translate(-50%, -50%)' : 'none',
+          transform: thumbnailClicked ? 'translateX(-50%)' : 'translate(-50%, -50%)',
         }}
         className="video-player"
       ></div>
@@ -404,7 +403,7 @@ const AudioPlayer = () => {
             />
           </div>
 
-          
+
         </div>
       </div>
     </>
