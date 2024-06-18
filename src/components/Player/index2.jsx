@@ -251,17 +251,41 @@ const AudioPlayer = () => {
   };
 
   const [thumbnailClicked, setThumbnailClicked] = useState(false);
+  const [currentPlayingSong, setCurrentPlayingSong] = useState(null);
+
 
   const handleThumbnailClick = () => {
+    if (selectedSong !== currentPlayingSong) {
+      setCurrentPlayingSong(selectedSong);
+    }
+  
+    const currentTimeBeforeExpand = currentTime;
+  
     setThumbnailClicked(true);
-    handleAudioPlayerSelect(selectedSong, currentSongIndex);
+    handleAudioPlayerSelect(selectedSong, currentSongIndex)
+      .then(() => {
+        playerRef.current.seekTo(currentTimeBeforeExpand);
+      })
+      .catch(error => console.error('Error handling song selection:', error));
   };
-
+  
   const handleCloseClick = () => {
-    setThumbnailClicked(false); // Retorna o vídeo ao tamanho original
-    handleAudioPlayerSelect(selectedSong, currentSongIndex); // Reinicia a música
+    const currentTimeBeforeClose = currentTime;
+  
+    setThumbnailClicked(false); 
+  
+    if (currentPlayingSong === selectedSong) {
+      setCurrentPlayingSong(null);
+    }
+  
+    handleAudioPlayerSelect(selectedSong, currentSongIndex)
+      .then(() => {
+        playerRef.current.seekTo(currentTimeBeforeClose);
+      })
+      .catch(error => console.error('Error handling song selection:', error));
   };
-
+  
+  
 
 
   return (
