@@ -1,32 +1,34 @@
-Instruções para instalar:
+## Instruções de Instalação
 
-1- Nessa pasta que você está lendo esse texto clique na barra de endereço do arquivo do player, apague a linha de endereço e digite cmd e pressione Enter. 
-Isso abrirá o Prompt de Comando na pasta atual.
+1. **Abrir o Prompt de Comando na Pasta do Projeto**
+   - Após baixar e extrair os arquivos, abra a pasta do projeto.
+   - Clique na barra de endereço da pasta, apague o endereço atual, digite `cmd` e pressione Enter.
+   - Isso abrirá o Prompt de Comando na pasta atual.
 
-2- No terminal que abriu na pasta do projeto, digite o seguinte comando e pressione Enter:
+2. **Instalar Dependências**
+   - No terminal que foi aberto, digite o seguinte comando e pressione Enter:
+     ```sh
+     npm install
+     ```
+   - Este comando instalará todas as dependências necessárias para o player. Certifique-se de estar conectado à internet, pois o npm precisará baixar os pacotes necessários.
 
-npm install
+3. **Iniciar o Servidor Local**
+   - Procure pelo arquivo `player youtube.bat` na pasta e abra-o.
+   - Este arquivo iniciará o servidor local.
 
-Este comando instalará todas as dependências necessárias para o player. Certifique-se de estar conectado à internet, pois o npm baixará os pacotes necessários.
+### Atenção
+- **Mantenha o Terminal Aberto**: É importante manter o Prompt de Comando aberto enquanto o servidor estiver em execução. Isso garantirá que o player funcione corretamente e permitirá que você visualize qualquer saída ou mensagem relevante. Quando não precisar mais do servidor, você pode fechar o terminal.
 
-3- Procure pelo arquivo chamado player youtube.bat na pasta e abra ele. Este arquivo será responsável por iniciar o servidor local.
+### Dicas
 
-Atenção: 
+1. **Criar Atalho no Desktop**
+   - Você pode criar um atalho do arquivo `.bat` no desktop para facilitar o acesso futuro.
+   - Também é possível personalizar o ícone do atalho nas propriedades.
 
-Mantenha o Terminal Aberto, É importante manter o Prompt de Comando aberto enquanto o servidor está em execução. 
-Isso garantirá que o player funcione corretamente e que você possa visualizar qualquer saída ou mensagem relevante.
-Quando não quiser usar mais pode fechar. 
-
-1- Dica:
-
-Você pode criar um atalho para o desktop do arquivo .bat assim será mais fácil você acessar quando quiser, 
-também é possível personalizar o ícone do atalho nas propriedades.
-
-2- Dica: Comandos de teclado para controlar o player
-
-s = ativa o modo aleatório
-r = repete o mesmo som em loop
-m = muta o som.
-seta direita = próxima música.
-seta esquerda = música anterior.
-espaço = play e pause.
+2. **Comandos de Teclado para Controlar o Player**
+   - `s`: Ativa o modo aleatório.
+   - `r`: Repete a mesma música em loop.
+   - `m`: Muta o som.
+   - `→`: Próxima música.
+   - `←`: Música anterior.
+   - `espaço`: Play/Pause.
