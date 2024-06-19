@@ -29,6 +29,12 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         setIsLoading(true);
         setError(null);
 
+        if (url.includes('start_radio=')) {
+            alert('Links com "start_radio=" não são aceitos. Por favor, use links de playlists sem o rádio ou links de músicas do YouTube.');
+            setIsLoading(false);
+            return;
+        }
+
         let cleanedUrl = url;
 
         if (url.includes("list=")) {
@@ -38,6 +44,10 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         } else if (url.includes("?v=")) {
             const videoId = url.match(/(?<=v=)[^&]+/)[0];
             cleanedUrl = `https://www.youtube.com/watch?v=${videoId}`;
+        } else {
+            alert('Somente links de músicas e playlists do YouTube são aceitos.');
+            setIsLoading(false);
+            return;
         }
 
         const route = url.includes("list=") ? '/api/scrapeplaylist' : '/api/scrape';
@@ -63,7 +73,7 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         setError(null);
         try {
             const playlistToSave = newPlaylist || selectedPlaylist;
-    
+
             // Primeira API - Salvar músicas na playlist existente ou nova
             const res1 = await fetch('/api/updateSongs', {
                 method: 'POST',
@@ -73,7 +83,7 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                 body: JSON.stringify({ playlist: playlistToSave })
             });
             const data1 = await res1.json();
-    
+
             // Segunda API - Adicionar nova playlist ao arquivo JSON
             if (selectedPlaylist === 'new' && newPlaylist) {
                 const res2 = await fetch('/api/addplaylistname', {
@@ -86,7 +96,7 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                 const data2 = await res2.json();
                 // Lidar com a resposta da segunda API, se necessário
             }
-    
+
             // Atualiza a resposta e atualiza a lista de músicas
             setResponse(data1);
             fetchSongs();
@@ -94,8 +104,6 @@ export default function AddSongsButton({ songs, fetchSongs }) {
             setError('Erro ao salvar as músicas');
         }
     };
-    
-    
 
     const handleClearApi = async () => {
         setError(null);
@@ -140,25 +148,21 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                         />
                     </div>
 
-
                     <div className='mx-1'>
                         <label htmlFor="url">Playlist </label>
                         <select
-                    
-                        value={selectedPlaylist}
-                        onChange={(e) => setSelectedPlaylist(e.target.value)}
-                        className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
-                        style={{ height: '40px' }}
-                    >
-                        <option value="none" disabled>Selecione uma playlist</option>
-                        <option value="">Nenhuma</option>
-                        {playlists.map((playlist, index) => (
-                            <option key={index} value={playlist.playlist}>{playlist.playlist}</option>
-                        ))}
-                        <option value="new">Nova playlist</option>
-                    </select>
-
-                        
+                            value={selectedPlaylist}
+                            onChange={(e) => setSelectedPlaylist(e.target.value)}
+                            className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
+                            style={{ height: '40px' }}
+                        >
+                            <option value="none" disabled>Selecione uma playlist</option>
+                            <option value="new">Nova playlist</option>
+                            <option value="">Nenhuma</option>
+                            {playlists.map((playlist, index) => (
+                                <option key={index} value={playlist.playlist}>{playlist.playlist}</option>
+                            ))}
+                        </select>
                     </div>
 
                     {selectedPlaylist === 'new' && (
