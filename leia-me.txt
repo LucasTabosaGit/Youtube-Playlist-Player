@@ -42,9 +42,9 @@ Você pode criar um atalho do arquivo .bat no desktop para facilitar o acesso fu
 Também é possível personalizar o ícone do atalho nas propriedades.
 Comandos de Teclado para Controlar o Player
 
-s: Ativa o modo aleatório.
-r: Repete a mesma música em loop.
-m: Muta o som.
-→: Próxima música.
-←: Música anterior.
-espaço: Play/Pause.
+s = ativa o modo aleatório
+r = repete o mesmo som em loop
+m = muta o som.
+seta direita = próxima música.
+seta esquerda = música anterior.
+espaço = play e pause.
