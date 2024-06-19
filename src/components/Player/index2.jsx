@@ -263,7 +263,6 @@ const AudioPlayer = () => {
   const [thumbnailClicked, setThumbnailClicked] = useState(false);
   const [currentPlayingSong, setCurrentPlayingSong] = useState(null);
 
-
   const handleThumbnailClick = () => {
     const currentTimeBeforeExpand = currentTime;
 
@@ -276,7 +275,6 @@ const AudioPlayer = () => {
       })
       .catch(error => console.error('Error handling song selection:', error));
   };
-
 
   const handleCloseClick = () => {
     const currentTimeBeforeClose = currentTime;
