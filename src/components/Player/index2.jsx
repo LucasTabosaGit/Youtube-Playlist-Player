@@ -26,6 +26,8 @@ const AudioPlayer = () => {
   const [title, setTitle] = useState('');
   const [artist, setArtist] = useState('');
   const [isMuted, setIsMuted] = useState(false);
+  const [currentSong, setCurrentSong] = useState(null);
+
 
   const toggleMute = () => {
     const newVolume = isMuted ? (volume === 0 ? 50 : volume) : 0;
@@ -67,23 +69,21 @@ const AudioPlayer = () => {
 
   const handleAudioPlayerSelect = async (song, index) => {
     try {
-      setCurrentSongIndex(index); // Atualiza índice da música atual
+      setCurrentSong(song); // Atualiza a música atual
+      setCurrentSongIndex(index);
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
-
-      // Destruir o player anterior
+  
       if (playerRef.current) {
         playerRef.current.destroy();
       }
-
-      // Limpar estados da música anterior
+  
       setThumbnail('');
       setTitle('');
       setArtist('');
       setCurrentSongLink('');
-
-      // Criar um novo player para a nova música
+  
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
         playerVars: {
@@ -91,31 +91,30 @@ const AudioPlayer = () => {
           controls: 0,
         },
       });
-
+  
       player.on('stateChange', event => {
         if (event && event.data) {
           setIsPlaying(event.data === 1);
         }
       });
-
+  
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
         player.setVolume(volume);
       });
-
+  
       playerRef.current = player;
-
-      // Atualizar os estados da nova música
+  
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
       setCurrentSongLink(song.link);
-
     } catch (error) {
       console.error('Error handling song selection:', error);
     }
   };
+  
 
   const playNextSong = () => {
     let nextIndex;
@@ -263,31 +262,26 @@ const AudioPlayer = () => {
   const [thumbnailClicked, setThumbnailClicked] = useState(false);
   const [currentPlayingSong, setCurrentPlayingSong] = useState(null);
 
-  const handleThumbnailClick = () => {
+  const handleThumbnailClick = async () => {
     const currentTimeBeforeExpand = currentTime;
-
     setThumbnailClicked(true);
-
-    // Use the current playing song to ensure the correct song is resumed
-    handleAudioPlayerSelect(songs[currentSongIndex], currentSongIndex)
-      .then(() => {
-        playerRef.current.seekTo(currentTimeBeforeExpand);
-      })
-      .catch(error => console.error('Error handling song selection:', error));
+  
+    if (currentSong) {
+      await handleAudioPlayerSelect(currentSong, currentSongIndex);
+      playerRef.current.seekTo(currentTimeBeforeExpand);
+    }
   };
-
-  const handleCloseClick = () => {
+  
+  const handleCloseClick = async () => {
     const currentTimeBeforeClose = currentTime;
-
     setThumbnailClicked(false);
-
-    // Use the current playing song to ensure the correct song is resumed
-    handleAudioPlayerSelect(songs[currentSongIndex], currentSongIndex)
-      .then(() => {
-        playerRef.current.seekTo(currentTimeBeforeClose);
-      })
-      .catch(error => console.error('Error handling song selection:', error));
+  
+    if (currentSong) {
+      await handleAudioPlayerSelect(currentSong, currentSongIndex);
+      playerRef.current.seekTo(currentTimeBeforeClose);
+    }
   };
+  
 
 
 
