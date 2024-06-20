@@ -13,12 +13,12 @@ const IndexPage = () => {
             console.log('Dados da playlist do Spotify:', playlistJson);
 
             // Segunda API: extractYouTubeInfo
-            const youtubeData = await fetch(`/api/sextractYouTubeInfo?playlistId=${playlistJson.playlistId}`);
+            const youtubeData = await fetch(`/api/extractYouTubeInfo?playlistId=${playlistJson.playlistId}`);
             const youtubeJson = await youtubeData.json();
             console.log('Informações do YouTube:', youtubeJson);
 
             // Terceira API: scrapeArray
-            const scrapedData = await fetch(`/api/sscrapeArray`, {
+            const scrapedData = await fetch(`/api/scrapeArray`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
