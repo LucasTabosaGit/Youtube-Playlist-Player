@@ -44,8 +44,24 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         } else if (url.includes("?v=")) {
             const videoId = url.match(/(?<=v=)[^&]+/)[0];
             cleanedUrl = `https://www.youtube.com/watch?v=${videoId}`;
+        } else if (url.includes("spotify.com")) {
+            try {
+                const playlistData = await fetch(`/api/scrapePlaylistSpotify?link=${encodeURIComponent(url)}`);
+                const playlistJson = await playlistData.json();
+                console.log('Dados da playlist do Spotify:', playlistJson);
+
+                const youtubeData = await fetch(`/api/extractYouTubeInfo?playlistId=${playlistJson.playlistId}`);
+                const youtubeJson = await youtubeData.json();
+                console.log('Informações do YouTube:', youtubeJson);
+
+                cleanedUrl = url; // Mantém a URL do Spotify para a chamada de API subsequente
+            } catch (error) {
+                setError('Erro ao chamar APIs do Spotify');
+                setIsLoading(false);
+                return;
+            }
         } else {
-            alert('Somente links de músicas e playlists do YouTube são aceitos.');
+            alert('Somente links de músicas e playlists do YouTube ou Spotify são aceitos.');
             setIsLoading(false);
             return;
         }

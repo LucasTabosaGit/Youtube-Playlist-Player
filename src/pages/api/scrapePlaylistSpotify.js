@@ -1,57 +1,51 @@
-// Importando as dependências necessárias
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 
-// Definindo o handler da rota API
 export default async function handler(req, res) {
-    // Verificando se o método HTTP é GET ou POST
     if (req.method !== 'GET' && req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    // Obtendo a URL da playlist do corpo da requisição ou dos parâmetros de consulta
     let playlistUrl = req.body.playlistUrl || req.query.link;
 
-    // Para requisições GET, obtendo a URL da playlist dos parâmetros de consulta
     if (!playlistUrl && req.method === 'GET') {
         playlistUrl = req.query.link;
     }
 
-    // Retornando um erro se a URL da playlist não for fornecida
     if (!playlistUrl) {
         return res.status(400).json({ error: 'Playlist URL is required' });
     }
 
     let browser;
     try {
-        // Iniciando o navegador Puppeteer
-        browser = await puppeteer.launch();
+        browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
-        
-        // Indo para a página da playlist do Spotify
+
+        await page.setViewport({ width: 800, height: 30000 });
+
         await page.goto(playlistUrl, { waitUntil: 'networkidle2' });
 
-        // Extraindo detalhes das músicas da página
+        await page.waitForSelector('.encore-text.encore-text-body-medium.encore-internal-color-text-base.btE2c3IKaOXZ4VNAb8WQ.standalone-ellipsis-one-line');
+
         const songDetails = await page.evaluate(() => {
             const songs = [];
             const songElements = document.querySelectorAll('.encore-text.encore-text-body-medium.encore-internal-color-text-base.btE2c3IKaOXZ4VNAb8WQ.standalone-ellipsis-one-line');
 
             songElements.forEach(songElement => {
                 const title = songElement.textContent.trim();
-
-                // Procurando pelos artistas
                 let artists = '';
-                if (songElement.nextElementSibling.tagName === 'SPAN') {
+
+                if (songElement.nextElementSibling && songElement.nextElementSibling.tagName === 'SPAN') {
                     const artistLinks = songElement.nextElementSibling.querySelectorAll('a');
                     artists = Array.from(artistLinks).map(link => link.textContent.trim()).join(', ');
-                } else if (songElement.nextElementSibling.tagName === 'A') {
+                } else if (songElement.nextElementSibling && songElement.nextElementSibling.tagName === 'A') {
                     artists = songElement.nextElementSibling.textContent.trim();
                 }
 
-                // Montando o link do YouTube
-                const query = `${title} ${artists}`.replace(/\s+/g, '+');
-                const youtubeLink = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+                const query = `${title} ${artists} música`.replace(/\s+/g, '+');
+                const youtubeLink = `https://www.youtube.com/results?search_query=${query}`;
+
 
                 songs.push({ title, artists, youtubeLink });
             });
@@ -59,22 +53,23 @@ export default async function handler(req, res) {
             return songs;
         });
 
-        // Caminho para salvar o arquivo JSON
+        if (songDetails.length === 0) {
+            throw new Error('No songs found on the playlist page. The structure of the page might have changed.');
+        }
+
         const publicDirectory = path.join(process.cwd(), 'public', 'songs');
         const filePath = path.join(publicDirectory, 'searchyoutube.json');
 
-        // Criando o diretório se não existir
         if (!fs.existsSync(publicDirectory)) {
             fs.mkdirSync(publicDirectory, { recursive: true });
         }
 
-        // Salvando os detalhes das músicas em um arquivo JSON
+        // Escrever no arquivo JSON com feedback no console
+        console.log(`Foram encontradas ${songDetails.length} músicas na playlist`);
         fs.writeFileSync(filePath, JSON.stringify(songDetails, null, 2));
 
-        // Fechando o navegador Puppeteer
         await browser.close();
 
-        // Enviando a resposta com sucesso e o número total de músicas capturadas
         const totalSongs = songDetails.length;
         res.status(200).json({
             message: 'Playlist information extracted and saved successfully',
@@ -83,7 +78,6 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
-        // Lidando com erros
         if (browser) {
             await browser.close();
         }

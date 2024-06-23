@@ -2,33 +2,13 @@
   {
     "songs": [
       {
-        "name": "Sagrado Profano",
-        "link": "https://www.youtube.com/watch?v=G3-jmM-aLzs",
-        "thumbnail": "https://img.youtube.com/vi/G3-jmM-aLzs/hqdefault.jpg",
-        "artist": "Luísa Sonza",
-        "duration": "3:18",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:01:55.323Z",
-        "playlist": ""
-      },
-      {
-        "name": "Sorriso no Rosto",
-        "link": "https://www.youtube.com/watch?v=1C4I--UbMxM",
-        "thumbnail": "https://img.youtube.com/vi/1C4I--UbMxM/hqdefault.jpg",
-        "artist": "GR6 EXPLODE",
-        "duration": "0:15",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:01.922Z",
-        "playlist": ""
-      },
-      {
         "name": "MTG QUEM NÃO QUER SOU EU",
         "link": "https://www.youtube.com/watch?v=BgThysdP9lc",
         "thumbnail": "https://img.youtube.com/vi/BgThysdP9lc/hqdefault.jpg",
         "artist": "DJ TOPO",
-        "duration": "0:06",
+        "duration": "2:03",
         "genre": "",
-        "extractedAt": "2024-06-20T10:02:13.468Z",
+        "extractedAt": "2024-06-23T06:11:15.750Z",
         "playlist": ""
       },
       {
@@ -36,9 +16,29 @@
         "link": "https://www.youtube.com/watch?v=l8tgKTBF0Fk",
         "thumbnail": "https://img.youtube.com/vi/l8tgKTBF0Fk/hqdefault.jpg",
         "artist": "Dj Rique Sales",
-        "duration": "0:15",
+        "duration": "0:30",
         "genre": "",
-        "extractedAt": "2024-06-20T10:02:07.645Z",
+        "extractedAt": "2024-06-23T06:11:23.382Z",
+        "playlist": ""
+      },
+      {
+        "name": "Sagrado Profano",
+        "link": "https://www.youtube.com/watch?v=G3-jmM-aLzs",
+        "thumbnail": "https://img.youtube.com/vi/G3-jmM-aLzs/hqdefault.jpg",
+        "artist": "Luísa Sonza",
+        "duration": "0:30",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:11:29.767Z",
+        "playlist": ""
+      },
+      {
+        "name": "Sorriso no Rosto",
+        "link": "https://www.youtube.com/watch?v=1C4I--UbMxM",
+        "thumbnail": "https://img.youtube.com/vi/1C4I--UbMxM/hqdefault.jpg",
+        "artist": "GR6 EXPLODE",
+        "duration": "2:52",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:11:35.493Z",
         "playlist": ""
       },
       {
@@ -48,7 +48,7 @@
         "artist": "THE BOX",
         "duration": "4:30",
         "genre": "",
-        "extractedAt": "2024-06-20T10:02:20.284Z",
+        "extractedAt": "2024-06-23T06:11:41.211Z",
         "playlist": ""
       },
       {
@@ -58,57 +58,7 @@
         "artist": "DJ LUAN GOMES - Tema",
         "duration": "1:57",
         "genre": "",
-        "extractedAt": "2024-06-20T10:02:25.471Z",
-        "playlist": ""
-      },
-      {
-        "name": "EU SOU SENTIMENTO",
-        "link": "https://www.youtube.com/watch?v=Ad1s0Xn2VDo",
-        "thumbnail": "https://img.youtube.com/vi/Ad1s0Xn2VDo/hqdefault.jpg",
-        "artist": "Luan Santana",
-        "duration": "3:13",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:30.825Z",
-        "playlist": ""
-      },
-      {
-        "name": "Sonho Dela (Cowboy)",
-        "link": "https://www.youtube.com/watch?v=5owVlSUtMwA",
-        "thumbnail": "https://img.youtube.com/vi/5owVlSUtMwA/hqdefault.jpg",
-        "artist": "CountryBeat",
-        "duration": "1:54",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:36.083Z",
-        "playlist": ""
-      },
-      {
-        "name": "Foi Intenso - Ao Vivo",
-        "link": "https://www.youtube.com/watch?v=FeD9wvOq1yY",
-        "thumbnail": "https://img.youtube.com/vi/FeD9wvOq1yY/hqdefault.jpg",
-        "artist": "Zé Neto e Cristiano",
-        "duration": "2:16",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:40.842Z",
-        "playlist": ""
-      },
-      {
-        "name": "FALTA DE QUÊ?",
-        "link": "https://www.youtube.com/watch?v=ZVCmjM_kLBY",
-        "thumbnail": "https://img.youtube.com/vi/ZVCmjM_kLBY/hqdefault.jpg",
-        "artist": "Luan Pereira LP",
-        "duration": "2:41",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:46.272Z",
-        "playlist": ""
-      },
-      {
-        "name": "Mtg Quero Te Encontrar",
-        "link": "https://www.youtube.com/watch?v=EQzM0PN4t2g",
-        "thumbnail": "https://img.youtube.com/vi/EQzM0PN4t2g/hqdefault.jpg",
-        "artist": "Humberto e Ronaldo",
-        "duration": "2:59",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:02:51.810Z",
+        "extractedAt": "2024-06-23T06:11:46.244Z",
         "playlist": ""
       },
       {
@@ -118,7 +68,57 @@
         "artist": "Felipe e Rodrigo",
         "duration": "2:55",
         "genre": "",
-        "extractedAt": "2024-06-20T10:02:56.731Z",
+        "extractedAt": "2024-06-23T06:11:51.765Z",
+        "playlist": ""
+      },
+      {
+        "name": "Sonho Dela (Cowboy)",
+        "link": "https://www.youtube.com/watch?v=OvXjRqK1xLw",
+        "thumbnail": "https://img.youtube.com/vi/OvXjRqK1xLw/hqdefault.jpg",
+        "artist": "CountryBeat",
+        "duration": "1:50",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:11:57.212Z",
+        "playlist": ""
+      },
+      {
+        "name": "Mtg Quero Te Encontrar",
+        "link": "https://www.youtube.com/watch?v=EQzM0PN4t2g",
+        "thumbnail": "https://img.youtube.com/vi/EQzM0PN4t2g/hqdefault.jpg",
+        "artist": "Humberto e Ronaldo",
+        "duration": "2:59",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:12:02.311Z",
+        "playlist": ""
+      },
+      {
+        "name": "EU SOU SENTIMENTO",
+        "link": "https://www.youtube.com/watch?v=Ad1s0Xn2VDo",
+        "thumbnail": "https://img.youtube.com/vi/Ad1s0Xn2VDo/hqdefault.jpg",
+        "artist": "Luan Santana",
+        "duration": "3:13",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:12:07.432Z",
+        "playlist": ""
+      },
+      {
+        "name": "Foi Intenso - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=FeD9wvOq1yY",
+        "thumbnail": "https://img.youtube.com/vi/FeD9wvOq1yY/hqdefault.jpg",
+        "artist": "Zé Neto e Cristiano",
+        "duration": "2:16",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:12:13.160Z",
+        "playlist": ""
+      },
+      {
+        "name": "FALTA DE QUÊ?",
+        "link": "https://www.youtube.com/watch?v=ZVCmjM_kLBY",
+        "thumbnail": "https://img.youtube.com/vi/ZVCmjM_kLBY/hqdefault.jpg",
+        "artist": "Luan Pereira LP",
+        "duration": "2:41",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:12:19.018Z",
         "playlist": ""
       },
       {
@@ -128,7 +128,7 @@
         "artist": "Simone Mendes",
         "duration": "3:15",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:01.714Z",
+        "extractedAt": "2024-06-23T06:12:24.479Z",
         "playlist": ""
       },
       {
@@ -138,17 +138,7 @@
         "artist": "Murilo Huff",
         "duration": "2:42",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:06.383Z",
-        "playlist": ""
-      },
-      {
-        "name": "Nosso Primeiro Beijo - Ao Vivo",
-        "link": "https://www.youtube.com/watch?v=mBvcHrwuAjs",
-        "thumbnail": "https://img.youtube.com/vi/mBvcHrwuAjs/hqdefault.jpg",
-        "artist": "Gloria Groove",
-        "duration": "2:47",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:03:13.110Z",
+        "extractedAt": "2024-06-23T06:12:29.615Z",
         "playlist": ""
       },
       {
@@ -158,27 +148,17 @@
         "artist": "Zé Neto e Cristiano",
         "duration": "2:05",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:18.156Z",
+        "extractedAt": "2024-06-23T06:12:34.783Z",
         "playlist": ""
       },
       {
-        "name": "TUMBÁTUM",
-        "link": "https://www.youtube.com/watch?v=NIlQ_invdic",
-        "thumbnail": "https://img.youtube.com/vi/NIlQ_invdic/hqdefault.jpg",
-        "artist": "TROPA DO BRUXO",
-        "duration": "2:00",
+        "name": "Eu So Comi Ela uma Vez",
+        "link": "https://www.youtube.com/watch?v=kpUu6fpg6jA",
+        "thumbnail": "https://img.youtube.com/vi/kpUu6fpg6jA/hqdefault.jpg",
+        "artist": "FUNK DE DRAK",
+        "duration": "1:47",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:23.604Z",
-        "playlist": ""
-      },
-      {
-        "name": "Haverá Sinais - Ao Vivo",
-        "link": "https://www.youtube.com/watch?v=Muo3F10dAcw",
-        "thumbnail": "https://img.youtube.com/vi/Muo3F10dAcw/hqdefault.jpg",
-        "artist": "Jorge & Mateus Oficial",
-        "duration": "3:10",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:03:29.261Z",
+        "extractedAt": "2024-06-23T06:12:39.897Z",
         "playlist": ""
       },
       {
@@ -188,47 +168,17 @@
         "artist": "Ana Castela",
         "duration": "3:49",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:34.353Z",
+        "extractedAt": "2024-06-23T06:12:45.530Z",
         "playlist": ""
       },
       {
-        "name": "Como Um Beijo",
-        "link": "https://www.youtube.com/watch?v=M9aJ2PxuDio",
-        "thumbnail": "https://img.youtube.com/vi/M9aJ2PxuDio/hqdefault.jpg",
-        "artist": "Marcos e Belutti",
-        "duration": "3:30",
+        "name": "Haverá Sinais - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=Muo3F10dAcw",
+        "thumbnail": "https://img.youtube.com/vi/Muo3F10dAcw/hqdefault.jpg",
+        "artist": "Jorge & Mateus Oficial",
+        "duration": "3:10",
         "genre": "",
-        "extractedAt": "2024-06-20T10:03:39.477Z",
-        "playlist": ""
-      },
-      {
-        "name": "CONFISSÕES PT2",
-        "link": "https://www.youtube.com/watch?v=0xnlxG_-NpQ",
-        "thumbnail": "https://img.youtube.com/vi/0xnlxG_-NpQ/hqdefault.jpg",
-        "artist": "Prof. Diego Pureza",
-        "duration": "12:34",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:03:43.280Z",
-        "playlist": ""
-      },
-      {
-        "name": "CHIHIRO",
-        "link": "https://www.youtube.com/watch?v=BY_XwvKogC8",
-        "thumbnail": "https://img.youtube.com/vi/BY_XwvKogC8/hqdefault.jpg",
-        "artist": "Billie Eilish",
-        "duration": "5:23",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:03:48.540Z",
-        "playlist": ""
-      },
-      {
-        "name": "Vem Desestressar",
-        "link": "https://www.youtube.com/watch?v=gP4yzuPuGV4",
-        "thumbnail": "https://img.youtube.com/vi/gP4yzuPuGV4/hqdefault.jpg",
-        "artist": "MC PH",
-        "duration": "4:11",
-        "genre": "",
-        "extractedAt": "2024-06-20T10:03:57.610Z",
+        "extractedAt": "2024-06-23T06:12:50.652Z",
         "playlist": ""
       },
       {
@@ -238,7 +188,57 @@
         "artist": "FP do Trem Bala",
         "duration": "3:49",
         "genre": "",
-        "extractedAt": "2024-06-20T10:04:02.092Z",
+        "extractedAt": "2024-06-23T06:12:55.765Z",
+        "playlist": ""
+      },
+      {
+        "name": "Nosso Primeiro Beijo - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=mBvcHrwuAjs",
+        "thumbnail": "https://img.youtube.com/vi/mBvcHrwuAjs/hqdefault.jpg",
+        "artist": "Gloria Groove",
+        "duration": "2:47",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:13:01.084Z",
+        "playlist": ""
+      },
+      {
+        "name": "Anestesiado - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=qs3EwodfFgs",
+        "thumbnail": "https://img.youtube.com/vi/qs3EwodfFgs/hqdefault.jpg",
+        "artist": "Murilo Huff",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:13:06.279Z",
+        "playlist": ""
+      },
+      {
+        "name": "Como Um Beijo",
+        "link": "https://www.youtube.com/watch?v=M9aJ2PxuDio",
+        "thumbnail": "https://img.youtube.com/vi/M9aJ2PxuDio/hqdefault.jpg",
+        "artist": "Marcos e Belutti",
+        "duration": "3:30",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:13:11.308Z",
+        "playlist": ""
+      },
+      {
+        "name": "Página De Ex - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=o4SIXV3OKeY",
+        "thumbnail": "https://img.youtube.com/vi/o4SIXV3OKeY/hqdefault.jpg",
+        "artist": "Mari Fernandez",
+        "duration": "2:41",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:13:16.994Z",
+        "playlist": ""
+      },
+      {
+        "name": "TUMBÁTUM",
+        "link": "https://www.youtube.com/watch?v=NIlQ_invdic",
+        "thumbnail": "https://img.youtube.com/vi/NIlQ_invdic/hqdefault.jpg",
+        "artist": "TROPA DO BRUXO",
+        "duration": "2:00",
+        "genre": "",
+        "extractedAt": "2024-06-23T06:13:22.608Z",
         "playlist": ""
       }
     ]
