@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const MAX_CONCURRENT_PAGES = 5; 
-const NAVIGATION_TIMEOUT = 120000; 
+const NAVIGATION_TIMEOUT = 1200000; 
 
 export default async function handler(req, res) {
     if (req.method !== 'GET') {
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
                 await page.goto(searchUrl, { waitUntil: 'networkidle2', timeout: NAVIGATION_TIMEOUT });
         
                 await page.waitForSelector('ytd-video-renderer #video-title');
-                const videoLink = await page.$eval('ytd-video-renderer #video-title', element => element.href);
+                const videoLink = await page.$eval('ytd-video-renderer #video-title', element => element.href.split('&')[0]);
                 const videoId = new URL(videoLink).searchParams.get('v');
                 const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
         
