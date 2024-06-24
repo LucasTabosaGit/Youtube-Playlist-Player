@@ -288,7 +288,7 @@ const AudioPlayer = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const { key, code } = event;
-
+  
       const keyMap = {
         'MediaPlayPause': togglePlay,
         'MediaTrackNext': playNextSong,
@@ -300,17 +300,19 @@ const AudioPlayer = () => {
         'KeyS': toggleShuffle,
         'KeyR': toggleRepeat,
       };
-
+  
       keyMap[key]?.();
       keyMap[code]?.();
     };
-
+  
     window.addEventListener('keydown', handleKeyDown);
-
+  
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [togglePlay, playNextSong, playPreviousSong, toggleMute, toggleShuffle, toggleRepeat]);
+  
+  
 
 
 
