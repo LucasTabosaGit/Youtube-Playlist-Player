@@ -125,30 +125,49 @@ const AddSongsButton = ({ songs, fetchSongs }) => {
     const handleSaveApi = async () => {
         setError(null);
         try {
+            // Atualiza o nome da playlist (incluindo lógica para adicionar nova playlist se necessário)
             const updatedPlaylist = await updatePlaylistName();
-
-            const res = await fetch('/api/updateSongs', {
+    
+            // Se for uma nova playlist, chama a API para adicioná-la
+            if (selectedPlaylist === 'new') {
+                const resAddPlaylist = await fetch('/api/addplaylistname', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ playlistName: newPlaylist }),
+                });
+    
+                if (!resAddPlaylist.ok) {
+                    throw new Error('Erro ao adicionar nova playlist');
+                }
+    
+                const dataAddPlaylist = await resAddPlaylist.json();
+                console.log('Nova playlist adicionada:', dataAddPlaylist);
+            }
+    
+            // Salva as músicas na playlist atualizada
+            const resUpdateSongs = await fetch('/api/updateSongs', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ playlist: updatedPlaylist }),
             });
-
-            if (!res.ok) {
+    
+            if (!resUpdateSongs.ok) {
                 throw new Error('Erro ao salvar as músicas');
             }
-
-            const data = await res.json();
-            setResponse(data);
-            await fetchSongs();
-
+    
+            const dataUpdateSongs = await resUpdateSongs.json();
+            setResponse(dataUpdateSongs);
+            await fetchSongs(); // Atualiza a lista de músicas após o salvamento
+    
         } catch (error) {
             setError('Erro ao salvar as músicas');
             console.error('Erro durante a requisição:', error);
         }
     };
-
     const handleClearApi = async () => {
         setError(null);
         try {

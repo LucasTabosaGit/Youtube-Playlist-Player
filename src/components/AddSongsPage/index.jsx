@@ -59,7 +59,7 @@ const Playlist = ({ onSongSelect }) => {
                     <div style={{ marginLeft: '-2px' }} className="header-item song-thumbnail">Vídeo</div>
                     <div style={{ marginLeft: '-2px' }} className="header-item song-title-header">Título</div>
                     <div className="header-item song-artist">Nome do Artista</div>
-                    <div style={{ marginLeft: '-6px' }} className="header-item song-playlist">Playlist</div>
+                    <div style={{ marginLeft: '-6px' }} className="header-item song-playlist"></div>
                     <div className="header-item song-duration ">Duração</div>
                 </div>
 

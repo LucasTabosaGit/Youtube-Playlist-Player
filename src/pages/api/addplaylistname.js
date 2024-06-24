@@ -7,7 +7,7 @@ const playlistFilePath = path.join(process.cwd(), 'public', 'songs', 'playlistna
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { playlist } = req.body;
+        const { playlistName } = req.body;
 
         try {
             // Ler o arquivo JSON atual
@@ -15,14 +15,14 @@ export default async function handler(req, res) {
             let playlists = JSON.parse(fileContent);
 
             // Verificar se a playlist já existe
-            const playlistExists = playlists.some(item => item.playlist === playlist);
+            const playlistExists = playlists.some(item => item.playlist === playlistName);
 
             if (!playlistExists) {
                 // Adicionar a nova playlist ao JSON
-                playlists.push({ playlist });
+                playlists.push({ playlist: playlistName });
 
-                // Escrever de volta ao arquivo JSON
-                fs.writeFileSync(playlistFilePath, JSON.stringify(playlists, null, 2));
+                // Escrever de volta ao arquivo JSON de forma segura
+                fs.writeFileSync(playlistFilePath, JSON.stringify(playlists, null, 2), 'utf-8');
 
                 res.status(200).json({ message: 'Playlist adicionada com sucesso.', playlists });
             } else {

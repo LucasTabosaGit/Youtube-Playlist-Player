@@ -39,7 +39,7 @@ export default async function handler(req, res) {
             const extractedAt = new Date().toISOString();
             return videoElements.map(video => {
                 const titleElement = video.querySelector('#video-title');
-                const link = titleElement.href;
+                const link = titleElement.href.split('&')[0]; // Remove tudo após o ID do vídeo
                 const name = titleElement.textContent.trim();
                 const videoId = new URL(link).searchParams.get('v');
                 const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
