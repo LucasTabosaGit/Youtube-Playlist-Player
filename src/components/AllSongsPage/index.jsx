@@ -26,6 +26,17 @@ const AllSongsPage = ({ onSongSelect }) => {
     useEffect(() => {
         setFilteredSongs(
             songs.filter(song =>
+                (song.name && song.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                (song.artist && song.artist.toLowerCase().includes(searchTerm.toLowerCase()))
+            )
+        );
+    }, [searchTerm, songs]);
+    
+    
+
+    useEffect(() => {
+        setFilteredSongs(
+            songs.filter(song =>
                 song.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 song.artist.toLowerCase().includes(searchTerm.toLowerCase())
             )

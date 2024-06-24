@@ -48,8 +48,9 @@ export default async function handler(req, res) {
                 const durationElement = video.querySelector('#overlays > ytd-thumbnail-overlay-time-status-renderer > div > badge-shape > div');
                 const duration = durationElement ? durationElement.textContent.trim() : 'Unknown';
                 const genre = ''; // Adicione lógica para obter gênero, se necessário
+                const playlist = '';
 
-                return { name, link, thumbnail, artist, duration, genre, extractedAt };
+                return { name, link, thumbnail, artist, duration, genre, extractedAt, playlist };
             });
         });
 

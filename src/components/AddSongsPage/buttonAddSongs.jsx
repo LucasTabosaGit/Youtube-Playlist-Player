@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function AddSongsButton({ songs, fetchSongs }) {
+const AddSongsButton = ({ songs, fetchSongs }) => {
     const [showForm, setShowForm] = useState(false);
     const [url, setUrl] = useState('');
     const [response, setResponse] = useState(null);
@@ -14,6 +14,9 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         const fetchPlaylists = async () => {
             try {
                 const res = await fetch('/api/playlistname');
+                if (!res.ok) {
+                    throw new Error('Erro ao buscar playlists');
+                }
                 const data = await res.json();
                 setPlaylists(data || []);
             } catch (error) {
@@ -23,6 +26,28 @@ export default function AddSongsButton({ songs, fetchSongs }) {
 
         fetchPlaylists();
     }, []);
+
+    const updatePlaylistName = async () => {
+        try {
+            const res = await fetch('/api/updatePlaylistName', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ playlist: selectedPlaylist === 'new' ? newPlaylist : selectedPlaylist }),
+            });
+
+            if (!res.ok) {
+                throw new Error('Erro ao atualizar o nome da playlist');
+            }
+
+            const data = await res.json();
+            return data.playlist; // Retorna o nome da playlist atualizada
+        } catch (error) {
+            console.error('Erro ao chamar API updateplaylistname:', error);
+            throw error; // Propaga o erro para ser tratado no componente
+        }
+    };
 
     const handleSubmitApi = async (e) => {
         e.preventDefault();
@@ -40,10 +65,16 @@ export default function AddSongsButton({ songs, fetchSongs }) {
         if (url.includes("spotify.com")) {
             try {
                 const playlistData = await fetch(`/api/scrapePlaylistSpotify?link=${encodeURIComponent(url)}`);
+                if (!playlistData.ok) {
+                    throw new Error('Erro ao buscar dados da playlist do Spotify');
+                }
                 const playlistJson = await playlistData.json();
                 console.log('Dados da playlist do Spotify:', playlistJson);
 
                 const youtubeData = await fetch(`/api/extractYouTubeInfo?playlistId=${playlistJson.playlistId}`);
+                if (!youtubeData.ok) {
+                    throw new Error('Erro ao buscar informações do YouTube');
+                }
                 const youtubeJson = await youtubeData.json();
                 console.log('Informações do YouTube:', youtubeJson);
 
@@ -74,15 +105,18 @@ export default function AddSongsButton({ songs, fetchSongs }) {
             const res = await fetch(route, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ url: cleanedUrl, playlist: selectedPlaylist === 'new' ? newPlaylist : selectedPlaylist })
+                body: JSON.stringify({ url: cleanedUrl, playlist: selectedPlaylist === 'new' ? newPlaylist : selectedPlaylist }),
             });
+            if (!res.ok) {
+                throw new Error('Erro ao submeter o URL');
+            }
             const data = await res.json();
             setResponse(data);
             fetchSongs();
         } catch (error) {
-            setError('Error submitting the URL');
+            setError('Erro ao submeter o URL');
         } finally {
             setIsLoading(false);
         }
@@ -91,36 +125,27 @@ export default function AddSongsButton({ songs, fetchSongs }) {
     const handleSaveApi = async () => {
         setError(null);
         try {
-            const playlistToSave = newPlaylist || selectedPlaylist;
+            const updatedPlaylist = await updatePlaylistName();
 
-            // Primeira API - Salvar músicas na playlist existente ou nova
-            const res1 = await fetch('/api/updateSongs', {
+            const res = await fetch('/api/updateSongs', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ playlist: playlistToSave })
+                body: JSON.stringify({ playlist: updatedPlaylist }),
             });
-            const data1 = await res1.json();
 
-            // Segunda API - Adicionar nova playlist ao arquivo JSON
-            if (selectedPlaylist === 'new' && newPlaylist) {
-                const res2 = await fetch('/api/addplaylistname', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ playlist: newPlaylist })
-                });
-                const data2 = await res2.json();
-                // Lidar com a resposta da segunda API, se necessário
+            if (!res.ok) {
+                throw new Error('Erro ao salvar as músicas');
             }
 
-            // Atualiza a resposta e atualiza a lista de músicas
-            setResponse(data1);
-            fetchSongs();
+            const data = await res.json();
+            setResponse(data);
+            await fetchSongs();
+
         } catch (error) {
             setError('Erro ao salvar as músicas');
+            console.error('Erro durante a requisição:', error);
         }
     };
 
@@ -130,14 +155,17 @@ export default function AddSongsButton({ songs, fetchSongs }) {
             const res = await fetch('/api/clearSongs', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
-                }
+                    'Content-Type': 'application/json',
+                },
             });
+            if (!res.ok) {
+                throw new Error('Erro ao limpar as músicas');
+            }
             const data = await res.json();
             setResponse(data);
             fetchSongs();
         } catch (error) {
-            setError('Error clearing the songs');
+            setError('Erro ao limpar as músicas');
         }
     };
 
@@ -166,35 +194,6 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                             className='text-white rounded-md w-40 bg-[#2F2F2F] px-2 py-1 mt-3 mb-2 hover:bg-[#3F3F3F]'
                         />
                     </div>
-
-                    <div className='mx-1'>
-                        <label htmlFor="url">Playlist </label>
-                        <select
-                            value={selectedPlaylist}
-                            onChange={(e) => setSelectedPlaylist(e.target.value)}
-                            className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
-                            style={{ height: '40px' }}
-                        >
-                            <option value="none" disabled>Selecione uma playlist</option>
-                            <option value="new">Nova playlist</option>
-                            <option value="">Nenhuma</option>
-                            {playlists.map((playlist, index) => (
-                                <option key={index} value={playlist.playlist}>{playlist.playlist}</option>
-                            ))}
-                        </select>
-                    </div>
-
-                    {selectedPlaylist === 'new' && (
-                        <input
-                            type="text"
-                            placeholder="Digite o nome da nova playlist"
-                            value={newPlaylist}
-                            onChange={(e) => setNewPlaylist(e.target.value)}
-                            required
-                            className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
-                            style={{ height: '40px' }}
-                        />
-                    )}
                     <button
                         style={{ maxHeight: '40px' }}
                         className={`mt-3 mb-2 text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-3 hover:cursor-pointer ${isAddButtonDisabled ? 'bg-gray-500' : 'hover:bg-[#14843B]'}`}
@@ -205,6 +204,38 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                     </button>
                 </form>
             )}
+
+            {songs.length > 0 && (
+                <div className='mx-1'>
+                    <label htmlFor="playlist">Playlist </label>
+                    <select
+                        value={selectedPlaylist}
+                        onChange={(e) => setSelectedPlaylist(e.target.value)}
+                        className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
+                        style={{ height: '40px' }}
+                    >
+                        <option value="none" disabled>Selecione uma playlist</option>
+                        <option value="new">Nova playlist</option>
+                        <option value="">Nenhuma</option>
+                        {playlists.map((playlist, index) => (
+                            <option key={index} value={playlist.playlist}>{playlist.playlist}</option>
+                        ))}
+                    </select>
+                </div>
+            )}
+
+            {selectedPlaylist === 'new' && (
+                <input
+                    type="text"
+                    placeholder="Digite o nome da nova playlist"
+                    value={newPlaylist}
+                    onChange={(e) => setNewPlaylist(e.target.value)}
+                    required
+                    className='text-white rounded-md bg-[#2F2F2F] px-2 py-1 font mx-2 mt-3 mb-2'
+                    style={{ height: '40px' }}
+                />
+            )}
+
             {songs.length > 0 && (
                 <>
                     <button
@@ -223,7 +254,10 @@ export default function AddSongsButton({ songs, fetchSongs }) {
                     </button>
                 </>
             )}
+
             {error && <p className="text-red-500">{error}</p>}
         </div>
     );
-}
+};
+
+export default AddSongsButton;
