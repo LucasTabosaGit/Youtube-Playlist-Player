@@ -2,1004 +2,1494 @@
   {
     "songs": [
       {
-        "name": "Numb (Official Music Video) [4K UPGRADE] – Linkin Park",
-        "link": "https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=1&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg",
-        "artist": "Linkin Park",
-        "duration": "3:08",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - November Rain",
-        "link": "https://www.youtube.com/watch?v=8SbUC-UaAxE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=2&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/8SbUC-UaAxE/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "9:17",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=hTWKbfoikeg&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=3&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/hTWKbfoikeg/hqdefault.jpg",
-        "artist": "Nirvana",
-        "duration": "4:39",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Avantide - Sleep it Off (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=m47KT2F9X3M&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=4&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/m47KT2F9X3M/hqdefault.jpg",
-        "artist": "Avantide",
-        "duration": "3:59",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "4 Non Blondes - What's Up (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=5&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/6NXnxTNIWkc/hqdefault.jpg",
-        "artist": "4 Non Blondes",
-        "duration": "4:53",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Queen – Bohemian Rhapsody (Official Video Remastered)",
-        "link": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=6&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
-        "artist": "Queen Official",
-        "duration": "6:00",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Dracovallis - Midnight Anthem (Official Lyric Video)",
-        "link": "https://www.youtube.com/watch?v=WQyL-nvoyC8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=7&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/WQyL-nvoyC8/hqdefault.jpg",
-        "artist": "Dracovallis",
-        "duration": "4:25",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "In The End [Official HD Music Video] - Linkin Park",
-        "link": "https://www.youtube.com/watch?v=eVTXPUF4Oz4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=8&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/eVTXPUF4Oz4/hqdefault.jpg",
-        "artist": "Linkin Park",
-        "duration": "3:39",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Green Day - Boulevard Of Broken Dreams [Official Music Video]",
-        "link": "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=9&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Soa3gO7tL-c/hqdefault.jpg",
-        "artist": "Green Day",
-        "duration": "4:48",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "George Bell - Mirror Mirror",
-        "link": "https://www.youtube.com/watch?v=7MkS_aHOipk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=10&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/7MkS_aHOipk/hqdefault.jpg",
-        "artist": "GeorgeBellVEVO",
-        "duration": "3:18",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=1w7OgIMMRc4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=11&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/1w7OgIMMRc4/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "5:03",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Arctic Monkeys - Do I Wanna Know? (Official Video)",
-        "link": "https://www.youtube.com/watch?v=bpOSxM0rNPM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=12&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/bpOSxM0rNPM/hqdefault.jpg",
-        "artist": "Official Arctic Monkeys",
-        "duration": "4:26",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Cranberries - Zombie (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=6Ejga4kJUts&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=13&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/6Ejga4kJUts/hqdefault.jpg",
-        "artist": "TheCranberriesTV",
-        "duration": "5:08",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "SUNVOLUME - God Is An AI (AI Visualizer)",
-        "link": "https://www.youtube.com/watch?v=I5vsJ2c00t8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=14&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/I5vsJ2c00t8/hqdefault.jpg",
-        "artist": "SUNVOLUME",
-        "duration": "4:01",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "AC/DC - Thunderstruck (Official Video)",
-        "link": "https://www.youtube.com/watch?v=v2AC41dglnM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=15&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/v2AC41dglnM/hqdefault.jpg",
-        "artist": "AC/DC",
-        "duration": "4:53",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bon Jovi - It's My Life (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=vx2u5uUu3DE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=16&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/vx2u5uUu3DE/hqdefault.jpg",
-        "artist": "Bon Jovi",
-        "duration": "4:27",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Zayd- \"Without You\"",
-        "link": "https://www.youtube.com/watch?v=SJisjznVKLg&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=17&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/SJisjznVKLg/hqdefault.jpg",
-        "artist": "Zayd",
-        "duration": "3:46",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Evanescence - Bring Me To Life (Official HD Music Video)",
-        "link": "https://www.youtube.com/watch?v=3YxaaGgTQYM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=18&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/3YxaaGgTQYM/hqdefault.jpg",
-        "artist": "Evanescence",
-        "duration": "4:14",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Metallica - Nothing Else Matters (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=HyrWd_gfQNQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=19&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/HyrWd_gfQNQ/hqdefault.jpg",
-        "artist": "Warner Records Vault",
-        "duration": "6:26",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Karson City Rebels - \"Runaway Train\" (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=boDAOWXPWWY&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=20&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/boDAOWXPWWY/hqdefault.jpg",
-        "artist": "Karson City Rebels",
-        "duration": "3:08",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "System Of A Down - Chop Suey! (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=CSvFpBOe8eY&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=21&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/CSvFpBOe8eY/hqdefault.jpg",
-        "artist": "System Of A Down",
-        "duration": "3:29",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Police - Every Breath You Take (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=OMOGaugKpzs&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=22&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/OMOGaugKpzs/hqdefault.jpg",
-        "artist": "The Police",
-        "duration": "3:49",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "R.E.M. - Losing My Religion (Official HD Music Video)",
-        "link": "https://www.youtube.com/watch?v=xwtdhWltSIg&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=23&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/xwtdhWltSIg/hqdefault.jpg",
-        "artist": "remhq",
-        "duration": "4:54",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Audioslave - Like a Stone (Official Video)",
-        "link": "https://www.youtube.com/watch?v=7QU1nvuxaMA&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=24&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/7QU1nvuxaMA/hqdefault.jpg",
-        "artist": "Audioslave",
-        "duration": "5:02",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Chris Erasmus - Hurt (Lyric Video)",
-        "link": "https://www.youtube.com/watch?v=-dmAHAwweZ0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=25&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/-dmAHAwweZ0/hqdefault.jpg",
-        "artist": "Chris Erasmus",
-        "duration": "3:58",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Europe - The Final Countdown (Official Video)",
-        "link": "https://www.youtube.com/watch?v=9jK-NcRmVcw&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=26&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/9jK-NcRmVcw/hqdefault.jpg",
-        "artist": "europethebandtv",
-        "duration": "4:57",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bon Jovi - Livin' On A Prayer",
-        "link": "https://www.youtube.com/watch?v=lDK9QqIzhwk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=27&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/lDK9QqIzhwk/hqdefault.jpg",
-        "artist": "Bon Jovi",
-        "duration": "4:09",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Tide Bends - Grasshopper (Official Video)",
-        "link": "https://www.youtube.com/watch?v=BtnGDFefRfo&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=28&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/BtnGDFefRfo/hqdefault.jpg",
-        "artist": "Tide Bends",
-        "duration": "3:45",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Red Hot Chili Peppers - Californication (Official Music Video) [HD UPGRADE]",
-        "link": "https://www.youtube.com/watch?v=YlUKcNNmywk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=29&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/YlUKcNNmywk/hqdefault.jpg",
-        "artist": "Red Hot Chili Peppers",
-        "duration": "5:22",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Imagine Dragons - Demons (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=mWRsgZuwf_8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=30&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/mWRsgZuwf_8/hqdefault.jpg",
-        "artist": "ImagineDragons",
-        "duration": "3:57",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Love Ghost x 3ANGEL - \"RAGE\" (AMV video)",
-        "link": "https://www.youtube.com/watch?v=8mefHWNjgeQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=31&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/8mefHWNjgeQ/hqdefault.jpg",
-        "artist": "Love Ghost",
-        "duration": "2:13",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Scorpions - Wind Of Change (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=n4RjJKxsamQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=32&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/n4RjJKxsamQ/hqdefault.jpg",
-        "artist": "Scorpions",
-        "duration": "4:43",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "No Doubt - Don't Speak (Official 4K Music Video)",
-        "link": "https://www.youtube.com/watch?v=TR3Vdo5etCQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=33&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/TR3Vdo5etCQ/hqdefault.jpg",
-        "artist": "NoDoubtTV",
-        "duration": "5:01",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Hoobastank - The Reason (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=fV4DiAyExN0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=34&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/fV4DiAyExN0/hqdefault.jpg",
-        "artist": "Hoobastank",
-        "duration": "4:11",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bella Moulden playing her original song, “Season of the Witch”",
-        "link": "https://www.youtube.com/watch?v=mzGUs0zXtF0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=35&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/mzGUs0zXtF0/hqdefault.jpg",
-        "artist": "Bella Moulden",
-        "duration": "3:13",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Verve - Bitter Sweet Symphony",
-        "link": "https://www.youtube.com/watch?v=1lyu1KKwC74&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=36&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/1lyu1KKwC74/hqdefault.jpg",
-        "artist": "The Verve",
-        "duration": "4:36",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "AC/DC - Back In Black (Official 4K Video)",
-        "link": "https://www.youtube.com/watch?v=pAgnJDJN4VA&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=37&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/pAgnJDJN4VA/hqdefault.jpg",
-        "artist": "AC/DC",
-        "duration": "4:14",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Mighty Trains Band- BUST OUT (official music video)",
-        "link": "https://www.youtube.com/watch?v=AiZnftvotDE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=38&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/AiZnftvotDE/hqdefault.jpg",
-        "artist": "The Mighty Trains Band",
-        "duration": "4:13",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Radiohead - Creep",
-        "link": "https://www.youtube.com/watch?v=XFkzRNyygfk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=39&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/XFkzRNyygfk/hqdefault.jpg",
-        "artist": "Radiohead",
-        "duration": "3:57",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bon Jovi - Always (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=9BMwcO6_hyA&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=40&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/9BMwcO6_hyA/hqdefault.jpg",
-        "artist": "Bon Jovi",
-        "duration": "6:06",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Thunderpussy \"N.E.D.\" (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=172Kd1rmgLk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=41&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/172Kd1rmgLk/hqdefault.jpg",
-        "artist": "Thunderpussy",
-        "duration": "3:37",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Disturbed  - The Sound Of Silence (Official Music Video) [4K UPGRADE]",
-        "link": "https://www.youtube.com/watch?v=u9Dg-g7t2l4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=42&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/u9Dg-g7t2l4/hqdefault.jpg",
-        "artist": "Disturbed",
-        "duration": "4:23",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Survivor - Eye Of The Tiger (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=btPJPFnesV4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=43&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/btPJPFnesV4/hqdefault.jpg",
-        "artist": "Survivor Band",
-        "duration": "4:05",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "SWERVE - 23 (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=tKNB3Idh52E&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=44&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/tKNB3Idh52E/hqdefault.jpg",
-        "artist": "Swerve",
-        "duration": "2:55",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Toto - Africa (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=FTQbiNvZqaY&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=45&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/FTQbiNvZqaY/hqdefault.jpg",
-        "artist": "TOTO",
-        "duration": "4:32",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Evanescence - My Immortal (Official HD Music Video)",
-        "link": "https://www.youtube.com/watch?v=5anLPw0Efmo&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=46&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/5anLPw0Efmo/hqdefault.jpg",
-        "artist": "Evanescence",
-        "duration": "4:31",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Avantide - Take it Slow (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=rp5oq5yWuv0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=47&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/rp5oq5yWuv0/hqdefault.jpg",
-        "artist": "Avantide",
-        "duration": "3:39",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "System Of A Down - Toxicity (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=iywaBOMvYLI&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=48&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/iywaBOMvYLI/hqdefault.jpg",
-        "artist": "System Of A Down",
-        "duration": "3:45",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Queen - Don't Stop Me Now (Official Video)",
-        "link": "https://www.youtube.com/watch?v=HgzGwKwLmgM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=49&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/HgzGwKwLmgM/hqdefault.jpg",
-        "artist": "Queen Official",
-        "duration": "3:33",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "3 Doors Down - Here Without You (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=kPBzTxZQG5Q&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=50&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/kPBzTxZQG5Q/hqdefault.jpg",
-        "artist": "3doorsdown",
-        "duration": "3:56",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bryan Adams - Please Forgive Me",
-        "link": "https://www.youtube.com/watch?v=7x8wPt8xarE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=51&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/7x8wPt8xarE/hqdefault.jpg",
-        "artist": "Bryan Adams",
-        "duration": "5:31",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Grasser - Vapid/Dense (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=lg1dIKIb47s&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=52&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/lg1dIKIb47s/hqdefault.jpg",
-        "artist": "Grasser",
-        "duration": "3:37",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - Paradise City (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=Rbm6GXllBiw&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=53&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Rbm6GXllBiw/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "6:49",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Extreme - More Than Words (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=UrIiLvg58SY&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=54&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/UrIiLvg58SY/hqdefault.jpg",
-        "artist": "OfficiallyExtreme",
-        "duration": "4:16",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Elena Mylonas - Sickness (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=1UYQLFMZPAo&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=55&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/1UYQLFMZPAo/hqdefault.jpg",
-        "artist": "Elena Mylonas",
-        "duration": "3:58",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Red Hot Chili Peppers - Otherside [Official Music Video]",
-        "link": "https://www.youtube.com/watch?v=rn_YodiJO6k&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=56&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/rn_YodiJO6k/hqdefault.jpg",
-        "artist": "Red Hot Chili Peppers",
-        "duration": "4:16",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Roxette - It Must Have Been Love (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=k2C5TjS2sh4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=57&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/k2C5TjS2sh4/hqdefault.jpg",
-        "artist": "Roxette",
-        "duration": "4:16",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - Patience",
-        "link": "https://www.youtube.com/watch?v=ErvgV4P6Fzc&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=58&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/ErvgV4P6Fzc/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "5:57",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Kiss - I Was Made For Lovin' You",
-        "link": "https://www.youtube.com/watch?v=ZhIsAZO5gl0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=59&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/ZhIsAZO5gl0/hqdefault.jpg",
-        "artist": "KISS",
-        "duration": "3:59",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Buckle My Head The Suburbs 2021 (Official Video)",
-        "link": "https://www.youtube.com/watch?v=6JPpOFW98j0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=60&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/6JPpOFW98j0/hqdefault.jpg",
-        "artist": "Chan Poling",
-        "duration": "2:58",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - Don't Cry",
-        "link": "https://www.youtube.com/watch?v=zRIbf6JqkNc&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=61&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/zRIbf6JqkNc/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "5:14",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Outfield - Your Love (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=4N1iwQxiHrs&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=62&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/4N1iwQxiHrs/hqdefault.jpg",
-        "artist": "TheOutfieldVEVO",
-        "duration": "4:13",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Thredge - Born of Dust [OFFICIAL VIDEO]",
-        "link": "https://www.youtube.com/watch?v=Y6jTjaa84GE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=63&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Y6jTjaa84GE/hqdefault.jpg",
-        "artist": "Thredge",
-        "duration": "4:14",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Aerosmith - Crazy (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=NMNgbISmF4I&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=64&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/NMNgbISmF4I/hqdefault.jpg",
-        "artist": "Aerosmith",
-        "duration": "6:14",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "KALEO - Way Down We Go (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=0-7IHOXkiV8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=65&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/0-7IHOXkiV8/hqdefault.jpg",
-        "artist": "KALEO",
-        "duration": "3:35",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Scarabeo - Little Auro",
-        "link": "https://www.youtube.com/watch?v=fv9LJbKr_VM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=66&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/fv9LJbKr_VM/hqdefault.jpg",
-        "artist": "Scarabeo",
-        "duration": "3:25",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Metallica: Enter Sandman (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=CD-E-LDc384&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=67&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/CD-E-LDc384/hqdefault.jpg",
-        "artist": "Metallica",
-        "duration": "5:31",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Avril Lavigne - Girlfriend (Official Video)",
-        "link": "https://www.youtube.com/watch?v=Bg59q4puhmg&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=68&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Bg59q4puhmg/hqdefault.jpg",
-        "artist": "Avril Lavigne",
-        "duration": "3:48",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "deegie - Old Spice (Eric #1) (Official  Music Video)",
-        "link": "https://www.youtube.com/watch?v=F3UHL84Gd_8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=69&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/F3UHL84Gd_8/hqdefault.jpg",
-        "artist": "deegie",
-        "duration": "3:31",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The White Stripes - Seven Nation Army (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=0J2QdDbelmY&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=70&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/0J2QdDbelmY/hqdefault.jpg",
-        "artist": "The White Stripes",
-        "duration": "3:59",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "What I've Done (Official Music Video) [4K Upgrade] - Linkin Park",
-        "link": "https://www.youtube.com/watch?v=8sgycukafqQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=71&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/8sgycukafqQ/hqdefault.jpg",
-        "artist": "Linkin Park",
-        "duration": "3:28",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Pluto sudo -Joke",
-        "link": "https://www.youtube.com/watch?v=EppxAcj4fiw&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=72&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/EppxAcj4fiw/hqdefault.jpg",
-        "artist": "Pluto Sudo",
-        "duration": "2:02",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Queen - Another One Bites the Dust (Official Video)",
-        "link": "https://www.youtube.com/watch?v=rY0WxgSXdEE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=73&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/rY0WxgSXdEE/hqdefault.jpg",
-        "artist": "Queen Official",
-        "duration": "3:43",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "AC/DC - Highway to Hell (Official Video)",
-        "link": "https://www.youtube.com/watch?v=l482T0yNkeo&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=74&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/l482T0yNkeo/hqdefault.jpg",
-        "artist": "AC/DC",
-        "duration": "3:28",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Caroline Kingsbury - Our House (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=e4rIfQtBIko&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=75&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/e4rIfQtBIko/hqdefault.jpg",
-        "artist": "Caroline Kingsbury",
-        "duration": "3:40",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bryan Adams - (Everything I Do) I Do It For You",
-        "link": "https://www.youtube.com/watch?v=Y0pdQU87dc8&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=76&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Y0pdQU87dc8/hqdefault.jpg",
-        "artist": "Bryan Adams",
-        "duration": "6:33",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Aerosmith - I Don't Want to Miss a Thing (Official HD Video)",
-        "link": "https://www.youtube.com/watch?v=JkK8g6FMEXE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=77&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/JkK8g6FMEXE/hqdefault.jpg",
-        "artist": "Aerosmith",
-        "duration": "4:53",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Queen - We Will Rock You (Official Video)",
-        "link": "https://www.youtube.com/watch?v=-tJYN-eG1zk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=78&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/-tJYN-eG1zk/hqdefault.jpg",
-        "artist": "Queen Official",
-        "duration": "2:15",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Anthony Von - Kiss Me First (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=TEmcyfKBNmo&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=79&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/TEmcyfKBNmo/hqdefault.jpg",
-        "artist": "Anthony Von",
-        "duration": "3:54",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "New Divide (Official Music Video) [4K Upgrade] - Linkin Park",
-        "link": "https://www.youtube.com/watch?v=ysSxxIqKNN0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=80&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/ysSxxIqKNN0/hqdefault.jpg",
-        "artist": "Linkin Park",
-        "duration": "4:29",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Guns N' Roses - Welcome To The Jungle",
-        "link": "https://www.youtube.com/watch?v=o1tj2zJ2Wvg&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=81&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/o1tj2zJ2Wvg/hqdefault.jpg",
-        "artist": "Guns N' Roses",
-        "duration": "4:40",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Next Door To Heaven - Believe in me (Official music video)",
-        "link": "https://www.youtube.com/watch?v=8xDBzuDLHwQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=82&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/8xDBzuDLHwQ/hqdefault.jpg",
-        "artist": "Next Door To Heaven",
-        "duration": "4:37",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Calling - Wherever You Will Go (First Video- in Tijuana)",
-        "link": "https://www.youtube.com/watch?v=iAP9AF6DCu4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=83&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/iAP9AF6DCu4/hqdefault.jpg",
-        "artist": "TheCallingVEVO",
-        "duration": "3:27",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Linkin Park - Castle of Glass",
-        "link": "https://www.youtube.com/watch?v=RRGSHvlu9Ss&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=84&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/RRGSHvlu9Ss/hqdefault.jpg",
-        "artist": "greenblood998",
-        "duration": "3:24",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Rammstein - Du Hast (Official 4K Video)",
-        "link": "https://www.youtube.com/watch?v=W3q8Od5qJio&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=85&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/W3q8Od5qJio/hqdefault.jpg",
-        "artist": "Rammstein Official",
-        "duration": "3:56",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Foo Fighters - The Pretender",
-        "link": "https://www.youtube.com/watch?v=SBjQ9tuuTJQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=86&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/SBjQ9tuuTJQ/hqdefault.jpg",
-        "artist": "Foo Fighters",
-        "duration": "4:31",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "JNDJ - In My Own Way",
-        "link": "https://www.youtube.com/watch?v=XwyuUb-f1Uk&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=87&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/XwyuUb-f1Uk/hqdefault.jpg",
-        "artist": "JNDJ",
-        "duration": "3:04",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Nickelback - How You Remind Me",
-        "link": "https://www.youtube.com/watch?v=1cQh1ccqu8M&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=88&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/1cQh1ccqu8M/hqdefault.jpg",
-        "artist": "Nickelback",
-        "duration": "3:49",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "The Killers - Mr. Brightside (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=gGdGFtwCNBE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=89&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/gGdGFtwCNBE/hqdefault.jpg",
-        "artist": "TheKillersMusic",
-        "duration": "3:48",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Richard Marx - Right Here Waiting (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=S_E2EHVxNAE&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=90&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/S_E2EHVxNAE/hqdefault.jpg",
-        "artist": "Richard Marx",
-        "duration": "4:23",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Nirvana - Come As You Are (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=vabnZ9-ex7o&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=91&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/vabnZ9-ex7o/hqdefault.jpg",
-        "artist": "Nirvana",
-        "duration": "3:45",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Green Day - 21 Guns [Official Music Video]",
-        "link": "https://www.youtube.com/watch?v=r00ikilDxW4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=92&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/r00ikilDxW4/hqdefault.jpg",
-        "artist": "Green Day",
-        "duration": "5:26",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Back for More",
-        "link": "https://www.youtube.com/watch?v=WoPGkzFkp_k&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=93&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/WoPGkzFkp_k/hqdefault.jpg",
-        "artist": "Hurricane On Saturn",
-        "duration": "3:23",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Phil Collins - Another Day In Paradise (Official Music Video)",
-        "link": "https://www.youtube.com/watch?v=Qt2mbGP6vFI&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=94&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/Qt2mbGP6vFI/hqdefault.jpg",
-        "artist": "Phil Collins",
-        "duration": "4:50",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Kings Of Leon - Sex on Fire (Official Video)",
-        "link": "https://www.youtube.com/watch?v=RF0HhrwIwp0&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=95&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/RF0HhrwIwp0/hqdefault.jpg",
-        "artist": "Kings of Leon",
-        "duration": "3:28",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Bad Wolves - Zombie (Official Video)",
-        "link": "https://www.youtube.com/watch?v=9XaS93WMRQQ&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=96&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/9XaS93WMRQQ/hqdefault.jpg",
-        "artist": "Better Noise Music",
-        "duration": "4:36",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Goo Goo Dolls – Iris [Official Music Video] [4K Remaster]",
-        "link": "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=97&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/NdYWuo9OFAw/hqdefault.jpg",
-        "artist": "Goo Goo Dolls",
-        "duration": "3:36",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Red Hot Chili Peppers - Scar Tissue [Official Music Video]",
-        "link": "https://www.youtube.com/watch?v=mzJj5-lubeM&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=98&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/mzJj5-lubeM/hqdefault.jpg",
-        "artist": "Red Hot Chili Peppers",
-        "duration": "3:41",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
-        "name": "Hurricane On Saturn feat. Deuce - Monsters (Official Visualizer)",
-        "link": "https://www.youtube.com/watch?v=lL0qHTuh5-4&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=99&pp=iAQB8AUB",
-        "thumbnail": "https://img.youtube.com/vi/lL0qHTuh5-4/hqdefault.jpg",
-        "artist": "Hurricane On Saturn",
-        "duration": "4:22",
-        "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
-      },
-      {
         "name": "Paint It, Black",
-        "link": "https://www.youtube.com/watch?v=170sceOWWXc&list=PL_Q15fKxrBb7wo5SRxHbhk6ZL6zMYh5tH&index=100&pp=iAQB8AUB",
+        "link": "https://www.youtube.com/watch?v=170sceOWWXc",
         "thumbnail": "https://img.youtube.com/vi/170sceOWWXc/hqdefault.jpg",
         "artist": "The Rolling Stones",
         "duration": "3:23",
         "genre": "",
-        "extractedAt": "2024-06-24T12:16:22.631Z",
-        "playlist": "teste"
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Numb (Official Music Video) [4K UPGRADE] – Linkin Park",
+        "link": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+        "thumbnail": "https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:08",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - November Rain",
+        "link": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+        "thumbnail": "https://img.youtube.com/vi/8SbUC-UaAxE/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "9:17",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+        "thumbnail": "https://img.youtube.com/vi/hTWKbfoikeg/hqdefault.jpg",
+        "artist": "Nirvana",
+        "duration": "4:39",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Avantide - Sleep it Off (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=m47KT2F9X3M",
+        "thumbnail": "https://img.youtube.com/vi/m47KT2F9X3M/hqdefault.jpg",
+        "artist": "Avantide",
+        "duration": "3:59",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "4 Non Blondes - What's Up (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
+        "thumbnail": "https://img.youtube.com/vi/6NXnxTNIWkc/hqdefault.jpg",
+        "artist": "4 Non Blondes",
+        "duration": "4:53",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+        "link": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "thumbnail": "https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
+        "artist": "Queen Official",
+        "duration": "6:00",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Dracovallis - Midnight Anthem (Official Lyric Video)",
+        "link": "https://www.youtube.com/watch?v=WQyL-nvoyC8",
+        "thumbnail": "https://img.youtube.com/vi/WQyL-nvoyC8/hqdefault.jpg",
+        "artist": "Dracovallis",
+        "duration": "4:25",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "In The End [Official HD Music Video] - Linkin Park",
+        "link": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+        "thumbnail": "https://img.youtube.com/vi/eVTXPUF4Oz4/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:39",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Green Day - Boulevard Of Broken Dreams [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=Soa3gO7tL-c",
+        "thumbnail": "https://img.youtube.com/vi/Soa3gO7tL-c/hqdefault.jpg",
+        "artist": "Green Day",
+        "duration": "4:48",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "George Bell - Mirror Mirror",
+        "link": "https://www.youtube.com/watch?v=7MkS_aHOipk",
+        "thumbnail": "https://img.youtube.com/vi/7MkS_aHOipk/hqdefault.jpg",
+        "artist": "GeorgeBellVEVO",
+        "duration": "3:18",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+        "thumbnail": "https://img.youtube.com/vi/1w7OgIMMRc4/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "5:03",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Arctic Monkeys - Do I Wanna Know? (Official Video)",
+        "link": "https://www.youtube.com/watch?v=bpOSxM0rNPM",
+        "thumbnail": "https://img.youtube.com/vi/bpOSxM0rNPM/hqdefault.jpg",
+        "artist": "Official Arctic Monkeys",
+        "duration": "4:26",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Cranberries - Zombie (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+        "thumbnail": "https://img.youtube.com/vi/6Ejga4kJUts/hqdefault.jpg",
+        "artist": "TheCranberriesTV",
+        "duration": "5:08",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "SUNVOLUME - God Is An AI (AI Visualizer)",
+        "link": "https://www.youtube.com/watch?v=I5vsJ2c00t8",
+        "thumbnail": "https://img.youtube.com/vi/I5vsJ2c00t8/hqdefault.jpg",
+        "artist": "SUNVOLUME",
+        "duration": "4:01",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "AC/DC - Thunderstruck (Official Video)",
+        "link": "https://www.youtube.com/watch?v=v2AC41dglnM",
+        "thumbnail": "https://img.youtube.com/vi/v2AC41dglnM/hqdefault.jpg",
+        "artist": "AC/DC",
+        "duration": "4:53",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bon Jovi - It's My Life (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=vx2u5uUu3DE",
+        "thumbnail": "https://img.youtube.com/vi/vx2u5uUu3DE/hqdefault.jpg",
+        "artist": "Bon Jovi",
+        "duration": "4:27",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Zayd- \"Without You\"",
+        "link": "https://www.youtube.com/watch?v=SJisjznVKLg",
+        "thumbnail": "https://img.youtube.com/vi/SJisjznVKLg/hqdefault.jpg",
+        "artist": "Zayd",
+        "duration": "3:46",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Evanescence - Bring Me To Life (Official HD Music Video)",
+        "link": "https://www.youtube.com/watch?v=3YxaaGgTQYM",
+        "thumbnail": "https://img.youtube.com/vi/3YxaaGgTQYM/hqdefault.jpg",
+        "artist": "Evanescence",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Metallica - Nothing Else Matters (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=HyrWd_gfQNQ",
+        "thumbnail": "https://img.youtube.com/vi/HyrWd_gfQNQ/hqdefault.jpg",
+        "artist": "Warner Records Vault",
+        "duration": "6:26",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Karson City Rebels - \"Runaway Train\" (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=boDAOWXPWWY",
+        "thumbnail": "https://img.youtube.com/vi/boDAOWXPWWY/hqdefault.jpg",
+        "artist": "Karson City Rebels",
+        "duration": "3:08",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "System Of A Down - Chop Suey! (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=CSvFpBOe8eY",
+        "thumbnail": "https://img.youtube.com/vi/CSvFpBOe8eY/hqdefault.jpg",
+        "artist": "System Of A Down",
+        "duration": "3:29",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Police - Every Breath You Take (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "thumbnail": "https://img.youtube.com/vi/OMOGaugKpzs/hqdefault.jpg",
+        "artist": "The Police",
+        "duration": "3:49",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "R.E.M. - Losing My Religion (Official HD Music Video)",
+        "link": "https://www.youtube.com/watch?v=xwtdhWltSIg",
+        "thumbnail": "https://img.youtube.com/vi/xwtdhWltSIg/hqdefault.jpg",
+        "artist": "remhq",
+        "duration": "4:54",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Audioslave - Like a Stone (Official Video)",
+        "link": "https://www.youtube.com/watch?v=7QU1nvuxaMA",
+        "thumbnail": "https://img.youtube.com/vi/7QU1nvuxaMA/hqdefault.jpg",
+        "artist": "Audioslave",
+        "duration": "5:02",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Chris Erasmus - Hurt (Lyric Video)",
+        "link": "https://www.youtube.com/watch?v=-dmAHAwweZ0",
+        "thumbnail": "https://img.youtube.com/vi/-dmAHAwweZ0/hqdefault.jpg",
+        "artist": "Chris Erasmus",
+        "duration": "3:58",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Europe - The Final Countdown (Official Video)",
+        "link": "https://www.youtube.com/watch?v=9jK-NcRmVcw",
+        "thumbnail": "https://img.youtube.com/vi/9jK-NcRmVcw/hqdefault.jpg",
+        "artist": "europethebandtv",
+        "duration": "4:57",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bon Jovi - Livin' On A Prayer",
+        "link": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+        "thumbnail": "https://img.youtube.com/vi/lDK9QqIzhwk/hqdefault.jpg",
+        "artist": "Bon Jovi",
+        "duration": "4:09",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Tide Bends - Grasshopper (Official Video)",
+        "link": "https://www.youtube.com/watch?v=BtnGDFefRfo",
+        "thumbnail": "https://img.youtube.com/vi/BtnGDFefRfo/hqdefault.jpg",
+        "artist": "Tide Bends",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Red Hot Chili Peppers - Californication (Official Music Video) [HD UPGRADE]",
+        "link": "https://www.youtube.com/watch?v=YlUKcNNmywk",
+        "thumbnail": "https://img.youtube.com/vi/YlUKcNNmywk/hqdefault.jpg",
+        "artist": "Red Hot Chili Peppers",
+        "duration": "5:22",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Imagine Dragons - Demons (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=mWRsgZuwf_8",
+        "thumbnail": "https://img.youtube.com/vi/mWRsgZuwf_8/hqdefault.jpg",
+        "artist": "ImagineDragons",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Love Ghost x 3ANGEL - \"RAGE\" (AMV video)",
+        "link": "https://www.youtube.com/watch?v=8mefHWNjgeQ",
+        "thumbnail": "https://img.youtube.com/vi/8mefHWNjgeQ/hqdefault.jpg",
+        "artist": "Love Ghost",
+        "duration": "2:13",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Scorpions - Wind Of Change (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=n4RjJKxsamQ",
+        "thumbnail": "https://img.youtube.com/vi/n4RjJKxsamQ/hqdefault.jpg",
+        "artist": "Scorpions",
+        "duration": "4:43",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "No Doubt - Don't Speak (Official 4K Music Video)",
+        "link": "https://www.youtube.com/watch?v=TR3Vdo5etCQ",
+        "thumbnail": "https://img.youtube.com/vi/TR3Vdo5etCQ/hqdefault.jpg",
+        "artist": "NoDoubtTV",
+        "duration": "5:01",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Hoobastank - The Reason (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=fV4DiAyExN0",
+        "thumbnail": "https://img.youtube.com/vi/fV4DiAyExN0/hqdefault.jpg",
+        "artist": "Hoobastank",
+        "duration": "4:11",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bella Moulden playing her original song, “Season of the Witch”",
+        "link": "https://www.youtube.com/watch?v=mzGUs0zXtF0",
+        "thumbnail": "https://img.youtube.com/vi/mzGUs0zXtF0/hqdefault.jpg",
+        "artist": "Bella Moulden",
+        "duration": "3:13",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Verve - Bitter Sweet Symphony",
+        "link": "https://www.youtube.com/watch?v=1lyu1KKwC74",
+        "thumbnail": "https://img.youtube.com/vi/1lyu1KKwC74/hqdefault.jpg",
+        "artist": "The Verve",
+        "duration": "4:36",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "AC/DC - Back In Black (Official 4K Video)",
+        "link": "https://www.youtube.com/watch?v=pAgnJDJN4VA",
+        "thumbnail": "https://img.youtube.com/vi/pAgnJDJN4VA/hqdefault.jpg",
+        "artist": "AC/DC",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Mighty Trains Band- BUST OUT (official music video)",
+        "link": "https://www.youtube.com/watch?v=AiZnftvotDE",
+        "thumbnail": "https://img.youtube.com/vi/AiZnftvotDE/hqdefault.jpg",
+        "artist": "The Mighty Trains Band",
+        "duration": "4:13",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Radiohead - Creep",
+        "link": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "thumbnail": "https://img.youtube.com/vi/XFkzRNyygfk/hqdefault.jpg",
+        "artist": "Radiohead",
+        "duration": "3:57",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bon Jovi - Always (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=9BMwcO6_hyA",
+        "thumbnail": "https://img.youtube.com/vi/9BMwcO6_hyA/hqdefault.jpg",
+        "artist": "Bon Jovi",
+        "duration": "6:06",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Thunderpussy \"N.E.D.\" (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=172Kd1rmgLk",
+        "thumbnail": "https://img.youtube.com/vi/172Kd1rmgLk/hqdefault.jpg",
+        "artist": "Thunderpussy",
+        "duration": "3:37",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Disturbed  - The Sound Of Silence (Official Music Video) [4K UPGRADE]",
+        "link": "https://www.youtube.com/watch?v=u9Dg-g7t2l4",
+        "thumbnail": "https://img.youtube.com/vi/u9Dg-g7t2l4/hqdefault.jpg",
+        "artist": "Disturbed",
+        "duration": "4:23",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Survivor - Eye Of The Tiger (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=btPJPFnesV4",
+        "thumbnail": "https://img.youtube.com/vi/btPJPFnesV4/hqdefault.jpg",
+        "artist": "Survivor Band",
+        "duration": "4:05",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "SWERVE - 23 (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=tKNB3Idh52E",
+        "thumbnail": "https://img.youtube.com/vi/tKNB3Idh52E/hqdefault.jpg",
+        "artist": "Swerve",
+        "duration": "2:55",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Toto - Africa (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=FTQbiNvZqaY",
+        "thumbnail": "https://img.youtube.com/vi/FTQbiNvZqaY/hqdefault.jpg",
+        "artist": "TOTO",
+        "duration": "4:32",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Evanescence - My Immortal (Official HD Music Video)",
+        "link": "https://www.youtube.com/watch?v=5anLPw0Efmo",
+        "thumbnail": "https://img.youtube.com/vi/5anLPw0Efmo/hqdefault.jpg",
+        "artist": "Evanescence",
+        "duration": "4:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Avantide - Take it Slow (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=rp5oq5yWuv0",
+        "thumbnail": "https://img.youtube.com/vi/rp5oq5yWuv0/hqdefault.jpg",
+        "artist": "Avantide",
+        "duration": "3:39",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "System Of A Down - Toxicity (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=iywaBOMvYLI",
+        "thumbnail": "https://img.youtube.com/vi/iywaBOMvYLI/hqdefault.jpg",
+        "artist": "System Of A Down",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Queen - Don't Stop Me Now (Official Video)",
+        "link": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+        "thumbnail": "https://img.youtube.com/vi/HgzGwKwLmgM/hqdefault.jpg",
+        "artist": "Queen Official",
+        "duration": "3:33",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "3 Doors Down - Here Without You (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=kPBzTxZQG5Q",
+        "thumbnail": "https://img.youtube.com/vi/kPBzTxZQG5Q/hqdefault.jpg",
+        "artist": "3doorsdown",
+        "duration": "3:56",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bryan Adams - Please Forgive Me",
+        "link": "https://www.youtube.com/watch?v=7x8wPt8xarE",
+        "thumbnail": "https://img.youtube.com/vi/7x8wPt8xarE/hqdefault.jpg",
+        "artist": "Bryan Adams",
+        "duration": "5:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Grasser - Vapid/Dense (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=lg1dIKIb47s",
+        "thumbnail": "https://img.youtube.com/vi/lg1dIKIb47s/hqdefault.jpg",
+        "artist": "Grasser",
+        "duration": "3:37",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - Paradise City (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=Rbm6GXllBiw",
+        "thumbnail": "https://img.youtube.com/vi/Rbm6GXllBiw/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "6:49",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Extreme - More Than Words (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=UrIiLvg58SY",
+        "thumbnail": "https://img.youtube.com/vi/UrIiLvg58SY/hqdefault.jpg",
+        "artist": "OfficiallyExtreme",
+        "duration": "4:16",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Elena Mylonas - Sickness (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=1UYQLFMZPAo",
+        "thumbnail": "https://img.youtube.com/vi/1UYQLFMZPAo/hqdefault.jpg",
+        "artist": "Elena Mylonas",
+        "duration": "3:58",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Red Hot Chili Peppers - Otherside [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=rn_YodiJO6k",
+        "thumbnail": "https://img.youtube.com/vi/rn_YodiJO6k/hqdefault.jpg",
+        "artist": "Red Hot Chili Peppers",
+        "duration": "4:16",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Roxette - It Must Have Been Love (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=k2C5TjS2sh4",
+        "thumbnail": "https://img.youtube.com/vi/k2C5TjS2sh4/hqdefault.jpg",
+        "artist": "Roxette",
+        "duration": "4:16",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - Patience",
+        "link": "https://www.youtube.com/watch?v=ErvgV4P6Fzc",
+        "thumbnail": "https://img.youtube.com/vi/ErvgV4P6Fzc/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "5:57",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Kiss - I Was Made For Lovin' You",
+        "link": "https://www.youtube.com/watch?v=ZhIsAZO5gl0",
+        "thumbnail": "https://img.youtube.com/vi/ZhIsAZO5gl0/hqdefault.jpg",
+        "artist": "KISS",
+        "duration": "3:59",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Buckle My Head The Suburbs 2021 (Official Video)",
+        "link": "https://www.youtube.com/watch?v=6JPpOFW98j0",
+        "thumbnail": "https://img.youtube.com/vi/6JPpOFW98j0/hqdefault.jpg",
+        "artist": "Chan Poling",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - Don't Cry",
+        "link": "https://www.youtube.com/watch?v=zRIbf6JqkNc",
+        "thumbnail": "https://img.youtube.com/vi/zRIbf6JqkNc/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "5:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Outfield - Your Love (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=4N1iwQxiHrs",
+        "thumbnail": "https://img.youtube.com/vi/4N1iwQxiHrs/hqdefault.jpg",
+        "artist": "TheOutfieldVEVO",
+        "duration": "4:13",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Thredge - Born of Dust [OFFICIAL VIDEO]",
+        "link": "https://www.youtube.com/watch?v=Y6jTjaa84GE",
+        "thumbnail": "https://img.youtube.com/vi/Y6jTjaa84GE/hqdefault.jpg",
+        "artist": "Thredge",
+        "duration": "4:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Aerosmith - Crazy (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=NMNgbISmF4I",
+        "thumbnail": "https://img.youtube.com/vi/NMNgbISmF4I/hqdefault.jpg",
+        "artist": "Aerosmith",
+        "duration": "6:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "KALEO - Way Down We Go (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=0-7IHOXkiV8",
+        "thumbnail": "https://img.youtube.com/vi/0-7IHOXkiV8/hqdefault.jpg",
+        "artist": "KALEO",
+        "duration": "3:35",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Scarabeo - Little Auro",
+        "link": "https://www.youtube.com/watch?v=fv9LJbKr_VM",
+        "thumbnail": "https://img.youtube.com/vi/fv9LJbKr_VM/hqdefault.jpg",
+        "artist": "Scarabeo",
+        "duration": "3:25",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Metallica: Enter Sandman (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=CD-E-LDc384",
+        "thumbnail": "https://img.youtube.com/vi/CD-E-LDc384/hqdefault.jpg",
+        "artist": "Metallica",
+        "duration": "5:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Avril Lavigne - Girlfriend (Official Video)",
+        "link": "https://www.youtube.com/watch?v=Bg59q4puhmg",
+        "thumbnail": "https://img.youtube.com/vi/Bg59q4puhmg/hqdefault.jpg",
+        "artist": "Avril Lavigne",
+        "duration": "3:48",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "deegie - Old Spice (Eric #1) (Official  Music Video)",
+        "link": "https://www.youtube.com/watch?v=F3UHL84Gd_8",
+        "thumbnail": "https://img.youtube.com/vi/F3UHL84Gd_8/hqdefault.jpg",
+        "artist": "deegie",
+        "duration": "3:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The White Stripes - Seven Nation Army (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=0J2QdDbelmY",
+        "thumbnail": "https://img.youtube.com/vi/0J2QdDbelmY/hqdefault.jpg",
+        "artist": "The White Stripes",
+        "duration": "3:59",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "What I've Done (Official Music Video) [4K Upgrade] - Linkin Park",
+        "link": "https://www.youtube.com/watch?v=8sgycukafqQ",
+        "thumbnail": "https://img.youtube.com/vi/8sgycukafqQ/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "3:28",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Pluto sudo -Joke",
+        "link": "https://www.youtube.com/watch?v=EppxAcj4fiw",
+        "thumbnail": "https://img.youtube.com/vi/EppxAcj4fiw/hqdefault.jpg",
+        "artist": "Pluto Sudo",
+        "duration": "2:02",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Queen - Another One Bites the Dust (Official Video)",
+        "link": "https://www.youtube.com/watch?v=rY0WxgSXdEE",
+        "thumbnail": "https://img.youtube.com/vi/rY0WxgSXdEE/hqdefault.jpg",
+        "artist": "Queen Official",
+        "duration": "3:43",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "AC/DC - Highway to Hell (Official Video)",
+        "link": "https://www.youtube.com/watch?v=l482T0yNkeo",
+        "thumbnail": "https://img.youtube.com/vi/l482T0yNkeo/hqdefault.jpg",
+        "artist": "AC/DC",
+        "duration": "3:28",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Caroline Kingsbury - Our House (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=e4rIfQtBIko",
+        "thumbnail": "https://img.youtube.com/vi/e4rIfQtBIko/hqdefault.jpg",
+        "artist": "Caroline Kingsbury",
+        "duration": "3:40",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bryan Adams - (Everything I Do) I Do It For You",
+        "link": "https://www.youtube.com/watch?v=Y0pdQU87dc8",
+        "thumbnail": "https://img.youtube.com/vi/Y0pdQU87dc8/hqdefault.jpg",
+        "artist": "Bryan Adams",
+        "duration": "6:33",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Aerosmith - I Don't Want to Miss a Thing (Official HD Video)",
+        "link": "https://www.youtube.com/watch?v=JkK8g6FMEXE",
+        "thumbnail": "https://img.youtube.com/vi/JkK8g6FMEXE/hqdefault.jpg",
+        "artist": "Aerosmith",
+        "duration": "4:53",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Queen - We Will Rock You (Official Video)",
+        "link": "https://www.youtube.com/watch?v=-tJYN-eG1zk",
+        "thumbnail": "https://img.youtube.com/vi/-tJYN-eG1zk/hqdefault.jpg",
+        "artist": "Queen Official",
+        "duration": "2:15",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Anthony Von - Kiss Me First (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=TEmcyfKBNmo",
+        "thumbnail": "https://img.youtube.com/vi/TEmcyfKBNmo/hqdefault.jpg",
+        "artist": "Anthony Von",
+        "duration": "3:54",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "New Divide (Official Music Video) [4K Upgrade] - Linkin Park",
+        "link": "https://www.youtube.com/watch?v=ysSxxIqKNN0",
+        "thumbnail": "https://img.youtube.com/vi/ysSxxIqKNN0/hqdefault.jpg",
+        "artist": "Linkin Park",
+        "duration": "4:29",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Guns N' Roses - Welcome To The Jungle",
+        "link": "https://www.youtube.com/watch?v=o1tj2zJ2Wvg",
+        "thumbnail": "https://img.youtube.com/vi/o1tj2zJ2Wvg/hqdefault.jpg",
+        "artist": "Guns N' Roses",
+        "duration": "4:40",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Next Door To Heaven - Believe in me (Official music video)",
+        "link": "https://www.youtube.com/watch?v=8xDBzuDLHwQ",
+        "thumbnail": "https://img.youtube.com/vi/8xDBzuDLHwQ/hqdefault.jpg",
+        "artist": "Next Door To Heaven",
+        "duration": "4:37",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Calling - Wherever You Will Go (First Video- in Tijuana)",
+        "link": "https://www.youtube.com/watch?v=iAP9AF6DCu4",
+        "thumbnail": "https://img.youtube.com/vi/iAP9AF6DCu4/hqdefault.jpg",
+        "artist": "TheCallingVEVO",
+        "duration": "3:27",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Linkin Park - Castle of Glass",
+        "link": "https://www.youtube.com/watch?v=RRGSHvlu9Ss",
+        "thumbnail": "https://img.youtube.com/vi/RRGSHvlu9Ss/hqdefault.jpg",
+        "artist": "greenblood998",
+        "duration": "3:24",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Rammstein - Du Hast (Official 4K Video)",
+        "link": "https://www.youtube.com/watch?v=W3q8Od5qJio",
+        "thumbnail": "https://img.youtube.com/vi/W3q8Od5qJio/hqdefault.jpg",
+        "artist": "Rammstein Official",
+        "duration": "3:56",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Foo Fighters - The Pretender",
+        "link": "https://www.youtube.com/watch?v=SBjQ9tuuTJQ",
+        "thumbnail": "https://img.youtube.com/vi/SBjQ9tuuTJQ/hqdefault.jpg",
+        "artist": "Foo Fighters",
+        "duration": "4:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "JNDJ - In My Own Way",
+        "link": "https://www.youtube.com/watch?v=XwyuUb-f1Uk",
+        "thumbnail": "https://img.youtube.com/vi/XwyuUb-f1Uk/hqdefault.jpg",
+        "artist": "JNDJ",
+        "duration": "3:04",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Nickelback - How You Remind Me",
+        "link": "https://www.youtube.com/watch?v=1cQh1ccqu8M",
+        "thumbnail": "https://img.youtube.com/vi/1cQh1ccqu8M/hqdefault.jpg",
+        "artist": "Nickelback",
+        "duration": "3:49",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "The Killers - Mr. Brightside (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+        "thumbnail": "https://img.youtube.com/vi/gGdGFtwCNBE/hqdefault.jpg",
+        "artist": "TheKillersMusic",
+        "duration": "3:48",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Richard Marx - Right Here Waiting (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=S_E2EHVxNAE",
+        "thumbnail": "https://img.youtube.com/vi/S_E2EHVxNAE/hqdefault.jpg",
+        "artist": "Richard Marx",
+        "duration": "4:23",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Nirvana - Come As You Are (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=vabnZ9-ex7o",
+        "thumbnail": "https://img.youtube.com/vi/vabnZ9-ex7o/hqdefault.jpg",
+        "artist": "Nirvana",
+        "duration": "3:45",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Green Day - 21 Guns [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=r00ikilDxW4",
+        "thumbnail": "https://img.youtube.com/vi/r00ikilDxW4/hqdefault.jpg",
+        "artist": "Green Day",
+        "duration": "5:26",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Back for More",
+        "link": "https://www.youtube.com/watch?v=WoPGkzFkp_k",
+        "thumbnail": "https://img.youtube.com/vi/WoPGkzFkp_k/hqdefault.jpg",
+        "artist": "Hurricane On Saturn",
+        "duration": "3:23",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Phil Collins - Another Day In Paradise (Official Music Video)",
+        "link": "https://www.youtube.com/watch?v=Qt2mbGP6vFI",
+        "thumbnail": "https://img.youtube.com/vi/Qt2mbGP6vFI/hqdefault.jpg",
+        "artist": "Phil Collins",
+        "duration": "4:50",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Kings Of Leon - Sex on Fire (Official Video)",
+        "link": "https://www.youtube.com/watch?v=RF0HhrwIwp0",
+        "thumbnail": "https://img.youtube.com/vi/RF0HhrwIwp0/hqdefault.jpg",
+        "artist": "Kings of Leon",
+        "duration": "3:28",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Bad Wolves - Zombie (Official Video)",
+        "link": "https://www.youtube.com/watch?v=9XaS93WMRQQ",
+        "thumbnail": "https://img.youtube.com/vi/9XaS93WMRQQ/hqdefault.jpg",
+        "artist": "Better Noise Music",
+        "duration": "4:36",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Goo Goo Dolls – Iris [Official Music Video] [4K Remaster]",
+        "link": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+        "thumbnail": "https://img.youtube.com/vi/NdYWuo9OFAw/hqdefault.jpg",
+        "artist": "Goo Goo Dolls",
+        "duration": "3:36",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Red Hot Chili Peppers - Scar Tissue [Official Music Video]",
+        "link": "https://www.youtube.com/watch?v=mzJj5-lubeM",
+        "thumbnail": "https://img.youtube.com/vi/mzJj5-lubeM/hqdefault.jpg",
+        "artist": "Red Hot Chili Peppers",
+        "duration": "3:41",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "Hurricane On Saturn feat. Deuce - Monsters (Official Visualizer)",
+        "link": "https://www.youtube.com/watch?v=lL0qHTuh5-4",
+        "thumbnail": "https://img.youtube.com/vi/lL0qHTuh5-4/hqdefault.jpg",
+        "artist": "Hurricane On Saturn",
+        "duration": "4:22",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:20:18.272Z",
+        "playlist": "Rock"
+      },
+      {
+        "name": "MTG QUERO VER SE VOCÊ TEM ATITUDE",
+        "link": "https://www.youtube.com/watch?v=WQHXSWz2sTI",
+        "thumbnail": "https://img.youtube.com/vi/WQHXSWz2sTI/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "1:56",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:57.972Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "MTG QUEM NÃO QUER SOU EU",
+        "link": "https://www.youtube.com/watch?v=BgThysdP9lc",
+        "thumbnail": "https://img.youtube.com/vi/BgThysdP9lc/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "2:04",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:58.008Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Sorriso no Rosto",
+        "link": "https://www.youtube.com/watch?v=1C4I--UbMxM",
+        "thumbnail": "https://img.youtube.com/vi/1C4I--UbMxM/hqdefault.jpg",
+        "artist": "GR6 EXPLODE",
+        "duration": "2:53",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:58.141Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "EU SOU SENTIMENTO",
+        "link": "https://www.youtube.com/watch?v=Ad1s0Xn2VDo",
+        "thumbnail": "https://img.youtube.com/vi/Ad1s0Xn2VDo/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "3:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:58.418Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "FALTA DE QUÊ?",
+        "link": "https://www.youtube.com/watch?v=ZVCmjM_kLBY",
+        "thumbnail": "https://img.youtube.com/vi/ZVCmjM_kLBY/hqdefault.jpg",
+        "artist": "Fernando e Sorocaba",
+        "duration": "2:42",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:58.854Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Sonho Dela (Cowboy)",
+        "link": "https://www.youtube.com/watch?v=OvXjRqK1xLw",
+        "thumbnail": "https://img.youtube.com/vi/OvXjRqK1xLw/hqdefault.jpg",
+        "artist": "Eddy Lopes",
+        "duration": "1:51",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:58.864Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Mtg Forró e Desmantelo",
+        "link": "https://www.youtube.com/watch?v=zi0yjEr2ODs",
+        "thumbnail": "https://img.youtube.com/vi/zi0yjEr2ODs/hqdefault.jpg",
+        "artist": "Doug Hits",
+        "duration": "2:30",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:59.225Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Foi Intenso - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=FeD9wvOq1yY",
+        "thumbnail": "https://img.youtube.com/vi/FeD9wvOq1yY/hqdefault.jpg",
+        "artist": "Zé Neto e Cristiano",
+        "duration": "2:17",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:23:59.447Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "THE BOX MEDLEY FUNK 2",
+        "link": "https://www.youtube.com/watch?v=k9QyieAsbnI",
+        "thumbnail": "https://img.youtube.com/vi/k9QyieAsbnI/hqdefault.jpg",
+        "artist": "Vale Records",
+        "duration": "4:18",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:00.229Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Gosta De Rua - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=ZsN_0_6yEXk",
+        "thumbnail": "https://img.youtube.com/vi/ZsN_0_6yEXk/hqdefault.jpg",
+        "artist": "Thiago e Luan",
+        "duration": "2:56",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:00.519Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Eu So Comi Ela uma Vez",
+        "link": "https://www.youtube.com/watch?v=z40Ra-ypQCU",
+        "thumbnail": "https://img.youtube.com/vi/z40Ra-ypQCU/hqdefault.jpg",
+        "artist": "Manu Kfouri",
+        "duration": "2:17",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:17.919Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Mtg Quero Te Encontrar",
+        "link": "https://www.youtube.com/watch?v=EQzM0PN4t2g",
+        "thumbnail": "https://img.youtube.com/vi/EQzM0PN4t2g/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "3:00",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:18.913Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Sagrado Profano",
+        "link": "https://www.youtube.com/watch?v=G3-jmM-aLzs",
+        "thumbnail": "https://img.youtube.com/vi/G3-jmM-aLzs/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "3:19",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.592Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Dois Tristes - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=KPQkb2AuXSw",
+        "thumbnail": "https://img.youtube.com/vi/KPQkb2AuXSw/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "3:16",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.645Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Haverá Sinais - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=Muo3F10dAcw",
+        "thumbnail": "https://img.youtube.com/vi/Muo3F10dAcw/hqdefault.jpg",
+        "artist": "Jorge & Mateus Oficial",
+        "duration": "3:10",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.718Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Morena De Goiânia - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=rh7bpHMRrS4",
+        "thumbnail": "https://img.youtube.com/vi/rh7bpHMRrS4/hqdefault.jpg",
+        "artist": "Hugo e Guilherme",
+        "duration": "2:58",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.723Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Deu Moral - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=CH8-4BbYSf4",
+        "thumbnail": "https://img.youtube.com/vi/CH8-4BbYSf4/hqdefault.jpg",
+        "artist": "Zé Neto e Cristiano",
+        "duration": "2:06",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.755Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Vazou Na Braquiara - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=oqXETHqkf4s",
+        "thumbnail": "https://img.youtube.com/vi/oqXETHqkf4s/hqdefault.jpg",
+        "artist": "Hugo e Guilherme",
+        "duration": "2:55",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:19.826Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Me Caiu Tão Bem - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=MhISEQzu4N4",
+        "thumbnail": "https://img.youtube.com/vi/MhISEQzu4N4/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "2:43",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:20.052Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Minha Herança",
+        "link": "https://www.youtube.com/watch?v=OrIlirfhorI",
+        "thumbnail": "https://img.youtube.com/vi/OrIlirfhorI/hqdefault.jpg",
+        "artist": "Elaine Cristtina CÉS",
+        "duration": "3:50",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:21.185Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Quase Algo - Ao Vivo Em Nova Iorque / 2022",
+        "link": "https://www.youtube.com/watch?v=oD9izvb3gO0",
+        "thumbnail": "https://img.youtube.com/vi/oD9izvb3gO0/hqdefault.jpg",
+        "artist": "Henrique e Juliano",
+        "duration": "3:05",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:36.725Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Te Maceto Depois do Baile",
+        "link": "https://www.youtube.com/watch?v=VM_-4Edp0dA",
+        "thumbnail": "https://img.youtube.com/vi/VM_-4Edp0dA/hqdefault.jpg",
+        "artist": "Pagode DaPaz",
+        "duration": "3:53",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:37.209Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Vamo de Pagodin",
+        "link": "https://www.youtube.com/watch?v=1nqShhAdDYE",
+        "thumbnail": "https://img.youtube.com/vi/1nqShhAdDYE/hqdefault.jpg",
+        "artist": "Pagode DaPaz",
+        "duration": "2:45",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:38.629Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Piração",
+        "link": "https://www.youtube.com/watch?v=SVJwnHIOVEY",
+        "thumbnail": "https://img.youtube.com/vi/SVJwnHIOVEY/hqdefault.jpg",
+        "artist": "Suel Oficial",
+        "duration": "2:26",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:38.664Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Como Um Beijo",
+        "link": "https://www.youtube.com/watch?v=M9aJ2PxuDio",
+        "thumbnail": "https://img.youtube.com/vi/M9aJ2PxuDio/hqdefault.jpg",
+        "artist": "Marcos e Belutti",
+        "duration": "3:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:39.297Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Nosso Primeiro Beijo - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=mBvcHrwuAjs",
+        "thumbnail": "https://img.youtube.com/vi/mBvcHrwuAjs/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "2:48",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:39.593Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Barulho Do Foguete - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=7t5mi3M_lAY",
+        "thumbnail": "https://img.youtube.com/vi/7t5mi3M_lAY/hqdefault.jpg",
+        "artist": "Thiago e Luan",
+        "duration": "2:14",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:39.693Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Anestesiado - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=qs3EwodfFgs",
+        "thumbnail": "https://img.youtube.com/vi/qs3EwodfFgs/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "2:59",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:39.810Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Casca de Bala",
+        "link": "https://www.youtube.com/watch?v=uSB58FixgSQ",
+        "thumbnail": "https://img.youtube.com/vi/uSB58FixgSQ/hqdefault.jpg",
+        "artist": "Ramon e Randinho",
+        "duration": "2:31",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:40.263Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Página De Ex - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=o4SIXV3OKeY",
+        "thumbnail": "https://img.youtube.com/vi/o4SIXV3OKeY/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "2:42",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:40.432Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "TUMBÁTUM",
+        "link": "https://www.youtube.com/watch?v=NIlQ_invdic",
+        "thumbnail": "https://img.youtube.com/vi/NIlQ_invdic/hqdefault.jpg",
+        "artist": "TROPA DO BRUXO",
+        "duration": "2:01",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:55.846Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Desilusão (MTG)",
+        "link": "https://www.youtube.com/watch?v=rVsbNKSZiNs",
+        "thumbnail": "https://img.youtube.com/vi/rVsbNKSZiNs/hqdefault.jpg",
+        "artist": "Top Records",
+        "duration": "2:43",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:56.413Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Vamo Marolar",
+        "link": "https://www.youtube.com/watch?v=QQw_eox2sDE",
+        "thumbnail": "https://img.youtube.com/vi/QQw_eox2sDE/hqdefault.jpg",
+        "artist": "MC João",
+        "duration": "3:02",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:56.648Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Amor Na Praia",
+        "link": "https://www.youtube.com/watch?v=JOnl51odv9Q",
+        "thumbnail": "https://img.youtube.com/vi/JOnl51odv9Q/hqdefault.jpg",
+        "artist": "Xand Avião",
+        "duration": "2:49",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:57.171Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Aquela Pessoa - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=a5vH9f0lHZg",
+        "thumbnail": "https://img.youtube.com/vi/a5vH9f0lHZg/hqdefault.jpg",
+        "artist": "Henrique e Juliano",
+        "duration": "2:44",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:57.277Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Torre Eiffel - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=8cZC3uqRJD4",
+        "thumbnail": "https://img.youtube.com/vi/8cZC3uqRJD4/hqdefault.jpg",
+        "artist": "Manu Bahtidão",
+        "duration": "3:23",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:57.719Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Apaguei Pra Todos - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=o3dknP3jclw",
+        "thumbnail": "https://img.youtube.com/vi/o3dknP3jclw/hqdefault.jpg",
+        "artist": "Grupo Menos é Mais",
+        "duration": "3:19",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:58.119Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Dedo do Meio - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=mHir7vo5vls",
+        "thumbnail": "https://img.youtube.com/vi/mHir7vo5vls/hqdefault.jpg",
+        "artist": "Murilo Huff",
+        "duration": "2:54",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:58.341Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Me Leva Pra Casa / Escrito Nas Estrelas / Saudade - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=1lVrYNhUkJg",
+        "thumbnail": "https://img.youtube.com/vi/1lVrYNhUkJg/hqdefault.jpg",
+        "artist": "Claudia Leitte",
+        "duration": "4:29",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:24:58.986Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Vem Desestressar",
+        "link": "https://www.youtube.com/watch?v=OCUL9ofFpEc",
+        "thumbnail": "https://img.youtube.com/vi/OCUL9ofFpEc/hqdefault.jpg",
+        "artist": "Eric Land",
+        "duration": "2:10",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:17.388Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Aproveita - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=3NNKqvtuWLE",
+        "thumbnail": "https://img.youtube.com/vi/3NNKqvtuWLE/hqdefault.jpg",
+        "artist": "Americanas",
+        "duration": "2:35",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:14.870Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "De Trás Pra Frente - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=r1SgAoRsJ98",
+        "thumbnail": "https://img.youtube.com/vi/r1SgAoRsJ98/hqdefault.jpg",
+        "artist": "Henrique e Juliano",
+        "duration": "2:48",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:14.898Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "MTG Chihiro (Funk)",
+        "link": "https://www.youtube.com/watch?v=OZ3Pn2MObxo",
+        "thumbnail": "https://img.youtube.com/vi/OZ3Pn2MObxo/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "2:32",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:15.128Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Aquariano Nato",
+        "link": "https://www.youtube.com/watch?v=_dqO2j4lqKg",
+        "thumbnail": "https://img.youtube.com/vi/_dqO2j4lqKg/hqdefault.jpg",
+        "artist": "MC Dricka",
+        "duration": "1:59",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:15.597Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Triplex - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=KgIiEuChZq0",
+        "thumbnail": "https://img.youtube.com/vi/KgIiEuChZq0/hqdefault.jpg",
+        "artist": "Thiago e Luan",
+        "duration": "2:57",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:16.511Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Samba de Malandro",
+        "link": "https://www.youtube.com/watch?v=-UDWqs7TsTg",
+        "thumbnail": "https://img.youtube.com/vi/-UDWqs7TsTg/hqdefault.jpg",
+        "artist": "Pagode DaPaz",
+        "duration": "5:10",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:17.379Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Digitando",
+        "link": "https://www.youtube.com/watch?v=4l5O5qhCVog",
+        "thumbnail": "https://img.youtube.com/vi/4l5O5qhCVog/hqdefault.jpg",
+        "artist": "Thiago e Luan",
+        "duration": "3:22",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:17.561Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "A Internet É Toxica",
+        "link": "https://www.youtube.com/watch?v=TvX29A17-Kk",
+        "thumbnail": "https://img.youtube.com/vi/TvX29A17-Kk/hqdefault.jpg",
+        "artist": "프림로즈 PRIMROSE",
+        "duration": "2:46",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:17.767Z",
+        "playlist": "Top 50 Brasil"
+      },
+      {
+        "name": "Não Recomendo - Ao Vivo",
+        "link": "https://www.youtube.com/watch?v=JIWd-AZSaQg",
+        "thumbnail": "https://img.youtube.com/vi/JIWd-AZSaQg/hqdefault.jpg",
+        "artist": "Matheus e Kauan",
+        "duration": "2:23",
+        "genre": "",
+        "extractedAt": "2024-06-24T12:25:18.995Z",
+        "playlist": "Top 50 Brasil"
       }
     ]
   }

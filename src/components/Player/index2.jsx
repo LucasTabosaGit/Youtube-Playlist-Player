@@ -29,12 +29,6 @@ const AudioPlayer = () => {
   const [currentSong, setCurrentSong] = useState(null);
 
 
-  const toggleMute = () => {
-    const newVolume = isMuted ? (volume === 0 ? 50 : volume) : 0;
-    setVolume(newVolume);
-    setIsMuted(!isMuted);
-  };
-
 
   useEffect(() => {
     const fetchSongs = async () => {
@@ -74,16 +68,16 @@ const AudioPlayer = () => {
       setIsPlaying(false);
       setDuration(0);
       setCurrentTime(0);
-  
+
       if (playerRef.current) {
         playerRef.current.destroy();
       }
-  
+
       setThumbnail('');
       setTitle('');
       setArtist('');
       setCurrentSongLink('');
-  
+
       const player = YouTube('player', {
         videoId: song.link.split('v=')[1],
         playerVars: {
@@ -91,21 +85,21 @@ const AudioPlayer = () => {
           controls: 0,
         },
       });
-  
+
       player.on('stateChange', event => {
         if (event && event.data) {
           setIsPlaying(event.data === 1);
         }
       });
-  
+
       player.on('ready', event => {
         setDuration(event.target.getDuration());
         setIsPlaying(true);
         player.setVolume(volume);
       });
-  
+
       playerRef.current = player;
-  
+
       setThumbnail(song.thumbnail);
       setTitle(song.name);
       setArtist(song.artist);
@@ -114,7 +108,7 @@ const AudioPlayer = () => {
       console.error('Error handling song selection:', error);
     }
   };
-  
+
 
   const playNextSong = () => {
     let nextIndex;
@@ -201,8 +195,8 @@ const AudioPlayer = () => {
       .catch(error => console.error('Error updating playing API:', error));
   };
 
-
   const togglePlay = () => {
+    if (!currentSong) return; // Verificação de segurança
     if (isPlaying) {
       playerRef.current.pauseVideo();
     } else {
@@ -210,19 +204,30 @@ const AudioPlayer = () => {
     }
     setIsPlaying(!isPlaying);
   };
-
+  
+  
+  
+  const toggleMute = () => {
+    if (!currentSong) return; // Verificação de segurança
+    const newVolume = isMuted ? (volume === 0 ? 50 : volume) : 0;
+    setVolume(newVolume);
+    setIsMuted(!isMuted);
+  };
+  
   const handleVolumeChange = event => {
+    if (!currentSong) return; // Verificação de segurança
     const newVolume = parseInt(event.target.value);
     setVolume(newVolume);
-    setIsMuted(newVolume === 0); // Atualiza isMuted se o novo volume for zero
+    setIsMuted(newVolume === 0);
   };
-
-
+  
   const handleProgressBarChange = event => {
+    if (!currentSong) return; // Verificação de segurança
     const newTime = parseFloat(event.target.value);
     setCurrentTime(newTime);
     playerRef.current.seekTo(newTime);
   };
+  
 
   const toggleShuffle = () => {
     setShuffle(!shuffle);
@@ -265,30 +270,30 @@ const AudioPlayer = () => {
   const handleThumbnailClick = async () => {
     const currentTimeBeforeExpand = currentTime;
     setThumbnailClicked(true);
-  
+
     if (currentSong) {
       await handleAudioPlayerSelect(currentSong, currentSongIndex);
       playerRef.current.seekTo(currentTimeBeforeExpand);
     }
   };
-  
+
   const handleCloseClick = async () => {
     const currentTimeBeforeClose = currentTime;
     setThumbnailClicked(false);
-  
+
     if (currentSong) {
       await handleAudioPlayerSelect(currentSong, currentSongIndex);
       playerRef.current.seekTo(currentTimeBeforeClose);
     }
   };
-  
+
 
 
 
   useEffect(() => {
     const handleKeyDown = (event) => {
       const { key, code } = event;
-  
+
       const keyMap = {
         'MediaPlayPause': togglePlay,
         'MediaTrackNext': playNextSong,
@@ -300,25 +305,24 @@ const AudioPlayer = () => {
         'KeyS': toggleShuffle,
         'KeyR': toggleRepeat,
       };
-  
+
       keyMap[key]?.();
       keyMap[code]?.();
     };
-  
+
     window.addEventListener('keydown', handleKeyDown);
-  
+
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [togglePlay, playNextSong, playPreviousSong, toggleMute, toggleShuffle, toggleRepeat]);
-  
-  
+
+
 
 
 
   return (
     <>
-
       <div
         style={{
           backgroundColor: '#000000',
@@ -357,16 +361,18 @@ const AudioPlayer = () => {
             justifyContent: 'center',
             alignItems: 'flex-end'
           }}>
-            <img
-              src={thumbnail}
-              style={{
-                width: '150px',
-                height: '150px',
-                objectFit: 'cover',
-                transform: 'translateY(25%)'
-              }}
-              alt="Cover"
-            />
+            {thumbnail && (
+              <img
+                src={thumbnail}
+                style={{
+                  width: '150px',
+                  height: '150px',
+                  objectFit: 'cover',
+                  transform: 'translateY(25%)'
+                }}
+                alt="Cover"
+              />
+            )}
           </div>
           <div className="flex flex-col mx-3">
             <div className="song-name font-bold">{truncateText(title, 38)}</div>
@@ -460,6 +466,7 @@ const AudioPlayer = () => {
     </>
   );
 };
+
 
 export default AudioPlayer;
 

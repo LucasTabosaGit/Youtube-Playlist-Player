@@ -1,3 +1,11 @@
+## Aviso de Direitos Autorais
+
+- Este projeto de portfólio utiliza técnicas de web scraping para coletar informações sobre playlists do YouTube (título da playlist, link da playlist, link da thumbnail, nome do canal/artista). Não realizamos o download ou armazenamento de qualquer conteúdo protegido por direitos autorais do YouTube, e o projeto foi desenvolvido apenas para desktop, não para dispositivos móveis.
+
+- Os vídeos reproduzidos e as thumbnails são carregados apenas com o link e requerem conexão com a internet, garantindo que nada está sendo baixado ou armazenado localmente. Todas as informações coletadas são utilizadas apenas para fins demonstrativos e educacionais. Não autorizo a cópia ou modificação deste player para outros fins.
+
+
+
 ## Instruções de Instalação
 
 1. **Verificar Instalação do Node.js**
