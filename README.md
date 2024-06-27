@@ -1,6 +1,6 @@
 ## Aviso de Direitos Autorais
 
-- Este projeto de portfólio utiliza técnicas de web scraping para coletar informações sobre playlists do YouTube e Spotify (título da playlist, link do vídeo, link da thumbnail, nome do canal/artista). Este projeto NÃO realiza o download ou armazenamento de qualquer conteúdo protegido por direitos autorais do YouTube. Foi desenvolvido apenas para desktop, não sendo compatível com dispositivos móveis. As informações de texto são salvas localmente e não estão disponíveis em nenhum servidor online.
+- Este projeto de portfólio utiliza técnicas de web scraping para coletar informações sobre playlists do YouTube e Spotify (título da playlist/vídeo, link do vídeo, link da thumbnail, nome do canal/artista). Este projeto NÃO realiza o download ou armazenamento de qualquer conteúdo protegido por direitos autorais do YouTube. Foi desenvolvido apenas para desktop, não sendo compatível com dispositivos móveis. As informações de texto são salvas localmente e não estão disponíveis em nenhum servidor online.
 
 - Os vídeos reproduzidos e as thumbnails são carregados apenas por meio de links, necessitando de conexão com a internet, o que garante que nada está sendo baixado ou armazenado localmente. Todas as informações coletadas são utilizadas exclusivamente para fins demonstrativos e educacionais. Não autorizo a cópia ou modificação deste player para outros fins.
 

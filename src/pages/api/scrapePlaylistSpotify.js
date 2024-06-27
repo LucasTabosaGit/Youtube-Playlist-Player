@@ -36,16 +36,18 @@ export default async function handler(req, res) {
                 const title = songElement.textContent.trim();
                 let artists = '';
 
-                if (songElement.nextElementSibling && songElement.nextElementSibling.tagName === 'SPAN') {
-                    const artistLinks = songElement.nextElementSibling.querySelectorAll('a');
-                    artists = Array.from(artistLinks).map(link => link.textContent.trim()).join(', ');
-                } else if (songElement.nextElementSibling && songElement.nextElementSibling.tagName === 'A') {
-                    artists = songElement.nextElementSibling.textContent.trim();
+                // Encontre o elemento de artistas dentro do elemento pai
+                const parentElement = songElement.closest('div._iQpvk1c9OgRAc8KRTlH');
+                if (parentElement) {
+                    const artistElement = parentElement.querySelector('span.encore-text-body-small');
+                    if (artistElement) {
+                        const artistLinks = artistElement.querySelectorAll('a');
+                        artists = Array.from(artistLinks).map(link => link.textContent.trim()).join(', ');
+                    }
                 }
 
                 const query = `${title} ${artists} música`.replace(/\s+/g, '+');
                 const youtubeLink = `https://www.youtube.com/results?search_query=${query}`;
-
 
                 songs.push({ title, artists, youtubeLink });
             });
